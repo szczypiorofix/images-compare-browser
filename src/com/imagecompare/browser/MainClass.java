@@ -7,8 +7,8 @@ public class MainClass {
     private MainWindow mainWindow;
 
     private MainClass() {
-        mainWindow = new MainWindow("Browser");
-        mainWindow.setVisible(true);
+        mainWindow = new MainWindow();
+        mainWindow.showWindow(true);
     }
 
     public static void main(String[] args) {
