@@ -5,10 +5,9 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+
 
 final class MainWindow extends JFrame {
 
@@ -29,26 +28,7 @@ final class MainWindow extends JFrame {
         createMainMenu();
         createMainPanel();
 
-        Connection conn = null;
-        try {
-            // db parameters
-            String url = "jdbc:sqlite:sample.db";
-            // create a connection to the database
-            conn = DriverManager.getConnection(url);
-
-            System.out.println("Connection to SQLite has been established.");
-
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        } finally {
-            try {
-                if (conn != null) {
-                    conn.close();
-                }
-            } catch (SQLException ex) {
-                System.out.println(ex.getMessage());
-            }
-        }
+        SQLiteConnector sqliteConnector = new SQLiteConnector();
     }
 
     private void setUIManager() {
@@ -97,20 +77,21 @@ final class MainWindow extends JFrame {
 
         Image myImage = null;
         try {
-            myImage = ImageIO.read(getClass().getResource("/spaceship.png"));
+            myImage = ImageIO.read(getClass().getResource("/image1.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         myImage = myImage.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH);
+        myImage = getScaledImage(myImage, 300, 400);
         ImageIcon myImageIcon = new ImageIcon(myImage);
         JLabel l1 = new JLabel(myImageIcon);
+        l1.setSize(300, 300);
         sd2.add(l1);
 
         mainPanel.add(splitPane, BorderLayout.CENTER);
         mainPanel.add(new JButton("Otwórz zdjęcie"), BorderLayout.NORTH);
 
         JTabbedPane tabbedPane = new JTabbedPane();
-        //ImageIcon icon = createImageIcon("images/middle.gif");
 
         JComponent panel1 = new JPanel(new BorderLayout());
         tabbedPane.addTab("Przeglądarka zdjęć", null, panel1, "Lista zdjęć");
@@ -120,6 +101,17 @@ final class MainWindow extends JFrame {
 
         panel1.add(mainPanel);
         this.add(tabbedPane);
+    }
+
+    private Image getScaledImage(Image srcImg, int w, int h){
+        BufferedImage resizedImg = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g2 = resizedImg.createGraphics();
+
+        g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+        g2.drawImage(srcImg, 0, 0, w, h, null);
+        g2.dispose();
+
+        return resizedImg;
     }
 
     private void createMainMenu() {
