@@ -28,7 +28,7 @@ final class MainWindow extends JFrame {
         createMainMenu();
         createMainPanel();
 
-        SQLiteConnector sqliteConnector = new SQLiteConnector();
+        //SQLiteConnector sqliteConnector = new SQLiteConnector();
     }
 
     private void setUIManager() {
@@ -58,35 +58,17 @@ final class MainWindow extends JFrame {
     }
 
     private void createMainPanel() {
-        JPanel sd1 = new JPanel(new BorderLayout());
-        JLabel lb1 = new JLabel("Hello");
-        sd1.add(lb1);
 
-        JPanel sd2 = new JPanel(new BorderLayout());
-        JLabel lb2 = new JLabel("Hello");
-        sd2.add(lb2);
+        ImagePanel sd1 = new ImagePanel("image1.jpg");
+        ImagePanel sd2 = new ImagePanel("image1.jpg");
+
 
         mainPanel = new JPanel(new BorderLayout());
-        splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
-                sd1, sd2);
-        splitPane.setResizeWeight(0.5);
-        //splitPane.setOneTouchExpandable(true);
+        splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, sd1, sd2);
         splitPane.setContinuousLayout(true);
+        splitPane.setDividerLocation(0.5);
         splitPane.setResizeWeight(0.5);
         splitPane.setDividerSize(6);
-
-        Image myImage = null;
-        try {
-            myImage = ImageIO.read(getClass().getResource("/image1.jpg"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        myImage = myImage.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH);
-        myImage = getScaledImage(myImage, 300, 400);
-        ImageIcon myImageIcon = new ImageIcon(myImage);
-        JLabel l1 = new JLabel(myImageIcon);
-        l1.setSize(300, 300);
-        sd2.add(l1);
 
         mainPanel.add(splitPane, BorderLayout.CENTER);
         mainPanel.add(new JButton("Otwórz zdjęcie"), BorderLayout.NORTH);
@@ -101,17 +83,6 @@ final class MainWindow extends JFrame {
 
         panel1.add(mainPanel);
         this.add(tabbedPane);
-    }
-
-    private Image getScaledImage(Image srcImg, int w, int h){
-        BufferedImage resizedImg = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
-        Graphics2D g2 = resizedImg.createGraphics();
-
-        g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-        g2.drawImage(srcImg, 0, 0, w, h, null);
-        g2.dispose();
-
-        return resizedImg;
     }
 
     private void createMainMenu() {
