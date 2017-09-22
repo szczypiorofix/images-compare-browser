@@ -1,12 +1,8 @@
 package com.imagecompare.browser;
 
-
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 
 
 final class MainWindow extends JFrame {
@@ -20,13 +16,17 @@ final class MainWindow extends JFrame {
 
     MainWindow() {
         super("Browser");
+        System.out.println("Created GUI on EDT? " + SwingUtilities.isEventDispatchThread());
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.setSize(800, 600);
+        this.setSize(1100, 600);
         this.setLocationRelativeTo(null);
 
         setUIManager();
         createMainMenu();
         createMainPanel();
+
+
+
 
         //SQLiteConnector sqliteConnector = new SQLiteConnector();
     }
@@ -62,9 +62,17 @@ final class MainWindow extends JFrame {
         ImagePanel sd1 = new ImagePanel("image1.jpg");
         ImagePanel sd2 = new ImagePanel("image1.jpg");
 
+        ImageScrollPane scrollPaneLeft = new ImageScrollPane(sd1);
+        ImageScrollPane scrollPaneRight = new ImageScrollPane(sd2);
+
+        sd1.setScrollPane(scrollPaneLeft);
+        sd2.setScrollPane(scrollPaneRight);
+
+        scrollPaneLeft.createVerticalScrollBar();
+        scrollPaneLeft.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
         mainPanel = new JPanel(new BorderLayout());
-        splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, sd1, sd2);
+        splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, scrollPaneLeft, scrollPaneRight);
         splitPane.setContinuousLayout(true);
         splitPane.setDividerLocation(0.5);
         splitPane.setResizeWeight(0.5);
@@ -132,4 +140,5 @@ final class MainWindow extends JFrame {
     void showWindow(Boolean s) {
         this.setVisible(s);
     }
+
 }
