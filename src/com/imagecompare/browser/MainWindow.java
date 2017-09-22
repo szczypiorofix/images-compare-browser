@@ -71,7 +71,7 @@ final class MainWindow extends JFrame {
         splitPane.setDividerSize(6);
 
         mainPanel.add(splitPane, BorderLayout.CENTER);
-        mainPanel.add(new JButton("Otwórz zdjęcie"), BorderLayout.NORTH);
+        //mainPanel.add(new JButton("Otwórz zdjęcie"), BorderLayout.NORTH);
 
         JTabbedPane tabbedPane = new JTabbedPane();
 
