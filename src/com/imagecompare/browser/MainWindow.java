@@ -25,9 +25,6 @@ final class MainWindow extends JFrame {
         createMainMenu();
         createMainPanel();
 
-
-
-
         //SQLiteConnector sqliteConnector = new SQLiteConnector();
     }
 

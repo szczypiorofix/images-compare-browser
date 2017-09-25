@@ -27,9 +27,8 @@ public class ImagePanel extends JPanel implements MouseMotionListener, MouseList
         }
         //this.setPreferredSize(new Dimension(300, 400));
         //this.image = getScaledImage(this.image, 300, 300);
-        //System.out.println(this.getWidth());
 
-        //this.add(new JLabel(new ImageIcon(this.image)));
+        this.add(new JLabel(new ImageIcon(this.image)));
 
         this.addMouseListener(this);
         this.addMouseMotionListener(this);
@@ -38,11 +37,7 @@ public class ImagePanel extends JPanel implements MouseMotionListener, MouseList
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawString("This is my custom Panel!",10,20);
-        g.setColor(Color.RED);
-        g.fillRect(10, 100, 100, 200);
-        g.setColor(Color.BLACK);
-        g.drawRect(10, 100, 120, 200);
+        //g.drawImage(this.image, 0, 0, this.image.getWidth(this), this.image.getHeight(this),this);
     }
 
     private Image getScaledImage(Image srcImg, int w, int h){
