@@ -11,5 +11,7 @@ class ImageScrollPane extends JScrollPane {
         super(view);
         this.view = view;
         this.getVerticalScrollBar().setUnitIncrement(16);
+        //this.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+        //this.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
     }
 }

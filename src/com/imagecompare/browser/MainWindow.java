@@ -2,10 +2,12 @@ package com.imagecompare.browser;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
 import java.awt.event.KeyEvent;
 
 
-final class MainWindow extends JFrame {
+final class MainWindow extends JFrame implements ComponentListener {
 
     private JPanel mainPanel;
     private JSplitPane splitPane;
@@ -13,6 +15,7 @@ final class MainWindow extends JFrame {
     private JMenu menuFile, menuOptions;
     private JMenuItem menuFileExit, menuFileOpen;
     private JMenuItem menuOptionShowDatabase, menuOptionsAddNewImage;
+    private int screenWidth, screenHeight;
 
     MainWindow() {
         super("Browser");
@@ -56,26 +59,30 @@ final class MainWindow extends JFrame {
 
     private void createMainPanel() {
 
-        ImagePanel sd1 = new ImagePanel("image1.jpg");
-        ImagePanel sd2 = new ImagePanel("image1.jpg");
+        //ImagePanel sd1 = new ImagePanel("image1.jpg");
+        //ImagePanel sd2 = new ImagePanel("image1.jpg");
 
-        ImageScrollPane scrollPaneLeft = new ImageScrollPane(sd1);
+        ImagePanel sd1 = new ImagePanel("image1.jpg", "image2.jpg", this.screenWidth, this.screenHeight);
+
+/*        ImageScrollPane scrollPaneLeft = new ImageScrollPane(sd1);
         ImageScrollPane scrollPaneRight = new ImageScrollPane(sd2);
-
         sd1.setScrollPane(scrollPaneLeft);
         sd2.setScrollPane(scrollPaneRight);
-
         scrollPaneLeft.createVerticalScrollBar();
         scrollPaneLeft.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-
         mainPanel = new JPanel(new BorderLayout());
         splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, scrollPaneLeft, scrollPaneRight);
         splitPane.setContinuousLayout(true);
         splitPane.setDividerLocation(0.5);
         splitPane.setResizeWeight(0.5);
         splitPane.setDividerSize(6);
+        mainPanel.add(splitPane, BorderLayout.CENTER);*/
 
-        mainPanel.add(splitPane, BorderLayout.CENTER);
+        mainPanel = new JPanel(new BorderLayout());
+        ImageScrollPane scrollPaneLeft = new ImageScrollPane(sd1);
+        sd1.setScrollPane(scrollPaneLeft);
+        mainPanel.add(scrollPaneLeft);
+
         //mainPanel.add(new JButton("Otwórz zdjęcie"), BorderLayout.NORTH);
 
         JTabbedPane tabbedPane = new JTabbedPane();
@@ -88,6 +95,7 @@ final class MainWindow extends JFrame {
 
         panel1.add(mainPanel);
         this.add(tabbedPane);
+        this.addComponentListener(this);
     }
 
     private void createMainMenu() {
@@ -138,4 +146,25 @@ final class MainWindow extends JFrame {
         this.setVisible(s);
     }
 
+    @Override
+    public void componentResized(ComponentEvent e) {
+        this.screenWidth = this.getContentPane().getSize().width;
+        this.screenHeight = this.getContentPane().getSize().height;
+        //System.out.println(screenWidth +":" +screenHeight);
+    }
+
+    @Override
+    public void componentMoved(ComponentEvent e) {
+
+    }
+
+    @Override
+    public void componentShown(ComponentEvent e) {
+
+    }
+
+    @Override
+    public void componentHidden(ComponentEvent e) {
+
+    }
 }
