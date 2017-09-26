@@ -11,12 +11,12 @@ public class ImagePanel extends JPanel implements MouseMotionListener, MouseList
 
     private BufferedImage image1 = null, image2 = null;
     private Point location;
-    private final int DIVIDER = 3;
+    private final int DIVIDER = 2;
     private int x = 0;
     private JScrollPane scrollPane = null;
 
     ImagePanel(String imageName1, String imageName2) {
-        super(new FlowLayout());
+        super(null);
 
         try {
             this.image1 = ImageIO.read(getClass().getResource("/" +imageName1));

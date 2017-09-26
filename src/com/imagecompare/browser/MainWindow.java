@@ -2,6 +2,7 @@ package com.imagecompare.browser;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 
 
@@ -9,17 +10,19 @@ final class MainWindow extends JFrame {
 
     private JPanel mainPanel;
     private JMenuBar mainMenuBar;
-    private JMenu menuFile, menuOptions;
-    private JMenuItem menuFileExit, menuFileOpen;
+    private JMenu menuFile, menuOptions, menuPomoc;
+    private JMenuItem menuFileExit, menuFileOpen, menuPomocInformacje, menuPomocPomoc;
     private JMenuItem menuOptionShowDatabase, menuOptionsAddNewImage;
     private ImagePanel imageViewerPanel;
+    private InformationDialog informationDialog;
 
     MainWindow() {
-        super("Browser");
+        super("Images Compare Browser");
         System.out.println("Created GUI on EDT? " + SwingUtilities.isEventDispatchThread());
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setSize(1100, 600);
         this.setLocationRelativeTo(null);
+        this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/icon.png")));
 
         setUIManager();
         createMainMenu();
@@ -68,13 +71,12 @@ final class MainWindow extends JFrame {
         tabbedPane.addTab("Przeglądarka zdjęć", null, panelImages, "Lista zdjęć");
 
 
-        JComponent panelDatabase = new JPanel(new BorderLayout());
-        tabbedPane.addTab("Baza danych", null, panelDatabase, "Baza danych zdjęć");
+        DatabasePanel panelDatabase = new DatabasePanel(this);
+        JScrollPane panelDatabaseScroll = new JScrollPane(panelDatabase);
+        panelDatabaseScroll.getVerticalScrollBar().setUnitIncrement(12);
+        tabbedPane.addTab("Baza danych", null, panelDatabaseScroll, "Baza danych zdjęć");
 
-        JLabel titlePane = new JLabel("Baza danych zdjęć");
-        titlePane.setHorizontalAlignment(JLabel.CENTER);
-        titlePane.setFont(new Font("Tahoma", Font.BOLD, 20));
-        panelDatabase.add(titlePane, BorderLayout.NORTH);
+        tabbedPane.setColors();
 
 
         this.add(tabbedPane);
@@ -113,8 +115,25 @@ final class MainWindow extends JFrame {
         menuOptions.add(menuOptionsAddNewImage);
         menuOptions.add(menuOptionShowDatabase);
 
+        informationDialog = new InformationDialog(this, "Informacje", true);
+
+        menuPomoc = new JMenu("Pomoc");
+        menuPomoc.setMnemonic(KeyEvent.VK_C);
+
+        menuPomocPomoc = new JMenuItem("Tematy pomocy");
+        menuPomocPomoc.setMnemonic(KeyEvent.VK_T);
+        menuPomocInformacje = new JMenuItem("Informacje");
+        menuPomocInformacje.setMnemonic(KeyEvent.VK_I);
+        menuPomocInformacje.addActionListener((ActionEvent action) -> {
+            informationDialog.setVisible(true);
+        });
+
+        menuPomoc.add(menuPomocPomoc);
+        menuPomoc.add(menuPomocInformacje);
+
         mainMenuBar.add(menuFile);
         mainMenuBar.add(menuOptions);
+        mainMenuBar.add(menuPomoc);
 
         this.setJMenuBar(mainMenuBar);
     }
