@@ -1,7 +1,8 @@
 package com.imagecompare.browser;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JScrollPane;
+import java.awt.Component;
+
 
 class ImageScrollPane extends JScrollPane {
 

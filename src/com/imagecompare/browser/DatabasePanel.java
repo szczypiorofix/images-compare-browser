@@ -1,8 +1,19 @@
 package com.imagecompare.browser;
 
-import javax.swing.*;
+
+import javax.swing.JPanel;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTable;
+import javax.swing.JScrollPane;
+import javax.swing.JOptionPane;
+import javax.swing.ListSelectionModel;
+import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableCellRenderer;
-import java.awt.*;
+
+import java.awt.BorderLayout;
+import java.awt.Font;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 
 
@@ -13,6 +24,7 @@ class DatabasePanel extends JPanel {
 
     DatabasePanel(JFrame frame) {
         super(new BorderLayout());
+        this.setBorder(new EmptyBorder(5, 5, 5, 5));
         JLabel titlePane = new JLabel("Baza danych zdjęć");
         titlePane.setHorizontalAlignment(JLabel.CENTER);
         titlePane.setFont(new Font("Tahoma", Font.BOLD, 18));

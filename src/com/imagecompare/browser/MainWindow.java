@@ -1,9 +1,21 @@
 package com.imagecompare.browser;
 
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
+import javax.swing.JPanel;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.UIManager;
+import javax.swing.JScrollPane;
+import javax.swing.JComponent;
+import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
+import javax.swing.KeyStroke;
+
+import java.awt.BorderLayout;
+import java.awt.Toolkit;
 
 
 final class MainWindow extends JFrame {

@@ -1,7 +1,7 @@
 package com.imagecompare.browser;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JButton;
+
 
 class FunctionalButton extends JButton {
 

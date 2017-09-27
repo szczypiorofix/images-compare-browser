@@ -1,10 +1,16 @@
 package com.imagecompare.browser;
 
 import javax.imageio.ImageIO;
-import javax.swing.*;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+
 import java.awt.*;
-import java.awt.event.*;
 import java.awt.image.BufferedImage;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+
+
 import java.io.IOException;
 
 public class ImagePanel extends JPanel implements MouseMotionListener, MouseListener {
@@ -16,7 +22,7 @@ public class ImagePanel extends JPanel implements MouseMotionListener, MouseList
     private JScrollPane scrollPane = null;
 
     ImagePanel(String imageName1, String imageName2) {
-        super(null);
+        super(new BorderLayout());
 
         try {
             this.image1 = ImageIO.read(getClass().getResource("/" +imageName1));
