@@ -15,7 +15,7 @@ class MainTabbedPanel extends JTabbedPane {
     }
 
     void setColors() {
-        this.setForegroundAt(0, firstTabColor);
-        this.setForegroundAt(1, secondTabColor);
+        //this.setForegroundAt(0, firstTabColor);
+        //this.setForegroundAt(1, secondTabColor);
     }
 }

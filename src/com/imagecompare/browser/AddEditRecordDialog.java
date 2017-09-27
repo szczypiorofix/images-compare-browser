@@ -49,7 +49,7 @@ class AddEditRecordDialog extends JDialog {
         JPanel northPanel = new JPanel(new FlowLayout());
         JButton addButton = new JButton("Dodaj plik");
         addButton.addActionListener((ActionEvent e) -> {
-            OpenFileDialog fc = new OpenFileDialog();
+            OpenFileDialog fc = new OpenFileDialog(OpenFileDialog.IMAGE_FILE);
             int returnVal = fc.showDialog(this, "Otwórz");
         });
 

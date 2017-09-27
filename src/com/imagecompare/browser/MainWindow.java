@@ -2,17 +2,8 @@ package com.imagecompare.browser;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import javax.swing.JPanel;
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.UIManager;
-import javax.swing.JScrollPane;
-import javax.swing.JComponent;
-import javax.swing.SwingUtilities;
-import javax.swing.WindowConstants;
-import javax.swing.KeyStroke;
+import javax.swing.*;
+
 
 import java.awt.BorderLayout;
 import java.awt.Toolkit;
@@ -73,15 +64,32 @@ final class MainWindow extends JFrame {
 
         MainTabbedPanel tabbedPane = new MainTabbedPanel();
 
-        JComponent panelImages = new JPanel(new BorderLayout());
+
+
         imageViewerPanel = new ImagePanel("image1.jpg", "image2.jpg");
         mainPanel = new JPanel(new BorderLayout());
         ImageScrollPane scrollPanel = new ImageScrollPane(imageViewerPanel);
         imageViewerPanel.setScrollPane(scrollPanel);
-        mainPanel.add(scrollPanel);
-        panelImages.add(mainPanel);
-        tabbedPane.addTab("Przeglądarka zdjęć", null, panelImages, "Lista zdjęć");
+        mainPanel.add(scrollPanel, BorderLayout.CENTER);
 
+        JPanel mainPanelNorth = new JPanel();
+        JPanel mainPanelEast = new ImagePanelEast();
+        JPanel mainPanelWest = new ImagePanelWest();
+        JPanel mainPanelSouth = new JPanel();
+
+
+        //mainPanel.add(mainPanelNorth, BorderLayout.NORTH);
+        mainPanel.add(mainPanelWest, BorderLayout.WEST);
+        mainPanel.add(mainPanelEast, BorderLayout.EAST);
+        //mainPanel.add(mainPanelSouth, BorderLayout.SOUTH);
+
+        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        splitPane.setDividerSize(6);
+        splitPane.setContinuousLayout(true);
+        splitPane.setLeftComponent(mainPanelWest);
+        splitPane.setRightComponent(mainPanel);
+
+        tabbedPane.addTab("Przeglądarka zdjęć", null, splitPane, "Lista zdjęć");
 
         DatabasePanel panelDatabase = new DatabasePanel(this);
         JScrollPane panelDatabaseScroll = new JScrollPane(panelDatabase);
@@ -105,7 +113,7 @@ final class MainWindow extends JFrame {
         menuFileOpen.setAccelerator(KeyStroke.getKeyStroke('O', Toolkit.getDefaultToolkit ().getMenuShortcutKeyMask()));
         menuFileOpen.setToolTipText("Otwórz plik ze zdjęciem");
         menuFileOpen.addActionListener(e -> {
-            OpenFileDialog fc = new OpenFileDialog();
+            OpenFileDialog fc = new OpenFileDialog(OpenFileDialog.IMAGE_FILE);
             int returnVal = fc.showDialog(this, "Otwórz");
         });
 

@@ -1,8 +1,7 @@
 package com.imagecompare.browser;
 
 import javax.imageio.ImageIO;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
+import javax.swing.*;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -75,15 +74,20 @@ public class ImagePanel extends JPanel implements MouseMotionListener, MouseList
 
     @Override
     public void mousePressed(MouseEvent e) {
-        Component component = e.getComponent();
-        location = component.getLocation(location);
-        this.x = location.x + this.scrollPane.getHorizontalScrollBar().getValue() + e.getX();
-        if (this.x <= 0) this.x = 1;
+        if (SwingUtilities.isLeftMouseButton(e)) {
+            Component component = e.getComponent();
+            location = component.getLocation(location);
+            this.x = location.x + this.scrollPane.getHorizontalScrollBar().getValue() + e.getX();
+            if (this.x <= 0) this.x = 1;
+        }
+
         this.repaint();
+
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
+        this.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     }
 
     @Override
@@ -96,10 +100,25 @@ public class ImagePanel extends JPanel implements MouseMotionListener, MouseList
 
     @Override
     public void mouseDragged(MouseEvent e) {
-        Component component = e.getComponent();
-        location = component.getLocation(location);
-        this.x = location.x + this.scrollPane.getHorizontalScrollBar().getValue() + e.getX();
-        if (this.x <= 0) this.x = 1;
+
+        if (SwingUtilities.isLeftMouseButton(e)) {
+            Component component = e.getComponent();
+            location = component.getLocation(location);
+            this.x = location.x + this.scrollPane.getHorizontalScrollBar().getValue() + e.getX();
+            if (this.x <= 0) this.x = 1;
+        }
+
+        if (SwingUtilities.isRightMouseButton(e)) {
+            this.setCursor(new Cursor(Cursor.MOVE_CURSOR));
+            Component component = e.getComponent();
+            location = component.getLocation(location);
+            int dx = this.scrollPane.getHorizontalScrollBar().getWidth() - (location.x + e.getX());
+            System.out.println(this.scrollPane.getHorizontalScrollBar().getWidth() + location.x - e.getX());
+            if (dx > 0 && dx < this.scrollPane.getHorizontalScrollBar().getWidth()) {
+                this.scrollPane.getHorizontalScrollBar().setValue(dx);
+            }
+        }
+
         this.repaint();
     }
 
