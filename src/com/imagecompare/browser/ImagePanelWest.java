@@ -10,8 +10,9 @@ class ImagePanelWest extends JPanel {
 
     private String choosenFileName = "";
 
-    ImagePanelWest() {
+    ImagePanelWest(String selectedDatabaseFilename) {
         super(new BorderLayout());
+        this.choosenFileName = selectedDatabaseFilename;
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
 
         JPanel fileNamePanel = new JPanel(new BorderLayout());
@@ -27,9 +28,7 @@ class ImagePanelWest extends JPanel {
                 fileNameLabel.setText(selectedFile.getName());
                 this.choosenFileName = selectedFile.getName();
             }
-
         });
-
         fileNamePanel.add(new JLabel("Wybrany plik:"), BorderLayout.NORTH);
         fileNamePanel.add(fileNameLabel, BorderLayout.CENTER);
         fileNamePanel.add(chooseFileButton, BorderLayout.SOUTH);

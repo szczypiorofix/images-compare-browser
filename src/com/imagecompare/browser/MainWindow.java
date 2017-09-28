@@ -11,6 +11,7 @@ import java.awt.Toolkit;
 
 final class MainWindow extends JFrame {
 
+    public static final String frameTitleName = " Images Compare Browser";
     private JPanel mainPanel;
     private JMenuBar mainMenuBar;
     private JMenu menuFile, menuOptions, menuPomoc;
@@ -18,18 +19,15 @@ final class MainWindow extends JFrame {
     private JMenuItem menuOptionShowDatabase, menuOptionsAddNewImage;
     private ImagePanel imageViewerPanel;
     private InformationDialog informationDialog;
+    private String databaseFileName;
 
     MainWindow() {
-        super("Images Compare Browser");
+        super(MainWindow.frameTitleName);
         System.out.println("Created GUI on EDT? " + SwingUtilities.isEventDispatchThread());
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setSize(1100, 600);
         this.setLocationRelativeTo(null);
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/icon.png")));
-
-        setUIManager();
-        createMainMenu();
-        createMainPanel();
 
         //SQLiteConnector sqliteConnector = new SQLiteConnector();
     }
@@ -64,8 +62,6 @@ final class MainWindow extends JFrame {
 
         MainTabbedPanel tabbedPane = new MainTabbedPanel();
 
-
-
         imageViewerPanel = new ImagePanel("image1.jpg", "image2.jpg");
         mainPanel = new JPanel(new BorderLayout());
         ImageScrollPane scrollPanel = new ImageScrollPane(imageViewerPanel);
@@ -74,7 +70,7 @@ final class MainWindow extends JFrame {
 
         JPanel mainPanelNorth = new JPanel();
         JPanel mainPanelEast = new ImagePanelEast();
-        JPanel mainPanelWest = new ImagePanelWest();
+        JPanel mainPanelWest = new ImagePanelWest(databaseFileName);
         JPanel mainPanelSouth = new JPanel();
 
 
@@ -158,7 +154,12 @@ final class MainWindow extends JFrame {
         this.setJMenuBar(mainMenuBar);
     }
 
-    void showWindow(Boolean s) {
+    void showWindow(Boolean s, String databaseFileName) {
+        this.databaseFileName = databaseFileName;
+        setUIManager();
+        createMainMenu();
+        createMainPanel();
+        this.setTitle(databaseFileName +" - " +MainWindow.frameTitleName);
         this.setVisible(s);
     }
 
