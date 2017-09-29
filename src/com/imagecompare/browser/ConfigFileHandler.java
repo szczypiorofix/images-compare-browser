@@ -1,7 +1,10 @@
 package com.imagecompare.browser;
 
+import com.imagecompare.browser.system.Log;
+
 import java.io.*;
 import java.util.Properties;
+import java.util.logging.Level;
 
 class ConfigFileHandler {
 
@@ -19,15 +22,18 @@ class ConfigFileHandler {
         configFile = new File(CONFIG_FILENAME);
         if(configFile.exists() && !configFile.isDirectory()) {
             System.out.println("Plik konfiguracji - OK.");
+            Log.put(false, Level.INFO, "Plik konfiguracji - OK.");
         }
         else {
             System.out.println("Tworzenie domyślnego pliku konfiguracji.");
+            Log.put(false, Level.INFO, "Brak pliku konfiguracji. Tworzenie nowego pliku z domyślnymi wartościami.");
             try {
                 PrintWriter writer = new PrintWriter(CONFIG_FILENAME, "UTF-8");
                 writer.println("LASTDB=");
                 writer.close();
             } catch(IOException ioe) {
                 System.out.println("Błąd przy próbie utworzenia domyślnego pliku konfiguracji !!!");
+                Log.put(false, Level.INFO, "Błąd przy próbie utworzenia domyślnego pliku konfiguracji !!!");
             }
         }
 
@@ -37,6 +43,7 @@ class ConfigFileHandler {
             lastDatabase = prop.getProperty("LASTDB");
         } catch(IOException ioe) {
             System.out.println("Błąd odczytu z pliku konfiguracji !!!");
+            Log.put(false, Level.INFO, "Błąd odczytu z pliku konfiguracji !!!");
         }
     }
 
@@ -49,6 +56,7 @@ class ConfigFileHandler {
             writer.close();
         } catch(IOException ioe) {
             System.out.println("Błąd przy próbie utworzenia domyślnego pliku konfiguracji !!!");
+            Log.put(false, Level.INFO, "Błąd przy próbie utworzenia domyślnego pliku konfiguracji !!!");
         }
     }
 

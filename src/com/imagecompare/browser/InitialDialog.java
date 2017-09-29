@@ -1,9 +1,12 @@
 package com.imagecompare.browser;
 
+import com.imagecompare.browser.system.Log;
+
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
 import java.io.File;
+import java.util.logging.Level;
 
 class InitialDialog extends JDialog {
 
@@ -41,6 +44,7 @@ class InitialDialog extends JDialog {
                     dbfn += databaseFilename.charAt(databaseFilename.length() - i);
                 }
             }
+            Log.put(false, Level.INFO, "Załadowany plik bazy danych: "+databaseFilename);
             JLabel databaseFilenameLabel = new JLabel(dbfn);
             databaseFilenameLabel.setBounds(50, 40, 320, 30);
             mainPanel.add(databaseFilenameLabel);

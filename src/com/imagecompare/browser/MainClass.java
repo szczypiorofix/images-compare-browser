@@ -1,6 +1,9 @@
 package com.imagecompare.browser;
 
+import com.imagecompare.browser.system.Log;
+
 import java.awt.*;
+import java.util.logging.Level;
 
 public class MainClass {
 
@@ -9,9 +12,12 @@ public class MainClass {
 
     private MainClass() {
 
+        Log.DEBUG_MODE = true;
+        Log.put(false, Level.INFO, "Application started.");
+
         ConfigFileHandler configFileHandler = new ConfigFileHandler();
 
-        System.out.println(configFileHandler.getLastDatabase());
+        //System.out.println(configFileHandler.getLastDatabase());
         mainWindow = new MainWindow();
 
         InitialDialog initialDialog = new InitialDialog(mainWindow, "Wybierz bazę danych", true, configFileHandler.getLastDatabase());

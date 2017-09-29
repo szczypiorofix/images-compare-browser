@@ -1,5 +1,7 @@
 package com.imagecompare.browser;
 
+import com.imagecompare.browser.system.Log;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
@@ -7,6 +9,7 @@ import javax.swing.*;
 
 import java.awt.BorderLayout;
 import java.awt.Toolkit;
+import java.util.logging.Level;
 
 
 final class MainWindow extends JFrame {
@@ -23,7 +26,8 @@ final class MainWindow extends JFrame {
 
     MainWindow() {
         super(MainWindow.frameTitleName);
-        System.out.println("Created GUI on EDT? " + SwingUtilities.isEventDispatchThread());
+        //System.out.println("Created GUI on EDT? " + SwingUtilities.isEventDispatchThread());
+        Log.put(false, Level.INFO, "Created GUI on EDT? " + SwingUtilities.isEventDispatchThread());
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setSize(1100, 600);
         this.setLocationRelativeTo(null);
