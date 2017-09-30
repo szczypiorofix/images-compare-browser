@@ -27,7 +27,7 @@ final class MainWindow extends JFrame {
     MainWindow() {
         super(MainWindow.frameTitleName);
         //System.out.println("Created GUI on EDT? " + SwingUtilities.isEventDispatchThread());
-        Log.put(false, Level.INFO, "Created GUI on EDT? " + SwingUtilities.isEventDispatchThread());
+        Log.put(false, Level.INFO, "Created GUI on EDT? " + SwingUtilities.isEventDispatchThread(), this.getClass().getName());
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setSize(1100, 600);
         this.setLocationRelativeTo(null);

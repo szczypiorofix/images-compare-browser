@@ -44,7 +44,7 @@ class InitialDialog extends JDialog {
                     dbfn += databaseFilename.charAt(databaseFilename.length() - i);
                 }
             }
-            Log.put(false, Level.INFO, "Załadowany plik bazy danych: "+databaseFilename);
+            Log.put(false, Level.INFO, "Załadowany plik bazy danych: "+databaseFilename, this.getClass().getName());
             JLabel databaseFilenameLabel = new JLabel(dbfn);
             databaseFilenameLabel.setBounds(50, 40, 320, 30);
             mainPanel.add(databaseFilenameLabel);

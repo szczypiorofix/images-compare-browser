@@ -1,24 +1,14 @@
-wrz 29, 2017 10:56:19 PM com.imagecompare.browser.system.Log put
-INFO: Uruchomienie gry w trybie DEBUG. Logger załadowany.
-wrz 29, 2017 10:56:19 PM com.imagecompare.browser.system.Log put
-INFO: Hello !
-wrz 29, 2017 10:56:23 PM com.imagecompare.browser.system.Log put
-INFO: Uruchomienie gry w trybie DEBUG. Logger załadowany.
-wrz 29, 2017 10:56:23 PM com.imagecompare.browser.system.Log put
-INFO: Hello !
-wrz 29, 2017 10:59:43 PM com.imagecompare.browser.system.Log put
-INFO: Uruchomienie gry w trybie DEBUG. Logger załadowany.
-wrz 29, 2017 10:59:43 PM com.imagecompare.browser.system.Log put
-INFO: Application started.
-wrz 29, 2017 10:59:43 PM com.imagecompare.browser.system.Log put
-INFO: Plik konfiguracji - OK.
-wrz 29, 2017 11:03:32 PM com.imagecompare.browser.system.Log put
-INFO: Uruchomienie gry w trybie DEBUG. Logger załadowany.
-wrz 29, 2017 11:03:32 PM com.imagecompare.browser.system.Log put
-INFO: Application started.
-wrz 29, 2017 11:03:32 PM com.imagecompare.browser.system.Log put
-INFO: Plik konfiguracji - OK.
-wrz 29, 2017 11:03:33 PM com.imagecompare.browser.system.Log put
-INFO: Created GUI on EDT? true
-wrz 29, 2017 11:03:33 PM com.imagecompare.browser.system.Log put
-INFO: Załadowany plik bazy danych: C:/Users/Semiko/Documents/dupas1.bdb
+wrz 30, 2017 2:10:02 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
+wrz 30, 2017 2:10:02 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Application started.
+wrz 30, 2017 2:10:02 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+wrz 30, 2017 2:10:03 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
+wrz 30, 2017 2:10:03 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
+wrz 30, 2017 2:10:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
+wrz 30, 2017 2:10:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.SQLiteConnector: Utworzono nową bazę danych.

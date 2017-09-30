@@ -13,7 +13,7 @@ public class MainClass {
     private MainClass() {
 
         Log.DEBUG_MODE = true;
-        Log.put(false, Level.INFO, "Application started.");
+        Log.put(false, Level.INFO, "Application started.", this.getClass().getName());
 
         ConfigFileHandler configFileHandler = new ConfigFileHandler();
 

@@ -8,11 +8,12 @@ import java.io.File;
 
 class ImagePanelWest extends JPanel {
 
-    private String choosenFileName = "";
+    private String chosenFileName = "";
+    private String selectedDatabaseFilename = "";
 
     ImagePanelWest(String selectedDatabaseFilename) {
         super(new BorderLayout());
-        this.choosenFileName = selectedDatabaseFilename;
+        this.selectedDatabaseFilename = selectedDatabaseFilename;
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
 
         JPanel fileNamePanel = new JPanel(new BorderLayout());
@@ -26,7 +27,7 @@ class ImagePanelWest extends JPanel {
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                 File selectedFile = fc.getSelectedFile();
                 fileNameLabel.setText(selectedFile.getName());
-                this.choosenFileName = selectedFile.getName();
+                this.chosenFileName = selectedFile.getName();
             }
         });
         fileNamePanel.add(new JLabel("Wybrany plik:"), BorderLayout.NORTH);
@@ -64,14 +65,14 @@ class ImagePanelWest extends JPanel {
 
         JButton addToDatabase = new JButton("Dodaj");
         addToDatabase.addActionListener((ActionEvent e) -> {
-            if ((!this.choosenFileName.equals(""))
+            if ((!this.chosenFileName.equals(""))
                     && (!textFieldName.getText().equals(""))
                     && (!textFieldParam1.getText().equals(""))
                     && (!textFieldParam2.getText().equals(""))
                     && (!textFieldParam3.getText().equals(""))
                     && (!textFieldParam4.getText().equals(""))) {
 
-                SQLiteConnector connector = new SQLiteConnector();
+                SQLiteConnector connector = new SQLiteConnector(this.selectedDatabaseFilename);
 
             }
             else {

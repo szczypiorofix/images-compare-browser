@@ -29,15 +29,15 @@ public class Log {
         fileHandler.setFormatter(new SimpleFormatter());
         fileHandler.setLevel(Level.INFO);
         logger.addHandler(fileHandler);
-        put(false, Level.INFO, "Uruchomienie gry w trybie DEBUG. Logger załadowany.");
+        put(false, Level.INFO, "Uruchomienie gry w trybie DEBUG. Logger załadowany.", "Log (Logger)");
         return logger;
     }
 
-    public static void put(boolean critical, Level level, String msg) {
+    public static void put(boolean critical, Level level, String msg, String c) {
         if (logger == null) logger = instance();
         if (DEBUG_MODE)
         {
-            logger.log(level, msg);
+            logger.log(level, c +": " +msg);
             if (critical) {
                 logger.log(Level.WARNING, "Zamykanie programu z błędem.");
                 System.exit(-1);
