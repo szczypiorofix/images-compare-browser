@@ -1,5 +1,7 @@
 package com.imagecompare.browser;
 
+import com.imagecompare.browser.system.SQLiteConnector;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;

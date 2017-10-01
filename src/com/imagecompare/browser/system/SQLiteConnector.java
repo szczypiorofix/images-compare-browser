@@ -1,4 +1,4 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.system;
 
 
 import com.imagecompare.browser.system.Log;
@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.sql.*;
 import java.util.logging.Level;
 
-class SQLiteConnector {
+public class SQLiteConnector {
 
     private final String SQL_DRIVER = "org.sqlite.JDBC";
     private final String DATABASE_FOLDER = "db";
@@ -16,7 +16,7 @@ class SQLiteConnector {
     private Connection conn = null;
     private Statement stm = null;
 
-    SQLiteConnector(String databaseFileName) {
+    public SQLiteConnector(String databaseFileName) {
 
         this.dbFileName = databaseFileName;
         //System.out.println(DB_URL+this.dbFileName);

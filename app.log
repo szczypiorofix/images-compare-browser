@@ -9,6 +9,36 @@ INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 wrz 30, 2017 2:10:03 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
 wrz 30, 2017 2:10:12 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
+INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 wrz 30, 2017 2:10:12 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.SQLiteConnector: Utworzono nową bazę danych.
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nową bazę danych.
+paź 01, 2017 7:09:13 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
+paź 01, 2017 7:09:13 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Application started.
+paź 01, 2017 7:09:13 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+paź 01, 2017 7:09:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
+paź 01, 2017 7:09:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
+paź 01, 2017 7:10:14 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
+paź 01, 2017 7:10:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Application started.
+paź 01, 2017 7:10:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+paź 01, 2017 7:10:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
+paź 01, 2017 7:10:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
+paź 01, 2017 7:11:37 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
+paź 01, 2017 7:11:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Application started.
+paź 01, 2017 7:11:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+paź 01, 2017 7:11:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
+paź 01, 2017 7:11:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
