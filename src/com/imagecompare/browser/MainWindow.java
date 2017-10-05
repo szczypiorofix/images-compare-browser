@@ -26,6 +26,7 @@ final class MainWindow extends JFrame implements WindowListener {
     private ImagePanel imageViewerPanel;
     private InformationDialog informationDialog;
     private String databaseFileName;
+    private MainTabbedPanel tabbedPane;
 
     MainWindow() {
         super(MainWindow.frameTitleName);
@@ -68,7 +69,7 @@ final class MainWindow extends JFrame implements WindowListener {
 
     private void createMainPanel() {
 
-        MainTabbedPanel tabbedPane = new MainTabbedPanel();
+        tabbedPane = new MainTabbedPanel();
 
         imageViewerPanel = new ImagePanel("image1.jpg", "image2.jpg");
         mainPanel = new JPanel(new BorderLayout());
@@ -78,7 +79,7 @@ final class MainWindow extends JFrame implements WindowListener {
 
         JPanel mainPanelNorth = new JPanel();
         JPanel mainPanelEast = new ImagePanelEast();
-        JPanel mainPanelWest = new ImagePanelWest(databaseFileName);
+        JPanel mainPanelWest = new ImagePanelWest(databaseFileName, this);
         JPanel mainPanelSouth = new JPanel();
 
 
@@ -101,6 +102,11 @@ final class MainWindow extends JFrame implements WindowListener {
         tabbedPane.addTab("Baza danych", null, panelDatabaseScroll, "Baza danych zdjęć");
 
         tabbedPane.setColors();
+
+        // IKONA
+        java.net.URL imgUrl = MainClass.class.getResource("/conn_off.png");
+        ImageIcon icon = new ImageIcon(imgUrl);
+        tabbedPane.setIconAt(1, icon);
 
 
         this.add(tabbedPane);
@@ -171,6 +177,15 @@ final class MainWindow extends JFrame implements WindowListener {
         this.setVisible(s);
     }
 
+    // Zmiana ikony przy JTabbedPane - wskaźnik połączenia z bazą danych
+    public void checkAndShowSqlConnection() {
+        String imgIconName = "/conn_off.png";
+        if (SQLiteConnector.isConnected()) imgIconName = "/conn_on.png";
+        java.net.URL imgUrl = MainClass.class.getResource(imgIconName);
+        ImageIcon icon = new ImageIcon(imgUrl);
+        tabbedPane.setIconAt(1, icon);
+    }
+
     @Override
     public void windowOpened(WindowEvent e) {}
 
@@ -186,7 +201,9 @@ final class MainWindow extends JFrame implements WindowListener {
     public void windowClosed(WindowEvent e) {}
 
     @Override
-    public void windowIconified(WindowEvent e) {}
+    public void windowIconified(WindowEvent e) {
+        System.out.println(SQLiteConnector.getStatus());
+    }
 
     @Override
     public void windowDeiconified(WindowEvent e) {}

@@ -12,9 +12,11 @@ class ImagePanelWest extends JPanel {
 
     private String chosenFileName = "";
     private String selectedDatabaseFilename = "";
+    private MainWindow mainWindow;
 
-    ImagePanelWest(String selectedDatabaseFilename) {
+    ImagePanelWest(String selectedDatabaseFilename, MainWindow mainWindow) {
         super(new BorderLayout());
+        this.mainWindow = mainWindow;
         this.selectedDatabaseFilename = selectedDatabaseFilename;
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -75,7 +77,7 @@ class ImagePanelWest extends JPanel {
                     && (!textFieldParam4.getText().equals(""))) {
 
                 SQLiteConnector connector = new SQLiteConnector(this.selectedDatabaseFilename);
-
+                mainWindow.checkAndShowSqlConnection();
             }
             else {
                 JOptionPane.showMessageDialog(null, "Proszę wypełnić wszystkie pola oraz dodać plik", "Ostrzeżenie", JOptionPane.WARNING_MESSAGE);
