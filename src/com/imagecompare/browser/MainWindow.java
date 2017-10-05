@@ -1,6 +1,7 @@
 package com.imagecompare.browser;
 
 import com.imagecompare.browser.system.Log;
+import com.imagecompare.browser.system.SQLiteConnector;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -9,10 +10,12 @@ import javax.swing.*;
 
 import java.awt.BorderLayout;
 import java.awt.Toolkit;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.util.logging.Level;
 
 
-final class MainWindow extends JFrame {
+final class MainWindow extends JFrame implements WindowListener {
 
     public static final String frameTitleName = " Images Compare Browser";
     private JPanel mainPanel;
@@ -28,10 +31,11 @@ final class MainWindow extends JFrame {
         super(MainWindow.frameTitleName);
         //System.out.println("Created GUI on EDT? " + SwingUtilities.isEventDispatchThread());
         Log.put(false, Level.INFO, "Created GUI on EDT? " + SwingUtilities.isEventDispatchThread(), this.getClass().getName());
-        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         this.setSize(1100, 600);
         this.setLocationRelativeTo(null);
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/icon.png")));
+        this.addWindowListener(this);
 
         //SQLiteConnector sqliteConnector = new SQLiteConnector();
     }
@@ -166,5 +170,31 @@ final class MainWindow extends JFrame {
         this.setTitle(databaseFileName +" - " +MainWindow.frameTitleName);
         this.setVisible(s);
     }
+
+    @Override
+    public void windowOpened(WindowEvent e) {}
+
+    @Override
+    public void windowClosing(WindowEvent e) {
+        System.out.println("Zamykanie połączenia z bazą SQLite...");
+        SQLiteConnector.closeConnection();
+        System.out.println("Zamykanie aplikacji ...");
+        System.exit(0);
+    }
+
+    @Override
+    public void windowClosed(WindowEvent e) {}
+
+    @Override
+    public void windowIconified(WindowEvent e) {}
+
+    @Override
+    public void windowDeiconified(WindowEvent e) {}
+
+    @Override
+    public void windowActivated(WindowEvent e) {}
+
+    @Override
+    public void windowDeactivated(WindowEvent e) {}
 
 }
