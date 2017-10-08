@@ -31,7 +31,6 @@ class ConfigFileHandler {
                 PrintWriter writer = new PrintWriter(CONFIG_FILENAME, "UTF-8");
 
                 // TRESC DOMYSLNEGO PLIKU KONFIGURACJI - TRZEBA TO PRZEROBIC I GDZIES PRZENIESC
-
                 writer.println("LASTDB=");
                 writer.close();
             } catch(IOException ioe) {

@@ -178,7 +178,7 @@ final class MainWindow extends JFrame implements WindowListener {
     }
 
     // Zmiana ikony przy JTabbedPane - wskaźnik połączenia z bazą danych
-    public void checkAndShowSqlConnection() {
+    void checkAndShowSqlConnection() {
         String imgIconName = "/conn_off.png";
         if (SQLiteConnector.isConnected()) imgIconName = "/conn_on.png";
         java.net.URL imgUrl = MainClass.class.getResource(imgIconName);
