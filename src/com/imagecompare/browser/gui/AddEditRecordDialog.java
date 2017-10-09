@@ -1,4 +1,6 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.gui;
+
+import com.imagecompare.browser.gui.OpenFileDialog;
 
 import javax.swing.JPanel;
 import javax.swing.JFrame;

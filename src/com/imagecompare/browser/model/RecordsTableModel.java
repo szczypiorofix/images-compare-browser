@@ -1,4 +1,4 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.model;
 
 import javax.swing.event.TableModelListener;
 import javax.swing.table.AbstractTableModel;
@@ -8,7 +8,7 @@ public class RecordsTableModel extends AbstractTableModel {
     private String[][] data;
     private String columns[]={"ID", "Nazwa", "Nazwa pliku", "Parametr 1", "Parametr 2", "Parametr 3", "Parametr 4"};
 
-    RecordsTableModel(String[][] data) {
+    public RecordsTableModel(String[][] data) {
         this.data = data;
     }
 

@@ -1,11 +1,11 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.gui;
 
 import javax.swing.*;
 import java.awt.*;
 
-class ImagePanelEast extends JPanel {
+public class ImagePanelEast extends JPanel {
 
-    ImagePanelEast() {
+    public ImagePanelEast() {
         super(new BorderLayout());
         JPanel mainPanel = new JPanel(new BorderLayout());
         mainPanel.add(new JLabel("Lista obrazków"), BorderLayout.NORTH);

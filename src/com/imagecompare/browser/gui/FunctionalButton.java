@@ -1,4 +1,4 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.gui;
 
 import javax.swing.JButton;
 import java.awt.*;

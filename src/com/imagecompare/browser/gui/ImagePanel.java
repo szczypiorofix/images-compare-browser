@@ -1,4 +1,4 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.gui;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -20,7 +20,7 @@ public class ImagePanel extends JPanel implements MouseMotionListener, MouseList
     private int x = 0;
     private JScrollPane scrollPane = null;
 
-    ImagePanel(String imageName1, String imageName2) {
+    public ImagePanel(String imageName1, String imageName2) {
         super(new BorderLayout());
 
         try {
@@ -60,7 +60,7 @@ public class ImagePanel extends JPanel implements MouseMotionListener, MouseList
         return resizedImg;
     }*/
 
-    void setScrollPane(JScrollPane scrollPane) {
+    public void setScrollPane(JScrollPane scrollPane) {
         this.scrollPane = scrollPane;
     }
 

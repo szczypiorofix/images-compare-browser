@@ -1,5 +1,7 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.gui;
 
+import com.imagecompare.browser.MainClass;
+import com.imagecompare.browser.system.ConfigFileHandler;
 import com.imagecompare.browser.system.Log;
 import com.imagecompare.browser.system.SQLiteConnector;
 
@@ -9,13 +11,13 @@ import java.awt.event.ActionEvent;
 import java.io.File;
 import java.util.logging.Level;
 
-class InitialDialog extends JDialog {
+public class InitialDialog extends JDialog {
 
     private boolean isFileChosen = false;
     private String databaseFileName;
 
 
-    InitialDialog(JFrame root, String title, boolean modal, String databaseFilename) {
+    public InitialDialog(JFrame root, String title, boolean modal, String databaseFilename) {
         super(root, title, modal);
         this.databaseFileName = databaseFilename;
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
@@ -77,7 +79,7 @@ class InitialDialog extends JDialog {
             JFileChooser fileChooser = new JFileChooser();
             FileNameExtensionFilter filter = new FileNameExtensionFilter(
                     "Pliki bazy danych " +
-                            "*." +MainClass.DATABASE_FILE_EXTENSION_DB +
+                            "*." + MainClass.DATABASE_FILE_EXTENSION_DB +
                             ", *." +MainClass.DATABASE_FILE_EXTENSION_SQLITE +
                             ", *." +MainClass.DATABASE_FILE_EXTENSION_SQLITE3 +
                             ", *." +MainClass.DATABASE_FILE_EXTENSION_DB3,
@@ -142,15 +144,15 @@ class InitialDialog extends JDialog {
         this.add(mainPanel);
     }
 
-    void showDialog(Boolean s) {
+    public void showDialog(Boolean s) {
         this.setVisible(s);
     }
 
-    Boolean isFileChosen() {
+    public Boolean isFileChosen() {
         return isFileChosen;
     }
 
-    String getDatabaseFilename() {
+    public String getDatabaseFilename() {
         return databaseFileName;
     }
 }

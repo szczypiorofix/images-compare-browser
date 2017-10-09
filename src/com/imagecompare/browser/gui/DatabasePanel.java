@@ -1,6 +1,7 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.gui;
 
 
+import com.imagecompare.browser.model.RecordsTableModel;
 import com.imagecompare.browser.system.SQLiteConnector;
 
 import javax.swing.JPanel;
@@ -19,12 +20,12 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 
 
-class DatabasePanel extends JPanel {
+public class DatabasePanel extends JPanel {
 
     private FunctionalButton buttonAdd, buttonDelete, buttonEdit;
     private AddEditRecordDialog addRecordDialog, editRecordDialog;
 
-    DatabasePanel(JFrame frame) {
+    public DatabasePanel(JFrame frame) {
         super(new BorderLayout());
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
         JLabel titlePane = new JLabel("Baza danych zdjęć");

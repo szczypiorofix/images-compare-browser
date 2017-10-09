@@ -1,12 +1,10 @@
-package com.imagecompare.browser;
-
-import com.imagecompare.browser.system.Log;
+package com.imagecompare.browser.system;
 
 import java.io.*;
 import java.util.Properties;
 import java.util.logging.Level;
 
-class ConfigFileHandler {
+public class ConfigFileHandler {
 
     private final static String CONFIG_FILENAME = "browser.cfg";
     private static File configFile = null;

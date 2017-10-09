@@ -1,17 +1,19 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.gui;
+
+import com.imagecompare.browser.MainClass;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
 
 
-class OpenFileDialog extends JFileChooser {
+public class OpenFileDialog extends JFileChooser {
 
-    static final int IMAGE_FILE = 0;
-    static final int DATABASE_FILE = 1;
+    public static final int IMAGE_FILE = 0;
+    public static final int DATABASE_FILE = 1;
     private FileNameExtensionFilter filter = null;
 
-    OpenFileDialog(int type) {
+    public OpenFileDialog(int type) {
 
         super(FileSystemView.getFileSystemView().getRoots()[0]);
         this.setAcceptAllFileFilterUsed(false);
@@ -20,7 +22,7 @@ class OpenFileDialog extends JFileChooser {
         }
         if (type == DATABASE_FILE) {
             filter = new FileNameExtensionFilter("Pliki bazy danych " +
-                    "*."+MainClass.DATABASE_FILE_EXTENSION_DB +
+                    "*."+ MainClass.DATABASE_FILE_EXTENSION_DB +
                     ", *."+MainClass.DATABASE_FILE_EXTENSION_SQLITE +
                     ", *."+MainClass.DATABASE_FILE_EXTENSION_SQLITE3 +
                     ", *."+MainClass.DATABASE_FILE_EXTENSION_DB3,

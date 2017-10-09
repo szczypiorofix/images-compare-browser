@@ -3,339 +3,339 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:43:55 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:43:55 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:43:55 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:43:55 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
 paź 09, 2017 10:45:18 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:45:18 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:45:18 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:45:18 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:45:18 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
 paź 09, 2017 10:45:37 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:45:37 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:45:37 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:45:37 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:45:37 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
 paź 09, 2017 10:46:00 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:46:00 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:46:00 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:46:00 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:46:00 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
 paź 09, 2017 10:50:38 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:50:38 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:50:38 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:50:38 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:50:38 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
 paź 09, 2017 10:53:30 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:53:30 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:53:30 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:53:30 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:53:30 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:53:30 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/db/mydb.bdb
 paź 09, 2017 10:53:48 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:53:48 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:53:48 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:53:48 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:53:48 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:53:48 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 10:54:27 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:54:27 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:54:28 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:54:28 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:54:28 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:54:28 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser111/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser111/db/mydb.bdb
 paź 09, 2017 10:54:37 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:54:37 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:54:37 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:54:37 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:54:37 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:54:37 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser111/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser111/db/mydb.bdb
 paź 09, 2017 10:55:18 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:55:18 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:55:18 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:55:18 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:55:18 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:55:18 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 10:56:18 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:56:18 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:56:18 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:56:19 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:56:19 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:56:19 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 10:56:45 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:56:45 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:56:45 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:56:45 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:56:45 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:56:45 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 10:57:28 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:57:28 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:57:28 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:57:28 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:57:29 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:57:29 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 10:57:35 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:57:35 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:57:35 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:57:35 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:57:35 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:57:35 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 10:58:54 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:58:54 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:58:54 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:58:54 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:58:54 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:58:54 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 10:59:33 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:59:33 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:59:33 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:59:34 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:59:34 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:59:34 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 10:59:54 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 10:59:54 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 10:59:54 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:59:54 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 10:59:54 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 10:59:54 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
 paź 09, 2017 11:00:01 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:00:02 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:00:02 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:00:02 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:00:02 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:00:02 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
 paź 09, 2017 11:01:34 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:01:34 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:01:34 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:01:34 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:01:34 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:01:34 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
 paź 09, 2017 11:03:00 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:03:00 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:03:00 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:03:00 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:03:00 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:03:00 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
 paź 09, 2017 11:03:49 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:03:49 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:03:49 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:03:49 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:03:49 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:03:49 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
 paź 09, 2017 11:04:06 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:04:06 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:04:06 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:04:06 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:04:06 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:04:06 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
 paź 09, 2017 11:04:48 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:04:48 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:04:48 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:04:48 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:04:48 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:04:48 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
 paź 09, 2017 11:05:34 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:05:34 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:05:34 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:05:34 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:05:34 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:05:34 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.bdb
 paź 09, 2017 11:06:49 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:06:49 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:06:49 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:06:50 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:06:50 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:06:50 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 11:07:04 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:07:04 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:07:04 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:07:05 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:07:05 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:07:05 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 11:07:20 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:07:20 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:07:20 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:07:20 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:07:20 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:07:20 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa1.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa1.bdb
 paź 09, 2017 11:07:37 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:07:37 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:07:37 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:07:37 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:07:38 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:07:38 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 11:12:41 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:12:41 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:12:41 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:12:41 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:12:41 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:12:41 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/mydb.bdb
 paź 09, 2017 11:12:53 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 11:12:53 AM com.imagecompare.browser.system.Log put
@@ -347,49 +347,49 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:13:58 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:13:58 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:13:58 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:13:58 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:13:58 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 11:30:03 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:30:03 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:30:03 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:30:03 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:30:03 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:30:03 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 11:36:21 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:36:21 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:36:21 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:36:21 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:36:21 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:36:21 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 11:38:47 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:38:47 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:38:47 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:38:47 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:38:47 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:38:47 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 11:39:08 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 11:39:08 AM com.imagecompare.browser.system.Log put
@@ -401,13 +401,13 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:40:15 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:40:15 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:40:16 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:40:16 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:40:16 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa2.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa2.bdb
 paź 09, 2017 11:40:32 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 11:40:32 AM com.imagecompare.browser.system.Log put
@@ -419,13 +419,13 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:41:37 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:41:37 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:41:38 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:41:38 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:41:38 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa3.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa3.bdb
 paź 09, 2017 11:41:49 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 11:41:49 AM com.imagecompare.browser.system.Log put
@@ -433,237 +433,237 @@ INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nową bazę dan
 paź 09, 2017 11:41:49 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nową tabelę 'images' w bazie danych.
 paź 09, 2017 11:41:49 AM com.imagecompare.browser.system.Log put
-WARNING: com.imagecompare.browser.InitialDialog: Błąd tworzenia pliku bazy danych : C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa3.bdb
+WARNING: com.imagecompare.browser.gui.InitialDialog: Błąd tworzenia pliku bazy danych : C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa3.bdb
 paź 09, 2017 11:42:31 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:42:31 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:42:31 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:42:31 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:42:31 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:42:31 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
 paź 09, 2017 11:43:29 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:43:29 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:43:29 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:43:29 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:43:29 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:43:29 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
 paź 09, 2017 11:43:45 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:43:45 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:43:45 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:43:45 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:43:45 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:43:45 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
 paź 09, 2017 11:47:40 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:47:40 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:47:40 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:47:40 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:47:40 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:47:40 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
 paź 09, 2017 11:48:19 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:48:19 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:48:19 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:48:20 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:48:20 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:48:20 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
 paź 09, 2017 11:48:49 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:48:49 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:48:49 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:48:49 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:48:49 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:48:49 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
 paź 09, 2017 11:50:45 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:50:45 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:50:45 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:50:45 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:50:45 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:50:45 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
 paź 09, 2017 11:53:54 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:53:54 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:53:54 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:53:54 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:53:54 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:53:54 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
 paź 09, 2017 11:54:01 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:54:01 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:54:01 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:54:02 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:54:02 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:54:02 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
 paź 09, 2017 11:54:50 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:54:50 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:54:50 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:54:50 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:54:50 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:54:50 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa4.bdb
 paź 09, 2017 11:55:03 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:55:03 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:55:03 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:55:03 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:55:03 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:55:03 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 11:55:04 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 11:55:16 AM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 11:55:16 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 11:55:16 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:55:17 AM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 11:55:17 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 11:55:17 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 11:55:19 AM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:10:38 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:10:38 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:10:38 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:10:39 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:10:39 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:10:39 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:10:40 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:11:11 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:11:11 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:11:11 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:11:11 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:11:11 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:11:11 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:11:12 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:14:46 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:14:46 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:14:46 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:14:46 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:14:46 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:14:46 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:14:47 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:23:59 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:23:59 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:23:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:23:59 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:23:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:23:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:24:00 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:30:59 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:30:59 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:30:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:30:59 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:30:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:30:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:31:00 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:39:01 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:39:01 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:39:01 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:39:01 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:39:01 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:39:01 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:39:13 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 12:39:13 PM com.imagecompare.browser.system.Log put
@@ -671,19 +671,19 @@ INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nową bazę dan
 paź 09, 2017 12:39:13 PM com.imagecompare.browser.system.Log put
 WARNING: com.imagecompare.browser.system.SQLiteConnector: Database connection error: [SQLITE_ERROR] SQL error or missing database (near ")": syntax error)
 paź 09, 2017 12:39:22 PM com.imagecompare.browser.system.Log put
-WARNING: com.imagecompare.browser.InitialDialog: Błąd tworzenia pliku bazy danych : C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+WARNING: com.imagecompare.browser.gui.InitialDialog: Błąd tworzenia pliku bazy danych : C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:39:59 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:39:59 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:39:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:39:59 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:39:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:39:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:40:07 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 12:40:07 PM com.imagecompare.browser.system.Log put
@@ -699,27 +699,27 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:45:42 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:45:42 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:45:43 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:45:43 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:45:43 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:45:44 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:45:48 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:45:48 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:45:48 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:45:49 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:45:49 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:45:49 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:45:56 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 12:45:56 PM com.imagecompare.browser.system.Log put
@@ -735,13 +735,13 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:52:17 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:52:17 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:52:17 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:52:17 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:52:17 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/dupa.bdb
 paź 09, 2017 12:52:37 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 12:52:37 PM com.imagecompare.browser.system.Log put
@@ -757,27 +757,27 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:58:09 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:58:09 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:58:09 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:58:09 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:58:09 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/newdb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/newdb.bdb
 paź 09, 2017 12:58:11 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/newdb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/newdb.bdb
 paź 09, 2017 12:58:17 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 12:58:17 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 12:58:17 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:58:17 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 12:58:17 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 12:58:17 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/newdb.bdb
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/newdb.bdb
 paź 09, 2017 12:58:51 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 12:58:51 PM com.imagecompare.browser.system.Log put
@@ -793,169 +793,169 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:03:52 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:03:52 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:03:52 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:03:52 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:03:52 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/newdb.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/newdb.db
 paź 09, 2017 1:07:59 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:07:59 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:07:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:07:59 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:07:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:07:59 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/newdb.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/newdb.db
 paź 09, 2017 1:11:13 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:11:13 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:11:13 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:11:13 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:11:13 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:11:13 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
 paź 09, 2017 1:11:48 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:11:48 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:11:48 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:11:48 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:11:48 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:11:48 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
 paź 09, 2017 1:12:01 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:12:01 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:12:01 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:12:01 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:12:01 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:12:01 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
 paź 09, 2017 1:12:20 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:12:20 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:12:20 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:12:20 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:12:20 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:12:20 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
 paź 09, 2017 1:12:46 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:12:46 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:12:46 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:12:46 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:12:46 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:12:47 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
 paź 09, 2017 1:13:37 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:13:37 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:13:37 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:13:37 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:13:37 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:13:37 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
 paź 09, 2017 1:14:04 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:14:04 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:14:04 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:14:04 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:14:04 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:14:04 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db4.sqlite3
 paź 09, 2017 1:14:58 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:14:58 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:14:58 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:14:58 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:14:58 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:14:58 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
 paź 09, 2017 1:16:41 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:16:41 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:16:41 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:16:41 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:16:41 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:16:41 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
 paź 09, 2017 1:17:12 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:17:12 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:17:12 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:17:12 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:17:12 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:17:12 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
 paź 09, 2017 1:17:37 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:17:37 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:17:37 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:17:38 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:17:38 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:17:38 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
 paź 09, 2017 1:19:26 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:19:26 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:19:26 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:19:26 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:19:26 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:19:26 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
 paź 09, 2017 1:19:36 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 1:19:36 PM com.imagecompare.browser.system.Log put
@@ -971,13 +971,13 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:19:44 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:19:44 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:19:44 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:19:44 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:19:44 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/dupka.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/dupka.db
 paź 09, 2017 1:19:56 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 1:19:56 PM com.imagecompare.browser.system.Log put
@@ -993,25 +993,25 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:20:18 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:20:18 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:20:18 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:20:18 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:20:18 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/dupek.db3.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/dupek.db3.db
 paź 09, 2017 1:22:43 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:22:43 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:22:43 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:22:43 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:22:43 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:22:43 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/dupek.db3.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/dupek.db3.db
 paź 09, 2017 1:22:54 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 1:22:54 PM com.imagecompare.browser.system.Log put
@@ -1027,13 +1027,13 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:27:33 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:27:33 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:27:34 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:27:34 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:27:34 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/dupek.db3
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/dupek.db3
 paź 09, 2017 1:27:48 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 1:27:48 PM com.imagecompare.browser.system.Log put
@@ -1049,13 +1049,13 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:30:01 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:30:01 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:30:01 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:30:01 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:30:01 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/db1.db
 paź 09, 2017 1:30:21 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Nazwa sterownika bazy danych:SQLiteJDBC
 paź 09, 2017 1:30:21 PM com.imagecompare.browser.system.Log put
@@ -1071,85 +1071,85 @@ INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:30:56 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:30:56 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:30:57 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:30:57 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:30:57 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
 paź 09, 2017 1:31:05 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
 paź 09, 2017 1:32:11 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:32:11 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Application started.
 paź 09, 2017 1:32:11 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:32:12 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:32:12 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:32:12 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
 paź 09, 2017 1:32:41 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:32:41 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:32:41 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:32:41 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:32:41 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:32:41 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
 paź 09, 2017 1:33:41 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:33:42 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:33:42 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:33:42 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:33:42 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:33:42 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
 paź 09, 2017 1:34:04 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie gry w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:34:04 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:34:04 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:34:04 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:34:04 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:34:04 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
 paź 09, 2017 1:40:08 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:40:08 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:40:08 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:40:08 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:40:08 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
 paź 09, 2017 1:40:09 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
 paź 09, 2017 1:40:15 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:40:15 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:40:15 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:40:15 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:40:15 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/Desktop/db1.db
 paź 09, 2017 1:40:32 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
 paź 09, 2017 1:40:32 PM com.imagecompare.browser.system.Log put
@@ -1167,35 +1167,35 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:40:49 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:40:49 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:40:49 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:40:49 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 1:40:56 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 1:42:19 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:42:19 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:42:19 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:42:19 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:42:19 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 1:42:24 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:42:24 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:42:24 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:42:24 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:42:24 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 1:42:25 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 1:42:28 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Zamykanie połączenia z bazą SQLite...
 paź 09, 2017 1:42:28 PM com.imagecompare.browser.system.Log put
@@ -1205,13 +1205,13 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:47:28 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:47:28 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:47:28 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:47:28 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 1:47:29 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 1:47:35 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Zamykanie połączenia z bazą SQLite...
 paź 09, 2017 1:47:35 PM com.imagecompare.browser.system.Log put
@@ -1221,13 +1221,13 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:47:45 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:47:45 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:47:45 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:47:45 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 1:47:46 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 1:48:01 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Zamykanie połączenia z bazą SQLite...
 paź 09, 2017 1:48:01 PM com.imagecompare.browser.system.Log put
@@ -1237,43 +1237,43 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 1:59:06 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 1:59:06 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 1:59:07 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 1:59:07 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:00:23 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:00:23 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:00:23 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:00:23 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:00:23 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:01:28 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:01:28 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:01:28 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:01:29 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:01:29 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:02:42 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:02:42 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:02:42 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:02:42 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:02:42 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:02:43 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:02:45 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Zamykanie połączenia z bazą SQLite...
 paź 09, 2017 2:02:45 PM com.imagecompare.browser.system.Log put
@@ -1283,25 +1283,25 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:04:26 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:04:26 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:04:26 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:04:26 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:04:28 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:06:05 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:06:05 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:06:05 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:06:05 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:06:05 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:06:07 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:06:08 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Zamykanie połączenia z bazą SQLite...
 paź 09, 2017 2:06:08 PM com.imagecompare.browser.system.Log put
@@ -1311,25 +1311,25 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:06:12 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:06:12 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:06:12 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:06:12 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:06:13 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:08:39 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:08:39 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:08:39 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:08:39 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:08:39 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:08:41 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:08:43 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Zamykanie połączenia z bazą SQLite...
 paź 09, 2017 2:08:43 PM com.imagecompare.browser.system.Log put
@@ -1339,13 +1339,13 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:44:45 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:44:45 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:44:45 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:44:45 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:44:47 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:45:05 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Zamykanie połączenia z bazą SQLite...
 paź 09, 2017 2:45:05 PM com.imagecompare.browser.system.Log put
@@ -1355,13 +1355,13 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:45:25 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:45:25 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:45:25 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:45:25 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:45:26 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:45:37 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Zamykanie połączenia z bazą SQLite...
 paź 09, 2017 2:45:37 PM com.imagecompare.browser.system.Log put
@@ -1371,13 +1371,13 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:50:49 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:50:49 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:50:49 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:50:49 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:50:50 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:50:55 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Zamykanie połączenia z bazą SQLite...
 paź 09, 2017 2:50:55 PM com.imagecompare.browser.system.Log put
@@ -1387,23 +1387,23 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:56:56 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:56:56 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:56:57 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:56:57 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:57:28 PM com.imagecompare.browser.system.Log put
 INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:57:28 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:57:28 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:57:28 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:57:28 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:57:29 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:57:30 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
 paź 09, 2017 2:57:30 PM com.imagecompare.browser.system.Log put
@@ -1417,11 +1417,11 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:57:47 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:57:47 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:57:47 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:57:47 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:57:59 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
 paź 09, 2017 2:57:59 PM com.imagecompare.browser.system.Log put
@@ -1435,13 +1435,13 @@ INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
 paź 09, 2017 2:58:49 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainClass: Start aplikacji.
 paź 09, 2017 2:58:49 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.ConfigFileHandler: Plik konfiguracji - OK.
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
 paź 09, 2017 2:58:50 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.MainWindow: Created GUI on EDT? true
 paź 09, 2017 2:58:50 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:58:51 PM com.imagecompare.browser.system.Log put
-INFO: com.imagecompare.browser.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
+INFO: com.imagecompare.browser.gui.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/db/nowa1.sqlite
 paź 09, 2017 2:58:52 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
 paź 09, 2017 2:58:52 PM com.imagecompare.browser.system.Log put

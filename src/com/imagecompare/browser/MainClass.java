@@ -1,5 +1,7 @@
 package com.imagecompare.browser;
 
+import com.imagecompare.browser.gui.InitialDialog;
+import com.imagecompare.browser.system.ConfigFileHandler;
 import com.imagecompare.browser.system.Log;
 
 import java.awt.*;

@@ -1,12 +1,12 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.gui;
 
 import javax.swing.*;
 import java.awt.*;
 
 
-class InformationDialog extends JDialog {
+public class InformationDialog extends JDialog {
 
-    InformationDialog(JFrame frame, String title, Boolean isModal) {
+    public InformationDialog(JFrame frame, String title, Boolean isModal) {
         super(frame, title, isModal);
         createGUI(frame);
     }

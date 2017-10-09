@@ -1,6 +1,6 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.gui;
 
-import com.imagecompare.browser.system.SQLiteConnector;
+import com.imagecompare.browser.MainWindow;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -8,13 +8,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.io.File;
 
-class ImagePanelWest extends JPanel {
+public class ImagePanelWest extends JPanel {
 
     private String chosenFileName = "";
     private String selectedDatabaseFilename = "";
     private MainWindow mainWindow;
 
-    ImagePanelWest(String selectedDatabaseFilename, MainWindow mainWindow) {
+    public ImagePanelWest(String selectedDatabaseFilename, MainWindow mainWindow) {
         super(new BorderLayout());
         this.mainWindow = mainWindow;
         this.selectedDatabaseFilename = selectedDatabaseFilename;

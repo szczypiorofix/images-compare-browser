@@ -1,5 +1,6 @@
 package com.imagecompare.browser;
 
+import com.imagecompare.browser.gui.*;
 import com.imagecompare.browser.system.Log;
 import com.imagecompare.browser.system.SQLiteConnector;
 
@@ -15,7 +16,7 @@ import java.awt.event.WindowListener;
 import java.util.logging.Level;
 
 
-final class MainWindow extends JFrame implements WindowListener {
+public final class MainWindow extends JFrame implements WindowListener {
 
     public static final String frameTitleName = " Images Compare Browser";
     private JPanel mainPanel;
@@ -24,9 +25,9 @@ final class MainWindow extends JFrame implements WindowListener {
     private JMenuItem menuFileExit, menuFileOpen, menuPomocInformacje, menuPomocPomoc;
     private JMenuItem menuOptionShowDatabase, menuOptionsAddNewImage;
     private ImagePanel imageViewerPanel;
-    private InformationDialog informationDialog;
+    public InformationDialog informationDialog;
     private String databaseFileName;
-    private MainTabbedPanel tabbedPane;
+    public MainTabbedPanel tabbedPane;
 
     MainWindow() {
         super(MainWindow.frameTitleName);
@@ -178,7 +179,7 @@ final class MainWindow extends JFrame implements WindowListener {
     }
 
     // Zmiana ikony przy JTabbedPane - wskaźnik połączenia z bazą danych
-    void checkAndShowSqlConnection() {
+    public void checkAndShowSqlConnection() {
         String imgIconName = "/conn_off.png";
         if (SQLiteConnector.isConnected()) imgIconName = "/conn_on.png";
         java.net.URL imgUrl = MainClass.class.getResource(imgIconName);

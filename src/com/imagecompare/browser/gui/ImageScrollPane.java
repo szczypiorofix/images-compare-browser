@@ -1,14 +1,14 @@
-package com.imagecompare.browser;
+package com.imagecompare.browser.gui;
 
 import javax.swing.JScrollPane;
 import java.awt.Component;
 
 
-class ImageScrollPane extends JScrollPane {
+public class ImageScrollPane extends JScrollPane {
 
     private Component view = null;
 
-    ImageScrollPane(Component view) {
+    public ImageScrollPane(Component view) {
         super(view);
         this.view = view;
         this.getVerticalScrollBar().setUnitIncrement(16);
