@@ -25,7 +25,7 @@ public class SQLiteConnector {
     private Statement stm = null;
 
     public SQLiteConnector(String databaseFileName) {
-        init(databaseFileName);
+        //init(databaseFileName);
     }
 
     private static Connection getConn(String url) throws SQLException {
@@ -34,6 +34,37 @@ public class SQLiteConnector {
         }
         return conn;
     }
+
+
+    public Boolean createNewDatabaseFile(String databaseFileName) {
+        if (!databaseFileName.equals("")) {
+            this.dbFileName = databaseFileName;
+
+            try {
+                conn = getConn(DB_URL+this.dbFileName);
+
+                if (conn != null) {
+                    DatabaseMetaData meta = conn.getMetaData();
+                    Log.put(false, Level.INFO, "Nazwa sterownika bazy danych:" +meta.getDriverName(), this.getClass().getName());
+                    Log.put(false, Level.INFO, "Utworzono nową bazę danych.", this.getClass().getName());
+
+                    stm = conn.createStatement();
+                    stm.execute(SQL_STM);
+                    System.out.println("Table created.");
+                    Log.put(false, Level.INFO, "Utworzono nową tabelę 'images' w bazie danych.", this.getClass().getName());
+                    return true;
+                }
+
+            } catch (SQLException sqle) {
+                System.out.println(sqle.getMessage());
+                Log.put(false, Level.WARNING, "Database connection error: " +sqle.getMessage(), this.getClass().getName());
+                JOptionPane.showMessageDialog(null, sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
+                return false;
+            }
+        }
+        return false;
+    }
+
 
     public void init(String databaseFileName) {
         if (!databaseFileName.equals("")) {
@@ -47,9 +78,6 @@ public class SQLiteConnector {
                     DatabaseMetaData meta = conn.getMetaData();
                     Log.put(false, Level.INFO, "Nazwa sterownika bazy danych:" +meta.getDriverName(), this.getClass().getName());
                     Log.put(false, Level.INFO, "Utworzono nową bazę danych.", this.getClass().getName());
-
-                    //System.out.println("The driver name is " + meta.getDriverName());
-                    //System.out.println("A new database has been created.");
 
                     stm = conn.createStatement();
                     stm.execute(SQL_STM);

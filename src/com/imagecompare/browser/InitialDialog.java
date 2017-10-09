@@ -1,6 +1,7 @@
 package com.imagecompare.browser;
 
 import com.imagecompare.browser.system.Log;
+import com.imagecompare.browser.system.SQLiteConnector;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -22,6 +23,8 @@ class InitialDialog extends JDialog {
         setLocationRelativeTo(root);
         setResizable(false);
 
+        ConfigFileHandler configFileHandler = new ConfigFileHandler();
+
         JPanel mainPanel = new JPanel(null);
 
         JLabel titleLabel = new JLabel("Ostatnio wybrana baza danych:");
@@ -35,7 +38,7 @@ class InitialDialog extends JDialog {
             titleLabel.setBounds(70, 10, 270, 30);
         }
         else {
-            System.out.println(databaseFilename);
+            //System.out.println(databaseFilename);
             String dbfn = "";
             int maxFileNameLength = 25;
             if (maxFileNameLength < databaseFilename.length()) dbfn += "...";
@@ -44,15 +47,22 @@ class InitialDialog extends JDialog {
                     dbfn += databaseFilename.charAt(databaseFilename.length() - i);
                 }
             }
-            Log.put(false, Level.INFO, "Załadowany plik bazy danych: "+databaseFilename, this.getClass().getName());
+            Log.put(false, Level.INFO, "Ostatnio wybierany plik bazy danych: "+databaseFilename, this.getClass().getName());
             JLabel databaseFilenameLabel = new JLabel(dbfn);
             databaseFilenameLabel.setBounds(50, 40, 320, 30);
             mainPanel.add(databaseFilenameLabel);
             JButton openThisDatabase = new JButton("Otwórz");
             openThisDatabase.setBounds(80, 80, 120, 30);
             openThisDatabase.addActionListener((ActionEvent e) -> {
-                isFileChosen = true;
-                this.setVisible(false);
+                File dbFile = new File(databaseFilename);
+                if (dbFile.exists() && !dbFile.isDirectory()) {
+                    isFileChosen = true;
+                    Log.put(false, Level.INFO, "Załadowany plik bazy danych: "+databaseFilename, this.getClass().getName());
+                    this.setVisible(false);
+                }
+                else {
+                    JOptionPane.showMessageDialog(this, "Brak pliku bazy danych!: "+databaseFilename, "Brak pliku bazy danych!", JOptionPane.ERROR_MESSAGE);
+                }
             });
             mainPanel.add(openThisDatabase);
         }
@@ -81,9 +91,15 @@ class InitialDialog extends JDialog {
                 fileName = fileName.replace("\\", "/");
                 System.out.println("Zapisz plik jako: " + fileName);
                 isFileChosen = true;
-                ConfigFileHandler configFileHandler = new ConfigFileHandler();
+
                 configFileHandler.writeLastDatabase(fileName);
                 this.databaseFileName = fileName;
+                SQLiteConnector sqLiteConnector = new SQLiteConnector(this.databaseFileName);
+                if (!sqLiteConnector.createNewDatabaseFile(this.databaseFileName)) {
+                    Log.put(false, Level.WARNING, "Błąd tworzenia pliku bazy danych : "+databaseFilename, this.getClass().getName());
+                    JOptionPane.showMessageDialog(this, "Błąd tworzenia pliku bazy danych", "Błąd tworzenia pliku bazy danych", JOptionPane.ERROR_MESSAGE);
+                    System.exit(0);
+                }
                 this.setVisible(false);
             }
         });
@@ -94,6 +110,16 @@ class InitialDialog extends JDialog {
         chooseDBButton.addActionListener((ActionEvent e) -> {
             OpenFileDialog fc = new OpenFileDialog(OpenFileDialog.DATABASE_FILE);
             int returnVal = fc.showDialog(this, "Otwórz");
+            if (returnVal == 0) {
+                System.out.println(fc.getSelectedFile().getAbsolutePath());
+                String fileName = fc.getSelectedFile().getAbsolutePath();
+                fileName = fileName.replace("\\", "/");
+                configFileHandler.writeLastDatabase(fileName);
+
+                this.databaseFileName = fileName;
+                this.isFileChosen = true;
+                this.setVisible(false);
+            }
         });
 
         mainPanel.add(titleLabel);
