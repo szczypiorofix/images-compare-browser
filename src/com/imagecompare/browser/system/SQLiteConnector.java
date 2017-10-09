@@ -5,7 +5,6 @@ package com.imagecompare.browser.system;
 import com.imagecompare.browser.model.ImageItem;
 
 import javax.swing.*;
-import java.awt.*;
 import java.sql.*;
 import java.util.logging.Level;
 
