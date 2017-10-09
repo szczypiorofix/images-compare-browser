@@ -30,15 +30,12 @@ final class MainWindow extends JFrame implements WindowListener {
 
     MainWindow() {
         super(MainWindow.frameTitleName);
-        //System.out.println("Created GUI on EDT? " + SwingUtilities.isEventDispatchThread());
         Log.put(false, Level.INFO, "Created GUI on EDT? " + SwingUtilities.isEventDispatchThread(), this.getClass().getName());
         this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         this.setSize(1100, 600);
         this.setLocationRelativeTo(null);
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/icon.png")));
         this.addWindowListener(this);
-
-        //SQLiteConnector sqliteConnector = new SQLiteConnector();
     }
 
     private void setUIManager() {
@@ -131,7 +128,12 @@ final class MainWindow extends JFrame implements WindowListener {
         menuFileExit.setMnemonic(KeyEvent.VK_W);
         menuFileExit.setAccelerator(KeyStroke.getKeyStroke('W', Toolkit.getDefaultToolkit ().getMenuShortcutKeyMask()));
         menuFileExit.setToolTipText("Wyjdź z programu");
-        menuFileExit.addActionListener(e -> System.exit(0));
+        menuFileExit.addActionListener(e -> {
+            Log.put(false, Level.INFO, "Zamykanie połączenia z bazą SQLite...", this.getClass().getName());
+            SQLiteConnector.closeConnection();
+            Log.put(false, Level.INFO, "Zamykanie aplikacji ...", this.getClass().getName());
+            System.exit(0);
+        });
 
         menuFile.add(menuFileOpen);
         menuFile.add(menuFileExit);
@@ -154,9 +156,7 @@ final class MainWindow extends JFrame implements WindowListener {
         menuPomocPomoc.setMnemonic(KeyEvent.VK_T);
         menuPomocInformacje = new JMenuItem("Informacje");
         menuPomocInformacje.setMnemonic(KeyEvent.VK_I);
-        menuPomocInformacje.addActionListener((ActionEvent action) -> {
-            informationDialog.setVisible(true);
-        });
+        menuPomocInformacje.addActionListener((ActionEvent action) -> informationDialog.setVisible(true));
 
         menuPomoc.add(menuPomocPomoc);
         menuPomoc.add(menuPomocInformacje);
@@ -191,9 +191,9 @@ final class MainWindow extends JFrame implements WindowListener {
 
     @Override
     public void windowClosing(WindowEvent e) {
-        System.out.println("Zamykanie połączenia z bazą SQLite...");
+        Log.put(false, Level.INFO, "Zamykanie połączenia z bazą SQLite...", this.getClass().getName());
         SQLiteConnector.closeConnection();
-        System.out.println("Zamykanie aplikacji ...");
+        Log.put(false, Level.INFO, "Zamykanie aplikacji ...", this.getClass().getName());
         System.exit(0);
     }
 

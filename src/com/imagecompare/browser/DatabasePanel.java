@@ -1,6 +1,8 @@
 package com.imagecompare.browser;
 
 
+import com.imagecompare.browser.system.SQLiteConnector;
+
 import javax.swing.JPanel;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -89,6 +91,7 @@ class DatabasePanel extends JPanel {
 
         String data[][] = new String[0][0];
 
+        SQLiteConnector.getResults();
 
         final JTable recordsTable = new JTable(new RecordsTableModel(data));
 

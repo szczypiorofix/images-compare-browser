@@ -13,7 +13,7 @@ class InformationDialog extends JDialog {
 
     private void createGUI(JFrame frame) {
         this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        this.setSize(250, 170);
+        this.setSize(250, 180);
         this.setResizable(false);
         this.setLocationRelativeTo(frame);
         this.setLayout(null);
@@ -21,13 +21,13 @@ class InformationDialog extends JDialog {
 
         JButton bOK = new JButton("OK");
         bOK.addActionListener(e -> this.dispose());
-        bOK.setBounds(80, 100, 90, 30);
+        bOK.setBounds(80, 110, 90, 30);
 
         JLabel titleLabel = new JLabel("Images Compare Browser");
         titleLabel.setFont(new Font("Tahoma", Font.PLAIN, 18));
         titleLabel.setBounds(20, 0, 240, 50);
 
-        JLabel versionContentLabel = new JLabel("ver. 0.5");
+        JLabel versionContentLabel = new JLabel("ver. 0.6");
         versionContentLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
         versionContentLabel.setBounds(100, 35, 50, 50);
 

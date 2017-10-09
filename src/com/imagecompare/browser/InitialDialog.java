@@ -23,7 +23,7 @@ class InitialDialog extends JDialog {
         setLocationRelativeTo(root);
         setResizable(false);
 
-        ConfigFileHandler configFileHandler = new ConfigFileHandler();
+        //ConfigFileHandler configFileHandler = new ConfigFileHandler();
 
         JPanel mainPanel = new JPanel(null);
 
@@ -76,7 +76,16 @@ class InitialDialog extends JDialog {
 
             JFileChooser fileChooser = new JFileChooser();
             FileNameExtensionFilter filter = new FileNameExtensionFilter(
-                    "Pliki bazy danych ." +MainClass.DATABASE_FILE_EXTENSION, MainClass.DATABASE_FILE_EXTENSION);
+                    "Pliki bazy danych " +
+                            "*." +MainClass.DATABASE_FILE_EXTENSION_DB +
+                            ", *." +MainClass.DATABASE_FILE_EXTENSION_SQLITE +
+                            ", *." +MainClass.DATABASE_FILE_EXTENSION_SQLITE3 +
+                            ", *." +MainClass.DATABASE_FILE_EXTENSION_DB3,
+                    MainClass.DATABASE_FILE_EXTENSION_DB,
+                    MainClass.DATABASE_FILE_EXTENSION_SQLITE,
+                    MainClass.DATABASE_FILE_EXTENSION_SQLITE3,
+                    MainClass.DATABASE_FILE_EXTENSION_DB3);
+
             fileChooser.setDialogTitle("Zapisz");
             fileChooser.setFileFilter(filter);
             fileChooser.setAcceptAllFileFilterUsed(false);
@@ -85,17 +94,22 @@ class InitialDialog extends JDialog {
             if (userSelection == JFileChooser.APPROVE_OPTION) {
                 File fileToSave = fileChooser.getSelectedFile();
                 String fileName = fileToSave.getAbsolutePath();
-                if (!fileName.endsWith("." +MainClass.DATABASE_FILE_EXTENSION)) {
-                    fileName += "." +MainClass.DATABASE_FILE_EXTENSION;
+
+                // DOMYSLNE ROZSZERZENIE *.db przy braku pozostałych rozszerzeń
+                if (!fileName.endsWith("." +MainClass.DATABASE_FILE_EXTENSION_DB)
+                        && !fileName.endsWith("." +MainClass.DATABASE_FILE_EXTENSION_SQLITE)
+                        && !fileName.endsWith("." +MainClass.DATABASE_FILE_EXTENSION_SQLITE3)
+                        && !fileName.endsWith("." +MainClass.DATABASE_FILE_EXTENSION_DB3)) {
+                    fileName += "." +MainClass.DATABASE_FILE_EXTENSION_DB;
                 }
                 fileName = fileName.replace("\\", "/");
                 System.out.println("Zapisz plik jako: " + fileName);
                 isFileChosen = true;
 
-                configFileHandler.writeLastDatabase(fileName);
+                ConfigFileHandler.writeLastDatabase(fileName);
                 this.databaseFileName = fileName;
-                SQLiteConnector sqLiteConnector = new SQLiteConnector(this.databaseFileName);
-                if (!sqLiteConnector.createNewDatabaseFile(this.databaseFileName)) {
+                //SQLiteConnector sqLiteConnector = new SQLiteConnector(this.databaseFileName);
+                if (!SQLiteConnector.createNewDatabaseFile(this.databaseFileName)) {
                     Log.put(false, Level.WARNING, "Błąd tworzenia pliku bazy danych : "+databaseFilename, this.getClass().getName());
                     JOptionPane.showMessageDialog(this, "Błąd tworzenia pliku bazy danych", "Błąd tworzenia pliku bazy danych", JOptionPane.ERROR_MESSAGE);
                     System.exit(0);
@@ -114,7 +128,7 @@ class InitialDialog extends JDialog {
                 System.out.println(fc.getSelectedFile().getAbsolutePath());
                 String fileName = fc.getSelectedFile().getAbsolutePath();
                 fileName = fileName.replace("\\", "/");
-                configFileHandler.writeLastDatabase(fileName);
+                ConfigFileHandler.writeLastDatabase(fileName);
 
                 this.databaseFileName = fileName;
                 this.isFileChosen = true;

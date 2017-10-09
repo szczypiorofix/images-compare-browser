@@ -8,19 +8,29 @@ import java.util.logging.Level;
 public class MainClass {
 
     private MainWindow mainWindow;
-    public static final String DATABASE_FILE_EXTENSION = "bdb";
+    public static final String DATABASE_FILE_EXTENSION_DB = "db";
+    public static final String DATABASE_FILE_EXTENSION_DB3 = "db3";
+    public static final String DATABASE_FILE_EXTENSION_SQLITE = "sqlite";
+    public static final String DATABASE_FILE_EXTENSION_SQLITE3 = "sqlite3";
 
-    private MainClass() {
+    private MainClass(String[] args) {
+        if (args.length > 0) {
+            if (args[0].equals("-debug") || args[0].equals("debug")) {
+                Log.DEBUG_MODE = true;
+            }
+        }
+        else {
+            Log.DEBUG_MODE = false;
+        }
 
-        Log.DEBUG_MODE = true;
-        Log.put(false, Level.INFO, "Application started.", this.getClass().getName());
+        Log.put(false, Level.INFO, "Start aplikacji.", this.getClass().getName());
 
-        ConfigFileHandler configFileHandler = new ConfigFileHandler();
+        ConfigFileHandler.init();
 
         //System.out.println(configFileHandler.getLastDatabase());
         mainWindow = new MainWindow();
 
-        InitialDialog initialDialog = new InitialDialog(mainWindow, "Wybierz bazę danych", true, configFileHandler.getLastDatabase());
+        InitialDialog initialDialog = new InitialDialog(mainWindow, "Wybierz bazę danych", true, ConfigFileHandler.getLastDatabase());
         initialDialog.showDialog(true);
 
         mainWindow.setAutoRequestFocus(true);
@@ -35,7 +45,7 @@ public class MainClass {
     }
 
     public static void main(String[] args) {
-        EventQueue.invokeLater(MainClass::new);
+        EventQueue.invokeLater(() -> new MainClass(args));
     }
 
 }

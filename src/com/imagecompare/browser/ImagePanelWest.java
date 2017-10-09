@@ -22,7 +22,7 @@ class ImagePanelWest extends JPanel {
 
         JPanel fileNamePanel = new JPanel(new BorderLayout());
         JLabel fileNameLabel = new JLabel("<brak pliku>");
-        JButton chooseFileButton = new JButton("Wybierz plik");
+        JButton chooseFileButton = new JButton("Dodaj zdjęcie");
 
         chooseFileButton.addActionListener((ActionEvent e) -> {
             OpenFileDialog fc = new OpenFileDialog(OpenFileDialog.IMAGE_FILE);
@@ -76,7 +76,7 @@ class ImagePanelWest extends JPanel {
                     && (!textFieldParam3.getText().equals(""))
                     && (!textFieldParam4.getText().equals(""))) {
 
-                SQLiteConnector connector = new SQLiteConnector(this.selectedDatabaseFilename);
+                //SQLiteConnector connector = new SQLiteConnector(this.selectedDatabaseFilename);
                 mainWindow.checkAndShowSqlConnection();
             }
             else {

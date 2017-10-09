@@ -15,7 +15,6 @@ public class Log {
     private Log() {}
 
     private static Logger instance() {
-        System.out.println("Creating new Logger ...");
         logger = Logger.getLogger(Log.class.getName());
 
         try {
@@ -29,7 +28,7 @@ public class Log {
         fileHandler.setFormatter(new SimpleFormatter());
         fileHandler.setLevel(Level.INFO);
         logger.addHandler(fileHandler);
-        put(false, Level.INFO, "Uruchomienie gry w trybie DEBUG. Logger załadowany.", "Log (Logger)");
+        put(false, Level.INFO, "Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.", "Log (Logger)");
         return logger;
     }
 
@@ -44,5 +43,4 @@ public class Log {
             }
         }
     }
-
 }

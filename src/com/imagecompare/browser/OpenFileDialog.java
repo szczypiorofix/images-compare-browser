@@ -19,7 +19,15 @@ class OpenFileDialog extends JFileChooser {
             filter = new FileNameExtensionFilter("Obrazy JPG, PNG i TIFF", "jpg", "png", "tiff");
         }
         if (type == DATABASE_FILE) {
-            filter = new FileNameExtensionFilter("Pliki bazy danych *." +MainClass.DATABASE_FILE_EXTENSION, MainClass.DATABASE_FILE_EXTENSION);
+            filter = new FileNameExtensionFilter("Pliki bazy danych " +
+                    "*."+MainClass.DATABASE_FILE_EXTENSION_DB +
+                    ", *."+MainClass.DATABASE_FILE_EXTENSION_SQLITE +
+                    ", *."+MainClass.DATABASE_FILE_EXTENSION_SQLITE3 +
+                    ", *."+MainClass.DATABASE_FILE_EXTENSION_DB3,
+                    MainClass.DATABASE_FILE_EXTENSION_DB,
+                    MainClass.DATABASE_FILE_EXTENSION_SQLITE,
+                    MainClass.DATABASE_FILE_EXTENSION_SQLITE3,
+                    MainClass.DATABASE_FILE_EXTENSION_DB3);
         }
 
         this.setFileFilter(filter);

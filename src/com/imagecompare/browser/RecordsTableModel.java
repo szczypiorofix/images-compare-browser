@@ -6,7 +6,7 @@ import javax.swing.table.AbstractTableModel;
 public class RecordsTableModel extends AbstractTableModel {
 
     private String[][] data;
-    private String columns[]={"ID", "Nazwa pliku", "Parametr 1", "Parametr 2", "Parametr 3", "Parametr 4"};
+    private String columns[]={"ID", "Nazwa", "Nazwa pliku", "Parametr 1", "Parametr 2", "Parametr 3", "Parametr 4"};
 
     RecordsTableModel(String[][] data) {
         this.data = data;

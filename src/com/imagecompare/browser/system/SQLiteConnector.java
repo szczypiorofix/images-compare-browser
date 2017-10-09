@@ -2,62 +2,81 @@ package com.imagecompare.browser.system;
 
 
 
+import com.imagecompare.browser.model.ImageItem;
+
 import javax.swing.*;
+import java.awt.*;
 import java.sql.*;
 import java.util.logging.Level;
 
 public class SQLiteConnector {
 
-    private final String SQL_DRIVER = "org.sqlite.JDBC";
-    private final String DATABASE_FOLDER = "db";
-    private final String DB_URL = "jdbc:sqlite:";
-    private final String SQL_STM = "CREATE TABLE IF NOT EXISTS images (" +
-            "id integer PRIMARY KEY," +
-            "name text NOT NULL," +
-            "filename text NOT NULL," +
-            "param1 text NOT NULL," +
-            "param2 text NOT NULL," +
-            "param3 text NOT NULL," +
-            "param4 text NOT NULL" +
-            ");";
-    private String dbFileName = "";
-    private static Connection conn = null;
-    private Statement stm = null;
 
-    public SQLiteConnector(String databaseFileName) {
+    private final static String DB_URL = "jdbc:sqlite:";
+    private final static String SQL_CR_TB_IMAGES = "CREATE TABLE IF NOT EXISTS images (" +
+            "image_id integer PRIMARY KEY AUTOINCREMENT," +
+            "image_name text NOT NULL," +
+            "image_filepath text NOT NULL" +
+            ");";
+    private final static String SQL_CR_TB_PARAMNAMES = "CREATE TABLE IF NOT EXISTS paramnames (" +
+            "param_id integer PRIMARY KEY AUTOINCREMENT," +
+            "param_name text NOT NULL" +
+            ");";
+    private final static String SQL_CR_TB_IMAGEPARAMS = "CREATE TABLE IF NOT EXISTS imageparams (" +
+            "param_id integer NOT NULL," +
+            "param_value text NOT NULL," +
+            "FOREIGN KEY (param_id) REFERENCES images(image_id)" +
+            ");";
+    private final static String SQL_GET_ITEMS = "SELECT * FROM images;";
+    private static String dbFileName = "";
+    private static Connection conn = null;
+    private static Statement stm = null;
+
+    private SQLiteConnector(String databaseFileName) {
         //init(databaseFileName);
     }
 
     private static Connection getConn(String url) throws SQLException {
         if (conn == null) {
             conn = DriverManager.getConnection(url);
+            Log.put(false, Level.INFO, "Utworzono nowe połączenie z bazą danych.", SQLiteConnector.class.getName());
         }
         return conn;
     }
 
 
-    public Boolean createNewDatabaseFile(String databaseFileName) {
+    public static Boolean createNewDatabaseFile(String databaseFileName) {
         if (!databaseFileName.equals("")) {
-            this.dbFileName = databaseFileName;
+            dbFileName = databaseFileName;
 
             try {
-                conn = getConn(DB_URL+this.dbFileName);
+                conn = getConn(DB_URL+dbFileName);
 
                 if (conn != null) {
                     DatabaseMetaData meta = conn.getMetaData();
-                    Log.put(false, Level.INFO, "Nazwa sterownika bazy danych:" +meta.getDriverName(), this.getClass().getName());
-                    Log.put(false, Level.INFO, "Utworzono nową bazę danych.", this.getClass().getName());
+                    Log.put(false, Level.INFO, "Nazwa sterownika bazy danych:" +meta.getDriverName(), SQLiteConnector.class.getName());
+                    Log.put(false, Level.INFO, "Utworzono nową bazę danych.", SQLiteConnector.class.getName());
 
                     stm = conn.createStatement();
-                    stm.execute(SQL_STM);
-                    System.out.println("Table created.");
-                    Log.put(false, Level.INFO, "Utworzono nową tabelę 'images' w bazie danych.", this.getClass().getName());
+
+                    // Nowa tabela 'images'
+                    stm.execute(SQL_CR_TB_IMAGES);
+                    Log.put(false, Level.INFO, "Utworzono nową tabelę 'images' w bazie danych.", SQLiteConnector.class.getName());
+
+                    // Nowa tabela 'paramnames'
+                    stm.execute(SQL_CR_TB_PARAMNAMES);
+                    Log.put(false, Level.INFO, "Utworzono nową tabelę 'paramnames' w bazie danych.", SQLiteConnector.class.getName());
+
+                    // Nowa tabela 'imageparams'
+                    stm.execute(SQL_CR_TB_IMAGEPARAMS);
+                    Log.put(false, Level.INFO, "Utworzono nową tabelę 'imageparams' w bazie danych.", SQLiteConnector.class.getName());
+
                     return true;
                 }
 
             } catch (SQLException sqle) {
                 System.out.println(sqle.getMessage());
-                Log.put(false, Level.WARNING, "Database connection error: " +sqle.getMessage(), this.getClass().getName());
+                Log.put(false, Level.WARNING, "Database connection error: " +sqle.getMessage(), SQLiteConnector.class.getName());
                 JOptionPane.showMessageDialog(null, sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
                 return false;
             }
@@ -66,39 +85,26 @@ public class SQLiteConnector {
     }
 
 
-    public void init(String databaseFileName) {
-        if (!databaseFileName.equals("")) {
-            this.dbFileName = databaseFileName;
-
-            try {
-
-                conn = getConn(DB_URL+this.dbFileName);
-
-                if (conn != null) {
-                    DatabaseMetaData meta = conn.getMetaData();
-                    Log.put(false, Level.INFO, "Nazwa sterownika bazy danych:" +meta.getDriverName(), this.getClass().getName());
-                    Log.put(false, Level.INFO, "Utworzono nową bazę danych.", this.getClass().getName());
-
-                    stm = conn.createStatement();
-                    stm.execute(SQL_STM);
-                    System.out.println("Table created.");
-                    Log.put(false, Level.INFO, "Utworzono nową tabelę 'images' w bazie danych.", this.getClass().getName());
+    public static ImageItem[] getResults() {
+        ImageItem[] imageItems = new ImageItem[10];
+        try {
+            conn = getConn(DB_URL+dbFileName);
+            if (conn != null) {
+                stm = conn.createStatement();
+                ResultSet rs = stm.executeQuery(SQL_GET_ITEMS);
+                while (rs.next()) {
+                    System.out.println(rs.getInt("id") +  "\t" +
+                            rs.getString("name") + "\t" +
+                            rs.getString("capacity"));
                 }
-            } catch (SQLException sqle) {
-                System.out.println(sqle.getMessage());
-                Log.put(false, Level.WARNING, "Database connection error: " +sqle.getMessage(), this.getClass().getName());
-                JOptionPane.showMessageDialog(null, sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
+                Log.put(false, Level.INFO, "Odczyt z bazy danych prawidłowy.", SQLiteConnector.class.getName());
             }
-/*            finally {
-                try {
-                    if (conn != null) {
-                        conn.close();
-                    }
-                } catch (SQLException e) {
-                    System.out.println(e.getMessage());
-                }
-            }*/
+        } catch(SQLException sqle) {
+            Log.put(false, Level.WARNING, "Database connection error: " +sqle.getMessage(), SQLiteConnector.class.getName());
+            JOptionPane.showMessageDialog(null, sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
         }
+
+        return imageItems;
     }
 
     public static String getStatus() {
