@@ -1,6 +1,8 @@
 package com.imagecompare.browser.gui;
 
 import com.imagecompare.browser.MainWindow;
+import com.imagecompare.browser.model.ImageItem;
+import com.imagecompare.browser.system.SQLiteConnector;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -11,12 +13,16 @@ import java.io.File;
 public class ImagePanelWest extends JPanel {
 
     private String chosenFileName = "";
+    private String chosenFilePath = "";
     private String selectedDatabaseFilename = "";
-    private MainWindow mainWindow;
+    private JTextField textFieldName;
+    private JTextField textFieldParam1;
+    private JTextField textFieldParam2;
+    private JTextField textFieldParam3;
+    private JTextField textFieldParam4;
 
-    public ImagePanelWest(String selectedDatabaseFilename, MainWindow mainWindow) {
+    public ImagePanelWest(String selectedDatabaseFilename, MainWindow mainWindow, CentralImagePanel centralImagePanel) {
         super(new BorderLayout());
-        this.mainWindow = mainWindow;
         this.selectedDatabaseFilename = selectedDatabaseFilename;
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -32,6 +38,13 @@ public class ImagePanelWest extends JPanel {
                 File selectedFile = fc.getSelectedFile();
                 fileNameLabel.setText(selectedFile.getName());
                 this.chosenFileName = selectedFile.getName();
+                this.chosenFilePath = selectedFile.getAbsolutePath();
+                centralImagePanel.loadImage(this.chosenFilePath, this.chosenFilePath);
+                textFieldName.setText("");
+                textFieldParam1.setText("");
+                textFieldParam2.setText("");
+                textFieldParam3.setText("");
+                textFieldParam4.setText("");
             }
         });
         fileNamePanel.add(new JLabel("Wybrany plik:"), BorderLayout.NORTH);
@@ -48,11 +61,11 @@ public class ImagePanelWest extends JPanel {
         inputGridPanel.setMaximumSize(new Dimension(180, 130));
         inputGridPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 
-        JTextField textFieldName = new JTextField();
-        JTextField textFieldParam1 = new JTextField();
-        JTextField textFieldParam2 = new JTextField();
-        JTextField textFieldParam3 = new JTextField();
-        JTextField textFieldParam4 = new JTextField();
+        textFieldName = new JTextField();
+        textFieldParam1 = new JTextField();
+        textFieldParam2 = new JTextField();
+        textFieldParam3 = new JTextField();
+        textFieldParam4 = new JTextField();
 
         inputGridPanel.add(new JLabel("Nazwa:"));
         inputGridPanel.add(textFieldName);
@@ -67,8 +80,8 @@ public class ImagePanelWest extends JPanel {
 
         inputMainPanel.add(inputGridPanel, BorderLayout.CENTER);
 
-        JButton addToDatabase = new JButton("Dodaj");
-        addToDatabase.addActionListener((ActionEvent e) -> {
+        JButton addToDatabaseButton = new JButton("Dodaj");
+        addToDatabaseButton.addActionListener((ActionEvent e) -> {
             if ((!this.chosenFileName.equals(""))
                     && (!textFieldName.getText().equals(""))
                     && (!textFieldParam1.getText().equals(""))
@@ -76,14 +89,16 @@ public class ImagePanelWest extends JPanel {
                     && (!textFieldParam3.getText().equals(""))
                     && (!textFieldParam4.getText().equals(""))) {
 
-                //SQLiteConnector connector = new SQLiteConnector(this.selectedDatabaseFilename);
+                SQLiteConnector.insertDataToDatabase(new ImageItem(textFieldName.getText(),this.chosenFilePath, new String[0]));
                 mainWindow.checkAndShowSqlConnection();
+                mainWindow.refreshDatabasePanel();
+                JOptionPane.showMessageDialog(null, "Pomyślnie dodano nowe dane do bazy!", "Udało się!", JOptionPane.INFORMATION_MESSAGE);
             }
             else {
                 JOptionPane.showMessageDialog(null, "Proszę wypełnić wszystkie pola oraz dodać plik", "Ostrzeżenie", JOptionPane.WARNING_MESSAGE);
             }
         });
-        inputMainPanel.add(addToDatabase, BorderLayout.SOUTH);
+        inputMainPanel.add(addToDatabaseButton, BorderLayout.SOUTH);
 
         this.add(inputMainPanel, BorderLayout.NORTH);
     }

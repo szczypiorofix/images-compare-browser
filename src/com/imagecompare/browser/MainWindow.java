@@ -24,10 +24,13 @@ public final class MainWindow extends JFrame implements WindowListener {
     private JMenu menuFile, menuOptions, menuPomoc;
     private JMenuItem menuFileExit, menuFileOpen, menuPomocInformacje, menuPomocPomoc;
     private JMenuItem menuOptionShowDatabase, menuOptionsAddNewImage;
-    private ImagePanel imageViewerPanel;
+    private CentralImagePanel imageViewerPanel;
     public InformationDialog informationDialog;
     private String databaseFileName;
     public MainTabbedPanel tabbedPane;
+    private DatabasePanel panelDatabase;
+    private ImagePanelEast mainPanelEast;
+    private  ImagePanelWest mainPanelWest;
 
     MainWindow() {
         super(MainWindow.frameTitleName);
@@ -69,32 +72,42 @@ public final class MainWindow extends JFrame implements WindowListener {
 
         tabbedPane = new MainTabbedPanel();
 
-        imageViewerPanel = new ImagePanel("image1.jpg", "image2.jpg");
+        //imageViewerPanel = new CentralImagePanel("image1.jpg", "image2.jpg");
+        imageViewerPanel = new CentralImagePanel();
         mainPanel = new JPanel(new BorderLayout());
         ImageScrollPane scrollPanel = new ImageScrollPane(imageViewerPanel);
         imageViewerPanel.setScrollPane(scrollPanel);
         mainPanel.add(scrollPanel, BorderLayout.CENTER);
 
         JPanel mainPanelNorth = new JPanel();
-        JPanel mainPanelEast = new ImagePanelEast();
-        JPanel mainPanelWest = new ImagePanelWest(databaseFileName, this);
+        JSplitPane rightSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        mainPanelEast = new ImagePanelEast(databaseFileName, this, imageViewerPanel);
+        mainPanelWest = new ImagePanelWest(databaseFileName, this, imageViewerPanel);
         JPanel mainPanelSouth = new JPanel();
 
-
         //mainPanel.add(mainPanelNorth, BorderLayout.NORTH);
-        mainPanel.add(mainPanelWest, BorderLayout.WEST);
-        mainPanel.add(mainPanelEast, BorderLayout.EAST);
+        //mainPanel.add(mainPanelWest, BorderLayout.WEST);
+        //mainPanel.add(mainPanelEast, BorderLayout.EAST);
         //mainPanel.add(mainPanelSouth, BorderLayout.SOUTH);
 
-        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
-        splitPane.setDividerSize(6);
-        splitPane.setContinuousLayout(true);
-        splitPane.setLeftComponent(mainPanelWest);
-        splitPane.setRightComponent(mainPanel);
+        //JSplitPane rightSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        rightSplitPane.setDividerSize(6);
+        rightSplitPane.setContinuousLayout(true);
+        rightSplitPane.setDividerLocation(0.3);
+        rightSplitPane.setLeftComponent(mainPanel);
+        rightSplitPane.setRightComponent(mainPanelEast);
 
-        tabbedPane.addTab("Przeglądarka zdjęć", null, splitPane, "Lista zdjęć");
+        JSplitPane leftSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        leftSplitPane.setDividerSize(6);
+        leftSplitPane.setContinuousLayout(true);
+        leftSplitPane.setDividerLocation(0.3);
+        leftSplitPane.setLeftComponent(mainPanelWest);
+        leftSplitPane.setRightComponent(rightSplitPane);
 
-        DatabasePanel panelDatabase = new DatabasePanel(this);
+        tabbedPane.addTab("Przeglądarka zdjęć", null, leftSplitPane, "Lista zdjęć");
+
+        panelDatabase = new DatabasePanel(this, this.databaseFileName);
+
         JScrollPane panelDatabaseScroll = new JScrollPane(panelDatabase);
         panelDatabaseScroll.getVerticalScrollBar().setUnitIncrement(12);
         tabbedPane.addTab("Baza danych", null, panelDatabaseScroll, "Baza danych zdjęć");
@@ -175,6 +188,7 @@ public final class MainWindow extends JFrame implements WindowListener {
         createMainMenu();
         createMainPanel();
         this.setTitle(databaseFileName +" - " +MainWindow.frameTitleName);
+        checkAndShowSqlConnection();
         this.setVisible(s);
     }
 
@@ -185,6 +199,11 @@ public final class MainWindow extends JFrame implements WindowListener {
         java.net.URL imgUrl = MainClass.class.getResource(imgIconName);
         ImageIcon icon = new ImageIcon(imgUrl);
         tabbedPane.setIconAt(1, icon);
+    }
+
+    public void refreshDatabasePanel() {
+        mainPanelEast.refresh();
+        panelDatabase.refresh();
     }
 
     @Override

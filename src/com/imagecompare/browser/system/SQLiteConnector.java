@@ -6,6 +6,7 @@ import com.imagecompare.browser.model.ImageItem;
 
 import javax.swing.*;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.logging.Level;
 
 public class SQLiteConnector {
@@ -83,20 +84,36 @@ public class SQLiteConnector {
         return false;
     }
 
+    public static Boolean connectToDatabase(String databaseFileName) {
+        if (!databaseFileName.equals("")) {
+            dbFileName = databaseFileName;
+            try {
+                conn = getConn(DB_URL+dbFileName);
+                return true;
+            } catch (SQLException sqle) {
+                Log.put(false, Level.WARNING, "Database connection error: " +sqle.getMessage(), SQLiteConnector.class.getName());
+                JOptionPane.showMessageDialog(null, sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+        return false;
+    }
 
-    public static ImageItem[] getResults() {
-        ImageItem[] imageItems = new ImageItem[10];
+    public static ArrayList<ImageItem> getResults() {
+        ArrayList<ImageItem> imageItems = null;
         try {
             conn = getConn(DB_URL+dbFileName);
             if (conn != null) {
                 stm = conn.createStatement();
-                ResultSet rs = stm.executeQuery(SQL_GET_ITEMS);
-                while (rs.next()) {
-                    System.out.println(rs.getInt("id") +  "\t" +
-                            rs.getString("name") + "\t" +
-                            rs.getString("capacity"));
+                ResultSet resultSet = stm.executeQuery(SQL_GET_ITEMS);
+
+                imageItems = new ArrayList<>(resultSet.getFetchSize());
+                int resultsCounter = 0;
+                while (resultSet.next()) {
+                    imageItems.add(new ImageItem(resultSet.getInt("image_id"), resultSet.getString("image_name"), resultSet.getString("image_filepath"), new String[0]));
+                    resultsCounter++;
                 }
-                Log.put(false, Level.INFO, "Odczyt z bazy danych prawidłowy.", SQLiteConnector.class.getName());
+                Log.put(false, Level.INFO, "Zwróconych wyników z bazy danych: " +resultsCounter, SQLiteConnector.class.getName());
+                Log.put(false, Level.INFO, "Odczyt z bazy danych "+ dbFileName +" prawidłowy.", SQLiteConnector.class.getName());
             }
         } catch(SQLException sqle) {
             Log.put(false, Level.WARNING, "Database connection error: " +sqle.getMessage(), SQLiteConnector.class.getName());
@@ -104,6 +121,22 @@ public class SQLiteConnector {
         }
 
         return imageItems;
+    }
+
+    public static void insertDataToDatabase(ImageItem imageItem) {
+        try {
+            conn = getConn(DB_URL+dbFileName);
+            PreparedStatement preparedStatement = conn.prepareStatement("INSERT INTO images(image_name, image_filepath) VALUES" +
+                    "(?, ?);");
+            preparedStatement.setString(1, imageItem.getName());
+            preparedStatement.setString(2, imageItem.getFilename());
+            preparedStatement.executeUpdate();
+            Log.put(false, Level.INFO, "Wstawiono nowe dane do bazy danych.", SQLiteConnector.class.getName());
+
+        } catch (SQLException sqle) {
+            Log.put(false, Level.WARNING, "Database connection error: " +sqle.getMessage(), SQLiteConnector.class.getName());
+            JOptionPane.showMessageDialog(null, sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     public static String getStatus() {
@@ -124,6 +157,7 @@ public class SQLiteConnector {
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
+            Log.put(false, Level.WARNING, "Błąd poczas zamykania połączenia z bazą danych !!! : " +e.getMessage(), SQLiteConnector.class.getName());
         }
     }
 }

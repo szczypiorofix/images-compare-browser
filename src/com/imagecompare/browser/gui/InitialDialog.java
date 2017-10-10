@@ -110,7 +110,7 @@ public class InitialDialog extends JDialog {
 
                 ConfigFileHandler.writeLastDatabase(fileName);
                 this.databaseFileName = fileName;
-                //SQLiteConnector sqLiteConnector = new SQLiteConnector(this.databaseFileName);
+
                 if (!SQLiteConnector.createNewDatabaseFile(this.databaseFileName)) {
                     Log.put(false, Level.WARNING, "Błąd tworzenia pliku bazy danych : "+databaseFilename, this.getClass().getName());
                     JOptionPane.showMessageDialog(this, "Błąd tworzenia pliku bazy danych", "Błąd tworzenia pliku bazy danych", JOptionPane.ERROR_MESSAGE);
