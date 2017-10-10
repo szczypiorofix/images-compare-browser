@@ -37,19 +37,20 @@ public class ConfigFileHandler {
             prop.load(propStream);
             lastDatabase = prop.getProperty("LASTDB");
         } catch(IOException ioe) {
-            System.out.println("Błąd odczytu z pliku konfiguracji !!!");
+            //System.out.println("Błąd odczytu z pliku konfiguracji !!!");
             Log.put(false, Level.INFO, "Błąd odczytu z pliku konfiguracji !!!", ConfigFileHandler.class.getName());
         }
     }
 
     public static void writeLastDatabase(String lastDatabase) {
         try {
-            System.out.println("Last DB: "+lastDatabase);
+            //System.out.println("Last DB: "+lastDatabase);
+            Log.put(false, Level.INFO, "Wpisanie do pliku konfiguracji ścieżki ostatnio używanej bazy danych: " +lastDatabase, ConfigFileHandler.class.getName());
             PrintWriter writer = new PrintWriter(CONFIG_FILENAME, "UTF-8");
             writer.println("LASTDB="+lastDatabase);
             writer.close();
         } catch(IOException ioe) {
-            System.out.println("Błąd przy próbie utworzenia domyślnego pliku konfiguracji !!!");
+            //System.out.println("Błąd przy próbie utworzenia domyślnego pliku konfiguracji !!!");
             Log.put(false, Level.INFO, "Błąd przy próbie utworzenia domyślnego pliku konfiguracji !!!", ConfigFileHandler.class.getName());
         }
     }

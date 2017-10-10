@@ -1,6 +1,5 @@
 package com.imagecompare.browser.gui;
 
-import com.imagecompare.browser.gui.OpenFileDialog;
 
 import javax.swing.JPanel;
 import javax.swing.JFrame;
@@ -16,7 +15,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 
 
-class AddEditRecordDialog extends JDialog {
+public class AddEditRecordDialog extends JDialog {
 
     static final int ADD = 0;
     static final int EDIT = 1;
@@ -24,7 +23,7 @@ class AddEditRecordDialog extends JDialog {
     private JScrollPane scrollPane;
     private JPanel mainPanel;
 
-    AddEditRecordDialog(JFrame panel, String name, int type) {
+    public AddEditRecordDialog(JFrame panel, String name, int type) {
         super(panel, name, true);
         this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         this.setSize(400, 280);
@@ -91,7 +90,7 @@ class AddEditRecordDialog extends JDialog {
 
     }
 
-    void showDialog(Boolean s) {
+    public void showDialog(Boolean s) {
         this.setVisible(s);
     }
 }

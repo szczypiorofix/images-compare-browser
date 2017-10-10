@@ -105,7 +105,6 @@ public class InitialDialog extends JDialog {
                     fileName += "." +MainClass.DATABASE_FILE_EXTENSION_DB;
                 }
                 fileName = fileName.replace("\\", "/");
-                System.out.println("Zapisz plik jako: " + fileName);
                 isFileChosen = true;
 
                 ConfigFileHandler.writeLastDatabase(fileName);

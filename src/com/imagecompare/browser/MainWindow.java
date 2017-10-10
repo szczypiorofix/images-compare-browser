@@ -31,6 +31,7 @@ public final class MainWindow extends JFrame implements WindowListener {
     private DatabasePanel panelDatabase;
     private ImagePanelEast mainPanelEast;
     private  ImagePanelWest mainPanelWest;
+    private JSplitPane rightSplitPane;
 
     MainWindow() {
         super(MainWindow.frameTitleName);
@@ -79,11 +80,11 @@ public final class MainWindow extends JFrame implements WindowListener {
         imageViewerPanel.setScrollPane(scrollPanel);
         mainPanel.add(scrollPanel, BorderLayout.CENTER);
 
-        JPanel mainPanelNorth = new JPanel();
-        JSplitPane rightSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        //JPanel mainPanelNorth = new JPanel();
+        rightSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
         mainPanelEast = new ImagePanelEast(databaseFileName, this, imageViewerPanel);
         mainPanelWest = new ImagePanelWest(databaseFileName, this, imageViewerPanel);
-        JPanel mainPanelSouth = new JPanel();
+        //JPanel mainPanelSouth = new JPanel();
 
         //mainPanel.add(mainPanelNorth, BorderLayout.NORTH);
         //mainPanel.add(mainPanelWest, BorderLayout.WEST);
@@ -203,6 +204,8 @@ public final class MainWindow extends JFrame implements WindowListener {
 
     public void refreshDatabasePanel() {
         mainPanelEast.refresh();
+        //rightSplitPane.setLeftComponent(mainPanel);
+        //rightSplitPane.setRightComponent(mainPanelEast);
         panelDatabase.refresh();
     }
 
@@ -222,7 +225,7 @@ public final class MainWindow extends JFrame implements WindowListener {
 
     @Override
     public void windowIconified(WindowEvent e) {
-        System.out.println(SQLiteConnector.getStatus());
+        //System.out.println(SQLiteConnector.getStatus());
     }
 
     @Override

@@ -7,20 +7,24 @@ import java.util.ArrayList;
 public class RecordsTableModel extends AbstractTableModel {
 
     private String[][] data;
-    private String columns[]={"ID", "Nazwa", "Plik", "Parametr 1", "Parametr 2", "Parametr 3", "Parametr 4"};
+    private String columns[] = {"ID", "Nazwa", "Plik", "Parametr 1", "Parametr 2", "Parametr 3", "Parametr 4", "Parametr 5"};
 
     public RecordsTableModel(ArrayList<ImageItem> imageItems) {
-        String[][] d = new String[imageItems.size()][columns.length];
+
+        // Multiple HeadTable cells ???
+        // Dodanie pola w celu wpisywania fraz do wyszukiwania
+
+        data = new String[imageItems.size()][columns.length];
         for (int i = 0; i < imageItems.size(); i++) {
-            d[i][0] = String.valueOf(imageItems.get(i).getId());
-            d[i][1] = imageItems.get(i).getName();
-            d[i][2] = imageItems.get(i).getFilename();
-            d[i][3] = "bla";
-            d[i][4] = "bla";
-            d[i][5] = "bla";
-            d[i][6] = "bla";
+            data[i][0] = String.valueOf(imageItems.get(i).getId());
+            data[i][1] = imageItems.get(i).getName();
+            data[i][2] = imageItems.get(i).getFilename();
+            data[i][3] = imageItems.get(i).getParam1();
+            data[i][4] = imageItems.get(i).getParam2();
+            data[i][5] = imageItems.get(i).getParam3();
+            data[i][6] = imageItems.get(i).getParam4();
+            data[i][7] = imageItems.get(i).getParam5();
         }
-        this.data = d;
     }
 
     @Override
@@ -45,7 +49,10 @@ public class RecordsTableModel extends AbstractTableModel {
 
     @Override
     public boolean isCellEditable(int rowIndex, int columnIndex) {
-        return false;
+        //return false;
+
+        // EDYTOWALNE POLA
+        return true;
     }
 
     @Override
@@ -55,6 +62,10 @@ public class RecordsTableModel extends AbstractTableModel {
 
     @Override
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
+        System.out.println("Zmieniona wartość w: " +rowIndex +" : " +columnIndex);
+        System.out.println("Nowa wartość: " +aValue);
+
+        // TUTAJ MOŻNA BEDZIE AKTUALIZOWAC DANE W BAZIE
     }
 
     @Override

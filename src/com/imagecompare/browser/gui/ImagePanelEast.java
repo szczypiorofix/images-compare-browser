@@ -5,8 +5,6 @@ import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.system.SQLiteConnector;
 
 import javax.swing.*;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.util.ArrayList;
 
@@ -23,18 +21,13 @@ public class ImagePanelEast extends JPanel {
         super(new BorderLayout());
         this.databaseFilename = databaseFilename;
         this.centralImagePanel = centralImagePanel;
-        mainPanel = new JPanel(new BorderLayout());
         refresh();
-        this.add(imagePanelEastScrollPane, BorderLayout.CENTER);
         this.setPreferredSize(new Dimension(300, 700));
     }
 
     public void refresh() {
-        // TO DO POPRAWKI !!!
-        // TODO Poprawic !!!
-        // POPRAWI !!!!!
-
-        mainPanel.removeAll();
+        this.removeAll();
+        mainPanel = new JPanel(new BorderLayout());
         mainPanel.add(new JLabel("Lista obrazków: "), BorderLayout.NORTH);
         DefaultListModel<String> listModel = new DefaultListModel<>();
 
@@ -56,8 +49,8 @@ public class ImagePanelEast extends JPanel {
                 centralImagePanel.loadImage(centralImagePanel.getImageLeftName(), imagesList.getSelectedValue());
             }
         });
-
-        imagePanelEastScrollPane = new JScrollPane(mainPanel);
         mainPanel.add(imagesList);
+        imagePanelEastScrollPane = new JScrollPane(mainPanel);
+        this.add(imagePanelEastScrollPane);
     }
 }

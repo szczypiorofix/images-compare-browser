@@ -20,8 +20,9 @@ public class Log {
         try {
             fileHandler = new FileHandler("app.log", true);
         } catch (IOException e) {
+            System.out.println("Błąd Loggera: " +e.getMessage());
             e.printStackTrace();
-            System.exit(-1);
+            System.exit(0);
         }
         //LOGGER.setUseParentHandlers(false); // WYSWIETLANIE LOGÓW W KONSOLI
 

@@ -20,6 +20,7 @@ public class ImagePanelWest extends JPanel {
     private JTextField textFieldParam2;
     private JTextField textFieldParam3;
     private JTextField textFieldParam4;
+    private JTextField textFieldParam5;
 
     public ImagePanelWest(String selectedDatabaseFilename, MainWindow mainWindow, CentralImagePanel centralImagePanel) {
         super(new BorderLayout());
@@ -45,9 +46,10 @@ public class ImagePanelWest extends JPanel {
                 textFieldParam2.setText("");
                 textFieldParam3.setText("");
                 textFieldParam4.setText("");
+                textFieldParam5.setText("");
             }
         });
-        fileNamePanel.add(new JLabel("Wybrany plik:"), BorderLayout.NORTH);
+        fileNamePanel.add(new JLabel("Wybrany plik: "), BorderLayout.NORTH);
         fileNamePanel.add(fileNameLabel, BorderLayout.CENTER);
         fileNamePanel.add(chooseFileButton, BorderLayout.SOUTH);
 
@@ -55,7 +57,7 @@ public class ImagePanelWest extends JPanel {
 
         inputMainPanel.add(fileNamePanel, BorderLayout.NORTH);
 
-        JPanel inputGridPanel = new JPanel(new GridLayout(5, 4));
+        JPanel inputGridPanel = new JPanel(new GridLayout(6, 4));
         inputGridPanel.setPreferredSize(new Dimension(180,130));
         inputGridPanel.setMinimumSize(new Dimension(180, 130));
         inputGridPanel.setMaximumSize(new Dimension(180, 130));
@@ -66,6 +68,7 @@ public class ImagePanelWest extends JPanel {
         textFieldParam2 = new JTextField();
         textFieldParam3 = new JTextField();
         textFieldParam4 = new JTextField();
+        textFieldParam5 = new JTextField();
 
         inputGridPanel.add(new JLabel("Nazwa:"));
         inputGridPanel.add(textFieldName);
@@ -77,6 +80,8 @@ public class ImagePanelWest extends JPanel {
         inputGridPanel.add(textFieldParam3);
         inputGridPanel.add(new JLabel("Parametr 4:"));
         inputGridPanel.add(textFieldParam4);
+        inputGridPanel.add(new JLabel("Parametr 5:"));
+        inputGridPanel.add(textFieldParam5);
 
         inputMainPanel.add(inputGridPanel, BorderLayout.CENTER);
 
@@ -87,9 +92,16 @@ public class ImagePanelWest extends JPanel {
                     && (!textFieldParam1.getText().equals(""))
                     && (!textFieldParam2.getText().equals(""))
                     && (!textFieldParam3.getText().equals(""))
-                    && (!textFieldParam4.getText().equals(""))) {
+                    && (!textFieldParam4.getText().equals(""))
+                    && (!textFieldParam5.getText().equals(""))) {
 
-                SQLiteConnector.insertDataToDatabase(new ImageItem(textFieldName.getText(),this.chosenFilePath, new String[0]));
+                SQLiteConnector.insertDataToDatabase(new ImageItem(textFieldName.getText(),
+                        this.chosenFilePath,
+                        this.textFieldParam1.getText(),
+                        this.textFieldParam2.getText(),
+                        this.textFieldParam3.getText(),
+                        this.textFieldParam4.getText(),
+                        this.textFieldParam5.getText()));
                 mainWindow.checkAndShowSqlConnection();
                 mainWindow.refreshDatabasePanel();
                 JOptionPane.showMessageDialog(null, "Pomyślnie dodano nowe dane do bazy!", "Udało się!", JOptionPane.INFORMATION_MESSAGE);
