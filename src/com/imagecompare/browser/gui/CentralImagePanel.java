@@ -96,6 +96,9 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
             this.imageLeftName = imageName1;
         }
 
+        //System.out.println("Image left aspect ratio: " + (this.imageLeft.getWidth()) +" / " +this.imageLeft.getHeight());
+        System.out.println((float) 13 / 3);
+
         try {
             this.imageRight = ImageIO.read(new File(imageName2));
         } catch (IOException e) {
@@ -105,6 +108,8 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
         finally {
             this.imageRightName = imageName2;
         }
+
+        System.out.println("Image right aspect ratio: " + ((this.imageRight.getWidth()) +" / " +this.imageRight.getHeight()));
 
         //System.out.println("Right: " +imageRightName);
         //System.out.println("Left: " +imageLeftName);

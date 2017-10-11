@@ -1,5 +1,7 @@
 package com.imagecompare.browser.gui;
 
+import com.imagecompare.browser.MainWindow;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -23,7 +25,7 @@ public class InformationDialog extends JDialog {
         bOK.addActionListener(e -> this.dispose());
         bOK.setBounds(80, 110, 90, 30);
 
-        JLabel titleLabel = new JLabel("Images Compare Browser");
+        JLabel titleLabel = new JLabel(MainWindow.frameTitleName);
         titleLabel.setFont(new Font("Tahoma", Font.PLAIN, 18));
         titleLabel.setBounds(20, 0, 240, 50);
 

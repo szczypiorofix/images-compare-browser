@@ -18,7 +18,7 @@ import java.util.logging.Level;
 
 public final class MainWindow extends JFrame implements WindowListener {
 
-    public static final String frameTitleName = " Images Compare Browser";
+    public static final String frameTitleName = "AdminImages";
     private JPanel mainPanel;
     private JMenuBar mainMenuBar;
     private JMenu menuFile, menuOptions, menuPomoc;
@@ -73,7 +73,6 @@ public final class MainWindow extends JFrame implements WindowListener {
 
         tabbedPane = new MainTabbedPanel();
 
-        //imageViewerPanel = new CentralImagePanel("image1.jpg", "image2.jpg");
         imageViewerPanel = new CentralImagePanel();
         mainPanel = new JPanel(new BorderLayout());
         ImageScrollPane scrollPanel = new ImageScrollPane(imageViewerPanel);
