@@ -1,6 +1,7 @@
 package com.imagecompare.browser.gui;
 
 
+import com.imagecompare.browser.model.DatabaseTableCellRenderer;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.model.RecordsTableModel;
 import com.imagecompare.browser.system.SQLiteConnector;
@@ -95,7 +96,8 @@ public class DatabasePanel extends JPanel {
 
         tableOfRecords = new JTable(new RecordsTableModel(imageItems));
 
-        DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+        //DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+        DatabaseTableCellRenderer centerRenderer = new DatabaseTableCellRenderer();
         centerRenderer.setHorizontalAlignment( JLabel.CENTER );
         tableOfRecords.setDefaultRenderer(String.class, centerRenderer);
 
