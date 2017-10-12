@@ -1,24 +1,23 @@
 package com.imagecompare.browser.gui;
 
 
-import com.imagecompare.browser.model.DatabaseTableCellRenderer;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.model.RecordsTableModel;
 import com.imagecompare.browser.system.SQLiteConnector;
+import com.imagecompare.browser.table.DatabaseTableCellRenderer;
+import com.imagecompare.browser.table.GroupableTableHeader;
+import com.imagecompare.browser.table.TableRowFilter;
+import javafx.scene.control.TableRow;
 
-import javax.swing.JPanel;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JTable;
-import javax.swing.JScrollPane;
-import javax.swing.JOptionPane;
-import javax.swing.ListSelectionModel;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.event.CellEditorListener;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import javax.swing.table.*;
 
-import java.awt.BorderLayout;
-import java.awt.Font;
-import java.awt.FlowLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 
@@ -36,6 +35,7 @@ public class DatabasePanel extends JPanel {
         super(new BorderLayout());
         this.databaseFilename = databaseFilename;
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
+        this.setOpaque(true);
         JLabel titlePane = new JLabel("Baza danych zdjęć");
         titlePane.setHorizontalAlignment(JLabel.CENTER);
         titlePane.setFont(new Font("Tahoma", Font.BOLD, 18));
@@ -94,17 +94,45 @@ public class DatabasePanel extends JPanel {
             imageItems = SQLiteConnector.getResults();
         }
 
-        tableOfRecords = new JTable(new RecordsTableModel(imageItems));
+        RecordsTableModel recordsTableModel = new RecordsTableModel(imageItems);
+        tableOfRecords = new JTable(recordsTableModel);// {
+            //protected JTableHeader createDefaultTableHeader() {
+           //     return new GroupableTableHeader(columnModel);
+           // }
+       // };
 
         //DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
         DatabaseTableCellRenderer centerRenderer = new DatabaseTableCellRenderer();
         centerRenderer.setHorizontalAlignment( JLabel.CENTER );
         tableOfRecords.setDefaultRenderer(String.class, centerRenderer);
 
+        // SINGLE CELL SELECTION
         tableOfRecords.setCellSelectionEnabled(true);
         ListSelectionModel select = tableOfRecords.getSelectionModel();
         select.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
+        tableOfRecords.setFillsViewportHeight(true);
+        tableOfRecords.setPreferredScrollableViewportSize(new Dimension(500, 70));
+        tableOfRecords.setFillsViewportHeight(true);
+
+
+        TableRowFilter tableRowFilter = new TableRowFilter(recordsTableModel, "");
+
+        TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(recordsTableModel);
+        sorter.setRowFilter(tableRowFilter);
+        recordsTableModel.setTableSorter(sorter);
+        tableOfRecords.setRowSorter(sorter);
+
+
+        /*TableColumn column = null;
+        for (int i = 0; i < 5; i++) {
+            column = tableOfRecords.getColumnModel().getColumn(i);
+            if (i == 1) {
+                column.setPreferredWidth(100); //third column is bigger
+            } else {
+                column.setPreferredWidth(50);
+            }
+        }*/
         recordsTableScrollPane = new JScrollPane(tableOfRecords);
         recordsTableScrollPane.getVerticalScrollBar().setUnitIncrement(15);
 

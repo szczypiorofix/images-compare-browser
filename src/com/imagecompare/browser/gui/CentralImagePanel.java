@@ -32,11 +32,12 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
         try {
             this.imageLeft = ImageIO.read(getClass().getResource("/" +imageName1));
             this.imageRight = ImageIO.read(getClass().getResource("/" +imageName2));
-            this.imageLeftName = imageName1;
-            this.imageRightName = imageName2;
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        this.imageLeftName = imageName1;
+        this.imageRightName = imageName2;
 
         imageLoaded = true;
         this.x = this.imageLeft.getWidth()/2;
