@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sqlite-jdbc-3.20.0" level="project" />
+    <orderEntry type="library" name="ini4j-0.5.4" level="project" />
   </component>
 </module>

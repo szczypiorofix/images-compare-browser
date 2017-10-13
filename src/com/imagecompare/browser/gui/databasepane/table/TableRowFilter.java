@@ -1,4 +1,4 @@
-package com.imagecompare.browser.table;
+package com.imagecompare.browser.gui.databasepane.table;
 
 import com.imagecompare.browser.model.RecordsTableModel;
 
@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class TableRowFilter extends RowFilter <Object, Object>{
 
-    private RecordsTableModel recordsTableModel;
+    private final RecordsTableModel recordsTableModel;
     private String filterText = "";
 
     public TableRowFilter(RecordsTableModel recordsTableModel, String filterText) {
@@ -17,7 +17,6 @@ public class TableRowFilter extends RowFilter <Object, Object>{
     @Override
     public boolean include(Entry entry) {
         String population = (String) entry.getValue(1);
-        if (!population.equals("")) return true;
-        return population.equals(filterText);
+        return !population.equals("") || population.equals(filterText);
     }
 }

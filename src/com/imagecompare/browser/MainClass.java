@@ -1,6 +1,7 @@
 package com.imagecompare.browser;
 
-import com.imagecompare.browser.gui.InitialDialog;
+import com.imagecompare.browser.gui.main.InitialDialog;
+import com.imagecompare.browser.gui.main.MainWindow;
 import com.imagecompare.browser.system.ConfigFileHandler;
 import com.imagecompare.browser.system.Log;
 
@@ -9,7 +10,6 @@ import java.util.logging.Level;
 
 public class MainClass {
 
-    private MainWindow mainWindow;
     public static final String DATABASE_FILE_EXTENSION_DB = "db";
     public static final String DATABASE_FILE_EXTENSION_DB3 = "db3";
     public static final String DATABASE_FILE_EXTENSION_SQLITE = "sqlite";
@@ -25,17 +25,23 @@ public class MainClass {
             Log.DEBUG_MODE = false;
         }
 
+        Log.DEBUG_IN_CONSOLE = true;
         Log.put(false, Level.INFO, "Start aplikacji.", this.getClass().getName());
 
         ConfigFileHandler.init();
 
-        //System.out.println(configFileHandler.getLastDatabase());
-        mainWindow = new MainWindow();
+        MainWindow mainWindow = new MainWindow(ConfigFileHandler.getAppWidth(),
+                ConfigFileHandler.getAppHeight(),
+                ConfigFileHandler.isAppMaximized());
 
-        InitialDialog initialDialog = new InitialDialog(mainWindow, "Wybierz bazę danych", true, ConfigFileHandler.getLastDatabase());
+        InitialDialog initialDialog = new InitialDialog(mainWindow,
+                "Wybierz bazę danych",
+                true,
+                ConfigFileHandler.getLastDatabase());
         initialDialog.showDialog(true);
 
         mainWindow.setAutoRequestFocus(true);
+
         if (initialDialog.isFileChosen()) {
             mainWindow.showWindow(true, initialDialog.getDatabaseFilename());
         }
@@ -49,5 +55,4 @@ public class MainClass {
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> new MainClass(args));
     }
-
 }

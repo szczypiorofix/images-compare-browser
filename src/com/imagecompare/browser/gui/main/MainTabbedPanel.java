@@ -1,17 +1,16 @@
-package com.imagecompare.browser.gui;
+package com.imagecompare.browser.gui.main;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class MainTabbedPanel extends JTabbedPane {
 
-    private Color firstTabColor = new Color(127, 14, 235);
-    private Color secondTabColor = new Color(127, 13, 224);
+    private Color firstTabColor = new Color(85, 14, 235);
+    private Color secondTabColor = new Color(90, 13, 224);
 
     public MainTabbedPanel() {
         super();
-        Font font = new Font("Tahoma", Font.PLAIN, 14);
-        this.setFont(font);
+        this.setFont(new Font("Tahoma", Font.PLAIN, 14));
     }
 
     public void setColors() {

@@ -1,5 +1,7 @@
-package com.imagecompare.browser.gui;
+package com.imagecompare.browser.gui.databasepane;
 
+
+import com.imagecompare.browser.gui.shared.OpenFileDialog;
 
 import javax.swing.JPanel;
 import javax.swing.JFrame;

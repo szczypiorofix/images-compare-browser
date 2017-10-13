@@ -1,4 +1,4 @@
-package com.imagecompare.browser.table;
+package com.imagecompare.browser.gui.databasepane.table;
 
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;

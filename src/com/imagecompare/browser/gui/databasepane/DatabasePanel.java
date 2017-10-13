@@ -1,20 +1,15 @@
-package com.imagecompare.browser.gui;
+package com.imagecompare.browser.gui.databasepane;
 
 
+import com.imagecompare.browser.gui.databasepane.table.TableRowFilter;
+import com.imagecompare.browser.gui.shared.FunctionalButton;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.model.RecordsTableModel;
 import com.imagecompare.browser.system.SQLiteConnector;
-import com.imagecompare.browser.table.DatabaseTableCellRenderer;
-import com.imagecompare.browser.table.GroupableTableHeader;
-import com.imagecompare.browser.table.TableRowFilter;
-import javafx.scene.control.TableRow;
+import com.imagecompare.browser.gui.databasepane.table.DatabaseTableCellRenderer;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.event.CellEditorListener;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import javax.swing.table.*;
 
 import java.awt.*;
@@ -50,14 +45,10 @@ public class DatabasePanel extends JPanel {
         editRecordDialog = new AddEditRecordDialog(frame, "Edytuj pozycję", AddEditRecordDialog.EDIT);
 
         buttonAdd = new FunctionalButton("Dodaj");
-        buttonAdd.addActionListener((ActionEvent e) -> {
-            addRecordDialog.showDialog(true);
-        });
+        buttonAdd.addActionListener((ActionEvent e) -> addRecordDialog.showDialog(true));
 
         buttonEdit = new FunctionalButton("Edytuj");
-        buttonEdit.addActionListener((ActionEvent e) -> {
-            editRecordDialog.showDialog(true);
-        });
+        buttonEdit.addActionListener((ActionEvent e) -> editRecordDialog.showDialog(true));
 
         buttonDelete = new FunctionalButton("Usuń");
         buttonDelete.addActionListener((ActionEvent e) -> {
@@ -121,7 +112,7 @@ public class DatabasePanel extends JPanel {
 
         TableRowFilter tableRowFilter = new TableRowFilter(recordsTableModel, "");
 
-        TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(recordsTableModel);
+        TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);
         sorter.setRowFilter(tableRowFilter);
         recordsTableModel.setTableSorter(sorter);
         tableOfRecords.setRowSorter(sorter);

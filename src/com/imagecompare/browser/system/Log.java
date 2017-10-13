@@ -9,6 +9,7 @@ import java.util.logging.SimpleFormatter;
 public class Log {
 
     public static boolean DEBUG_MODE = false;
+    public static boolean DEBUG_IN_CONSOLE = true;
     private static Logger logger = null;
     private static FileHandler fileHandler = null;
 
@@ -24,7 +25,8 @@ public class Log {
             e.printStackTrace();
             System.exit(0);
         }
-        //LOGGER.setUseParentHandlers(false); // WYSWIETLANIE LOGÓW W KONSOLI
+
+        logger.setUseParentHandlers(DEBUG_IN_CONSOLE); // WYSWIETLANIE LOGÓW W KONSOLI
 
         fileHandler.setFormatter(new SimpleFormatter());
         fileHandler.setLevel(Level.INFO);
@@ -35,11 +37,10 @@ public class Log {
 
     public static void put(boolean critical, Level level, String msg, String c) {
         if (logger == null) logger = instance();
-        if (DEBUG_MODE)
-        {
+        if (DEBUG_MODE) {
             logger.log(level, c +": " +msg);
             if (critical) {
-                logger.log(Level.WARNING, "Zamykanie programu z błędem.");
+                logger.log(Level.WARNING, "Błąd krytyczny!!! Zamykanie programu.");
                 System.exit(-1);
             }
         }

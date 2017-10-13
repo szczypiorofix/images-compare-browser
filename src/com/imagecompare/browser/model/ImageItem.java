@@ -3,9 +3,9 @@ package com.imagecompare.browser.model;
 public class ImageItem {
 
     private int id;
-    private String name;
-    private String filename;
-    private String param1, param2, param3, param4, param5;
+    private final String name;
+    private final String filename;
+    private final String param1, param2, param3, param4, param5;
 
     public ImageItem(int id, String name, String filename, String param1, String param2, String param3, String param4, String param5) {
         this.id = id;

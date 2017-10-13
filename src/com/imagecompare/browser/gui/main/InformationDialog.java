@@ -1,6 +1,4 @@
-package com.imagecompare.browser.gui;
-
-import com.imagecompare.browser.MainWindow;
+package com.imagecompare.browser.gui.main;
 
 import javax.swing.*;
 import java.awt.*;

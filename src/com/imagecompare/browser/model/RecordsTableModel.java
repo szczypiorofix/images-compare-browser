@@ -1,6 +1,6 @@
 package com.imagecompare.browser.model;
 
-import com.imagecompare.browser.table.TableRowFilter;
+import com.imagecompare.browser.gui.databasepane.table.TableRowFilter;
 
 import javax.swing.event.TableModelListener;
 import javax.swing.table.AbstractTableModel;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 
 public class RecordsTableModel extends AbstractTableModel {
 
-    private Object[][] data;
-    private String columns[] = {"ID", "Nazwa", "Plik", "Parametr 1", "Parametr 2", "Parametr 3", "Parametr 4", "Parametr 5"};
+    private final Object[][] data;
+    private final String columns[] = {"ID", "Nazwa", "Plik", "Parametr 1", "Parametr 2", "Parametr 3", "Parametr 4", "Parametr 5"};
     private String filterValue = "";
     private TableRowSorter tableRowSorter;
 
@@ -20,7 +20,7 @@ public class RecordsTableModel extends AbstractTableModel {
         // Dodanie pola w celu wpisywania fraz do wyszukiwania
 
         data = new Object[imageItems.size()+1][columns.length];
-        int x = 0;
+        int x;
         for (int i = 0; i < imageItems.size()+1; i++) {
             if (i == 0) {
                 data[i][0] = "";

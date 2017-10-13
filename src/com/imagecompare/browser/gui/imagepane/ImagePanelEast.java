@@ -1,6 +1,6 @@
-package com.imagecompare.browser.gui;
+package com.imagecompare.browser.gui.imagepane;
 
-import com.imagecompare.browser.MainWindow;
+import com.imagecompare.browser.gui.main.MainWindow;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.system.SQLiteConnector;
 

@@ -1,4 +1,4 @@
-package com.imagecompare.browser.table;
+package com.imagecompare.browser.gui.databasepane.table;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
