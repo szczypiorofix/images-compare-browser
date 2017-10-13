@@ -99,7 +99,10 @@ public class DatabasePanel extends JPanel {
             //protected JTableHeader createDefaultTableHeader() {
            //     return new GroupableTableHeader(columnModel);
            // }
-       // };
+        //};
+
+        // TODO Dodać pasek postępu przy wczytywaniu danych z bazy w momencie ładowania programu
+        // TODO Dodać wstępną opcję drukowania wyników z bazy - o ile się da
 
         //DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
         DatabaseTableCellRenderer centerRenderer = new DatabaseTableCellRenderer();
