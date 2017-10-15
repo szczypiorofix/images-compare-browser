@@ -16,9 +16,6 @@ public class RecordsTableModel extends AbstractTableModel {
 
     public RecordsTableModel(ArrayList<ImageItem> imageItems) {
 
-        // Multiple HeadTable cells ???
-        // Dodanie pola w celu wpisywania fraz do wyszukiwania
-
         data = new Object[imageItems.size()+1][columns.length];
         int x;
         for (int i = 0; i < imageItems.size()+1; i++) {
@@ -77,12 +74,7 @@ public class RecordsTableModel extends AbstractTableModel {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        //if (rowIndex == 0) {
-            //return new JTextField();
-        //}
-        //else {
-            return data[rowIndex][columnIndex];
-        //}
+        return data[rowIndex][columnIndex];
     }
 
     @Override
