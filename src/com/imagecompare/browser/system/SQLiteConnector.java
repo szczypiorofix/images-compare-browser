@@ -156,13 +156,6 @@ public class SQLiteConnector {
         }
     }
 
-    public static String getStatus() {
-        if (conn != null) {
-            return "Połaczenie z bazą aktywne";
-        }
-        return "Brak połączenia z bazą danych!";
-    }
-
     public static Boolean isConnected() {
         return conn != null;
     }

@@ -147,12 +147,8 @@ public final class MainWindow extends JFrame implements WindowListener {
         menuFileExit.setMnemonic(KeyEvent.VK_W);
         menuFileExit.setAccelerator(KeyStroke.getKeyStroke('W', Toolkit.getDefaultToolkit ().getMenuShortcutKeyMask()));
         menuFileExit.setToolTipText("Wyjdź z programu");
-        menuFileExit.addActionListener(e -> {
-            Log.put(false, Level.INFO, "Zamykanie połączenia z bazą SQLite...", this.getClass().getName());
-            SQLiteConnector.closeConnection();
-            Log.put(false, Level.INFO, "Zamykanie aplikacji ...", this.getClass().getName());
-            System.exit(0);
-        });
+        // WYJSCIE Z PROGRAMU
+        menuFileExit.addActionListener(e -> exitApp());
 
         menuFile.add(menuFileOpen);
         menuFile.add(menuFileExit);
@@ -213,17 +209,21 @@ public final class MainWindow extends JFrame implements WindowListener {
         panelDatabase.refresh();
     }
 
-    @Override
-    public void windowOpened(WindowEvent e) {}
-
-    @Override
-    public void windowClosing(WindowEvent e) {
+    public void exitApp() {
         Log.put(false, Level.INFO, "Zapis ustawień okna.", this.getClass().getName());
         ConfigFileHandler.saveWindowSizeToIniFile(this.getWidth(), this.getHeight(), (this.getExtendedState() == JFrame.MAXIMIZED_BOTH));
         Log.put(false, Level.INFO, "Zamykanie połączenia z bazą SQLite.", this.getClass().getName());
         SQLiteConnector.closeConnection();
         Log.put(false, Level.INFO, "Zamykanie aplikacji.", this.getClass().getName());
         System.exit(0);
+    }
+
+    @Override
+    public void windowOpened(WindowEvent e) {}
+
+    @Override
+    public void windowClosing(WindowEvent e) {
+        exitApp();
     }
 
     @Override
