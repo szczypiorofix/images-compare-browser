@@ -1046,3 +1046,63 @@ paź 19, 2017 10:01:49 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
 paź 19, 2017 10:01:49 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 19, 2017 10:29:35 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 19, 2017 10:29:36 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 19, 2017 10:29:36 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 19, 2017 10:29:36 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 19, 2017 10:29:36 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db
+paź 19, 2017 10:29:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db
+paź 19, 2017 10:29:38 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 19, 2017 10:29:38 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 19, 2017 10:29:38 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db prawidłowy.
+paź 19, 2017 10:29:38 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 19, 2017 10:29:38 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db prawidłowy.
+paź 19, 2017 10:29:45 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 19, 2017 10:29:45 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db
+paź 19, 2017 10:29:45 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 19, 2017 10:29:45 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 19, 2017 10:29:51 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 19, 2017 10:29:51 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 19, 2017 10:29:51 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 19, 2017 10:29:52 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 19, 2017 10:29:52 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db
+paź 19, 2017 10:29:53 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db
+paź 19, 2017 10:29:53 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 19, 2017 10:29:53 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 19, 2017 10:29:53 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db prawidłowy.
+paź 19, 2017 10:29:53 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 19, 2017 10:29:53 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db prawidłowy.
+paź 19, 2017 10:29:55 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 19, 2017 10:29:55 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db
+paź 19, 2017 10:29:55 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 19, 2017 10:29:55 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.

@@ -11,19 +11,16 @@ import com.imagecompare.browser.system.ConfigFileHandler;
 import com.imagecompare.browser.system.Log;
 import com.imagecompare.browser.system.SQLiteConnector;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 import javax.swing.*;
 
 
 import java.awt.BorderLayout;
 import java.awt.Toolkit;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 import java.util.logging.Level;
 
 
-public final class MainWindow extends JFrame implements WindowListener {
+public final class MainWindow extends JFrame {
 
     public static final String frameTitleName = "AdminImages";
 
@@ -55,7 +52,12 @@ public final class MainWindow extends JFrame implements WindowListener {
         }
         this.setLocationRelativeTo(null);
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/icon.png")));
-        this.addWindowListener(this);
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                exitApp();
+            }
+        });
     }
 
     private void setUIManager() {
@@ -217,30 +219,5 @@ public final class MainWindow extends JFrame implements WindowListener {
         Log.put(false, Level.INFO, "Zamykanie aplikacji.", this.getClass().getName());
         System.exit(0);
     }
-
-    @Override
-    public void windowOpened(WindowEvent e) {}
-
-    @Override
-    public void windowClosing(WindowEvent e) {
-        exitApp();
-    }
-
-    @Override
-    public void windowClosed(WindowEvent e) {}
-
-    @Override
-    public void windowIconified(WindowEvent e) {
-        //System.out.println(SQLiteConnector.getStatus());
-    }
-
-    @Override
-    public void windowDeiconified(WindowEvent e) {}
-
-    @Override
-    public void windowActivated(WindowEvent e) {}
-
-    @Override
-    public void windowDeactivated(WindowEvent e) {}
 
 }
