@@ -1106,3 +1106,633 @@ paź 19, 2017 10:29:55 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
 paź 19, 2017 10:29:55 PM com.imagecompare.browser.system.Log put
 INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 12:15:28 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 12:15:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 12:15:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 12:15:29 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 12:15:29 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db
+paź 20, 2017 3:16:59 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:16:59 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:16:59 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:17:00 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:17:00 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Semiko/IdeaProjects/ImageCompareBrowser/mydb1.db
+paź 20, 2017 3:17:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ścieżki ostatnio używanej bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:17:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:17:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:17:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:17:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:17:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:17:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:17:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:17:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:17:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:20:12 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:20:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:20:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:20:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:20:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:20:13 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:20:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:20:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:20:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:20:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:20:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:20:26 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:20:26 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:20:26 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:20:26 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:21:18 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:21:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:21:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:21:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:21:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:21:19 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:21:20 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:21:20 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:21:20 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:21:21 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:21:21 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:21:40 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:21:40 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:21:40 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:21:40 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:22:07 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:22:07 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:22:07 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:22:08 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:22:08 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:22:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:22:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:22:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:22:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:22:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:22:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:22:20 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:22:20 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:22:20 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:22:20 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:23:30 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:23:30 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:23:30 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:23:30 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:23:30 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:23:32 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:23:33 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:23:33 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:23:33 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:23:33 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:23:33 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:23:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:23:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:23:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:23:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:25:09 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:25:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:25:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:25:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:25:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:25:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:25:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:25:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:25:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:25:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:25:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:25:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:25:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:25:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:25:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:25:26 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:25:26 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:25:26 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:25:26 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:25:26 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:25:27 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:25:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:25:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:25:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:25:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:25:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:25:34 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:25:34 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:25:34 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:25:34 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:28:16 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:28:16 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:28:16 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:28:16 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:28:16 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:28:17 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:28:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:28:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:28:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:28:19 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:28:19 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:28:34 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:28:34 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:28:34 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:28:35 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:28:35 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:28:36 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:28:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:28:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:28:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:28:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:28:37 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:29:07 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:29:07 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:29:07 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:29:07 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:29:07 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:29:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:29:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:29:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:29:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:29:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:29:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:29:40 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:29:40 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:29:40 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:29:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:29:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:29:42 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:29:42 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:29:42 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:29:42 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:29:42 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:29:42 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:30:00 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:30:00 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:30:00 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:30:00 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:30:00 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:30:01 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:30:02 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:30:02 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:30:02 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:30:02 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:30:02 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:30:12 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:30:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:30:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:30:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:30:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:30:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:30:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:30:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:30:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:30:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:30:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:30:22 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:30:22 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:30:22 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:30:22 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:30:48 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:30:48 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:30:48 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:30:49 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:30:49 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:30:49 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:30:50 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:30:50 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:30:50 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:30:50 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:30:50 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:30:54 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:30:54 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:30:54 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:30:54 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:31:30 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:31:30 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:31:30 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:31:30 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:31:30 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:31:31 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:31:32 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:31:32 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:31:32 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:31:32 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:31:32 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:31:51 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:31:51 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:31:51 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:31:51 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:33:38 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:33:38 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:33:38 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:33:38 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:33:39 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:33:40 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:33:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:33:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:33:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:33:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:33:41 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:33:45 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:33:45 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:33:45 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:33:45 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:34:14 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:34:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:34:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:34:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:34:14 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:34:15 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:34:16 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:34:16 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:34:16 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:34:16 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:34:16 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:34:29 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:34:29 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:34:29 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:34:29 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:35:20 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:35:20 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:35:20 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:35:21 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:35:21 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:35:22 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:35:22 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:35:22 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:35:22 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:35:22 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:35:22 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:35:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:35:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:35:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:35:28 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:37:31 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:37:31 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:37:31 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:37:31 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:37:32 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:37:34 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:37:34 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:37:34 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:37:34 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:37:35 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:37:35 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:37:42 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:37:42 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:37:42 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:37:42 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:38:10 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:38:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:38:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:38:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:38:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:38:11 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:38:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:38:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:38:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:38:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:38:12 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:38:21 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:38:21 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:38:21 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:38:21 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:39:09 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:39:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:39:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:39:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:39:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:39:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:39:11 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:39:11 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:39:11 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:39:11 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:39:11 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:39:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:39:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:39:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:39:18 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.
+paź 20, 2017 3:41:08 PM com.imagecompare.browser.system.Log put
+INFO: Log (Logger): Uruchomienie aplikacji w trybie DEBUG. Logger załadowany.
+paź 20, 2017 3:41:08 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.MainClass: Start aplikacji.
+paź 20, 2017 3:41:08 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Plik konfiguracji - OK.
+paź 20, 2017 3:41:08 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Created GUI on EDT? true
+paź 20, 2017 3:41:08 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Ostatnio wybierany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:41:09 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.InitialDialog: Załadowany plik bazy danych: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:41:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Utworzono nowe połączenie z bazą danych.
+paź 20, 2017 3:41:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:41:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:41:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Zwróconych wyników z bazy danych: 6
+paź 20, 2017 3:41:10 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.SQLiteConnector: Odczyt z bazy danych C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db prawidłowy.
+paź 20, 2017 3:41:17 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zapis ustawień okna.
+paź 20, 2017 3:41:17 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.system.ConfigFileHandler: Wpisanie do pliku konfiguracji ostatniej wielkości okna aplikacji: C:/Users/Piotrek/IdeaProjects/images-compare-browser/mydb1.db
+paź 20, 2017 3:41:17 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie połączenia z bazą SQLite.
+paź 20, 2017 3:41:17 PM com.imagecompare.browser.system.Log put
+INFO: com.imagecompare.browser.gui.main.MainWindow: Zamykanie aplikacji.

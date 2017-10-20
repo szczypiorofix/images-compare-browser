@@ -9,6 +9,7 @@ import com.imagecompare.browser.system.SQLiteConnector;
 import com.imagecompare.browser.gui.databasepane.table.DatabaseTableCellRenderer;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.*;
 
@@ -24,7 +25,7 @@ public class DatabasePanel extends JPanel {
     private String databaseFilename;
     private JTable tableOfRecords;
     private JScrollPane recordsTableScrollPane;
-    private JPanel mainPanel,buttonsPanel, buttonsPanelGrid;
+    private JPanel mainPanel,buttonsPanel, buttonsPanelGrid, tableAndFiltersPanel;
 
     public DatabasePanel(JFrame frame, String databaseFilename) {
         super(new BorderLayout());
@@ -98,7 +99,7 @@ public class DatabasePanel extends JPanel {
         //DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
         DatabaseTableCellRenderer centerRenderer = new DatabaseTableCellRenderer();
         centerRenderer.setHorizontalAlignment( JLabel.CENTER );
-        tableOfRecords.setDefaultRenderer(String.class, centerRenderer);
+        //tableOfRecords.setDefaultRenderer(String.class, centerRenderer);
 
         // SINGLE CELL SELECTION
         tableOfRecords.setCellSelectionEnabled(true);
@@ -110,12 +111,12 @@ public class DatabasePanel extends JPanel {
         tableOfRecords.setFillsViewportHeight(true);
 
 
-        TableRowFilter tableRowFilter = new TableRowFilter(recordsTableModel, "");
+        //TableRowFilter tableRowFilter = new TableRowFilter(recordsTableModel, "");
 
-        TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);
-        sorter.setRowFilter(tableRowFilter);
-        recordsTableModel.setTableSorter(sorter);
-        tableOfRecords.setRowSorter(sorter);
+        //TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);
+        //sorter.setRowFilter(tableRowFilter);
+        //recordsTableModel.setTableSorter(sorter);
+        //tableOfRecords.setRowSorter(sorter);
 
 
         /*TableColumn column = null;
@@ -127,10 +128,29 @@ public class DatabasePanel extends JPanel {
                 column.setPreferredWidth(50);
             }
         }*/
+
+
         recordsTableScrollPane = new JScrollPane(tableOfRecords);
         recordsTableScrollPane.getVerticalScrollBar().setUnitIncrement(15);
 
-        mainPanel.add(recordsTableScrollPane, BorderLayout.CENTER);
+
+        tableAndFiltersPanel = new JPanel(new BorderLayout());
+        tableAndFiltersPanel.add(recordsTableScrollPane, BorderLayout.CENTER);
+
+        JPanel filtersPanel = new JPanel(new FlowLayout());
+        filtersPanel.add(new JButton("OK"));
+        filtersPanel.add(new JButton("OK"));
+        filtersPanel.add(new JButton("OK"));
+        filtersPanel.add(new JButton("OK"));
+        filtersPanel.add(new JButton("OK"));
+        filtersPanel.add(new JButton("OK"));
+
+
+
+        tableAndFiltersPanel.add(filtersPanel, BorderLayout.NORTH);
+
+
+        mainPanel.add(tableAndFiltersPanel, BorderLayout.CENTER);
 
         this.add(mainPanel, BorderLayout.CENTER);
     }

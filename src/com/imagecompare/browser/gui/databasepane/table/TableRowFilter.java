@@ -16,7 +16,7 @@ public class TableRowFilter extends RowFilter <Object, Object>{
 
     @Override
     public boolean include(Entry entry) {
-        String population = (String) entry.getValue(1);
-        return !population.equals("") || population.equals(filterText);
+        String entryValue = (String) entry.getValue(0);
+        return !entryValue.equals("") || entryValue.equals(this.filterText);
     }
 }

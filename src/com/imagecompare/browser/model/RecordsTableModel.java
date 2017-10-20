@@ -16,30 +16,17 @@ public class RecordsTableModel extends AbstractTableModel {
 
     public RecordsTableModel(ArrayList<ImageItem> imageItems) {
 
-        data = new Object[imageItems.size()+1][columns.length];
-        int x;
-        for (int i = 0; i < imageItems.size()+1; i++) {
-            if (i == 0) {
-                data[i][0] = "";
-                data[i][1] = "";
-                data[i][2] = "";
-                data[i][3] = "";
-                data[i][4] = "";
-                data[i][5] = "";
-                data[i][6] = "";
-                data[i][7] = "";
-            }
-            else {
-                x = i -1;
-                data[i][0] = String.valueOf(imageItems.get(x).getId());
-                data[i][1] = imageItems.get(x).getName();
-                data[i][2] = imageItems.get(x).getFilename();
-                data[i][3] = imageItems.get(x).getParam1();
-                data[i][4] = imageItems.get(x).getParam2();
-                data[i][5] = imageItems.get(x).getParam3();
-                data[i][6] = imageItems.get(x).getParam4();
-                data[i][7] = imageItems.get(x).getParam5();
-            }
+        data = new Object[imageItems.size()][columns.length];
+        for (int i = 0; i < imageItems.size(); i++) {
+                data[i][0] = String.valueOf(imageItems.get(i).getId());
+                data[i][1] = imageItems.get(i).getName();
+                data[i][2] = imageItems.get(i).getFilename();
+                data[i][3] = imageItems.get(i).getParam1();
+                data[i][4] = imageItems.get(i).getParam2();
+                data[i][5] = imageItems.get(i).getParam3();
+                data[i][6] = imageItems.get(i).getParam4();
+                data[i][7] = imageItems.get(i).getParam5();
+
         }
     }
 
@@ -79,8 +66,8 @@ public class RecordsTableModel extends AbstractTableModel {
 
     @Override
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
-        //System.out.println("Zmieniona wartość w: " +rowIndex +" : " +columnIndex);
-        //System.out.println("Nowa wartość: " +aValue);
+        System.out.println("Zmieniona wartość w: " +rowIndex +" : " +columnIndex);
+        System.out.println("Nowa wartość: " +aValue);
 
         filterValue = aValue.toString();
         TableRowFilter tableRowFilter = new TableRowFilter(this, "");
