@@ -25,11 +25,13 @@ public class DatabasePanel extends JPanel {
     private String databaseFilename;
     private JTable tableOfRecords;
     private JScrollPane recordsTableScrollPane;
+    private JFrame frame;
     private JPanel mainPanel,buttonsPanel, buttonsPanelGrid, tableAndFiltersPanel;
 
     public DatabasePanel(JFrame frame, String databaseFilename) {
         super(new BorderLayout());
         this.databaseFilename = databaseFilename;
+        this.frame = frame;
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
         this.setOpaque(true);
         JLabel titlePane = new JLabel("Baza danych zdjęć");
@@ -138,12 +140,14 @@ public class DatabasePanel extends JPanel {
         tableAndFiltersPanel.add(recordsTableScrollPane, BorderLayout.CENTER);
 
         JPanel filtersPanel = new JPanel(new FlowLayout());
-        filtersPanel.add(new JButton("OK"));
-        filtersPanel.add(new JButton("OK"));
-        filtersPanel.add(new JButton("OK"));
-        filtersPanel.add(new JButton("OK"));
-        filtersPanel.add(new JButton("OK"));
-        filtersPanel.add(new JButton("OK"));
+        filtersPanel.add(new FilterInput(this.frame, "ID"));
+        filtersPanel.add(new FilterInput(this.frame, "Nazwa"));
+        filtersPanel.add(new FilterInput(this.frame, "Plik"));
+        filtersPanel.add(new FilterInput(this.frame, "Parametr 1"));
+        filtersPanel.add(new FilterInput(this.frame, "Parametr 2"));
+        filtersPanel.add(new FilterInput(this.frame, "Parametr 3"));
+        filtersPanel.add(new FilterInput(this.frame, "Parametr 4"));
+        filtersPanel.add(new FilterInput(this.frame, "Parametr 5"));
 
 
 
