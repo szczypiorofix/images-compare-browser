@@ -140,15 +140,14 @@ public class DatabasePanel extends JPanel {
         tableAndFiltersPanel.add(recordsTableScrollPane, BorderLayout.CENTER);
 
         JPanel filtersPanel = new JPanel(new FlowLayout());
-        filtersPanel.add(new FilterInput(this.frame, "ID"));
-        filtersPanel.add(new FilterInput(this.frame, "Nazwa"));
-        filtersPanel.add(new FilterInput(this.frame, "Plik"));
-        filtersPanel.add(new FilterInput(this.frame, "Parametr 1"));
-        filtersPanel.add(new FilterInput(this.frame, "Parametr 2"));
-        filtersPanel.add(new FilterInput(this.frame, "Parametr 3"));
-        filtersPanel.add(new FilterInput(this.frame, "Parametr 4"));
-        filtersPanel.add(new FilterInput(this.frame, "Parametr 5"));
-
+        filtersPanel.add(new FilterInput(frame, "ID"));
+        filtersPanel.add(new FilterInput(frame, "Nazwa"));
+        filtersPanel.add(new FilterInput(frame, "Plik"));
+        filtersPanel.add(new FilterInput(frame, "Parametr 1"));
+        filtersPanel.add(new FilterInput(frame, "Parametr 2"));
+        filtersPanel.add(new FilterInput(frame, "Parametr 3"));
+        filtersPanel.add(new FilterInput(frame, "Parametr 4"));
+        filtersPanel.add(new FilterInput(frame, "Parametr 5"));
 
 
         tableAndFiltersPanel.add(filtersPanel, BorderLayout.NORTH);

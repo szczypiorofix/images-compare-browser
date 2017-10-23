@@ -9,43 +9,43 @@ import java.awt.event.FocusListener;
 public class FilterInput extends JTextField implements FocusListener {
 
     private String placeholder;
-    private String value;
+    private boolean valueChanged = false;
+    private boolean active = false;
     private JFrame frame;
 
-    // TODO Kliknięcie (może wstawić tutaj FocusListener) powoduje że jeśli value jest != od placeholder to powoduje czyszczenie pola.
-
     public FilterInput(JFrame frame, String placeholder) {
-        super(placeholder);
+        super();
         this.frame = frame;
         this.placeholder = placeholder;
-        this.value = placeholder;
         this.addFocusListener(this);
     }
 
     @Override
     public Dimension getPreferredSize() {
-        return new Dimension(frame.getWidth() / 8, 20);
+        return new Dimension(frame.getWidth() / this.getParent().getComponents().length, 20);
     }
 
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        if (!active && !valueChanged) {
+            Color c = g.getColor();
+            g.setColor(new Color(140, 140, 140));
+            g.drawString(placeholder, 4, 15);
+            g.setColor(c);
+        }
+    }
 
     @Override
     public void focusGained(FocusEvent e) {
-        if (value.equals(placeholder)) {
-            setText("");
-        }
-        System.out.println("Focus gained: " +this.value);
+        active = true;
+        this.repaint();
     }
 
     @Override
     public void focusLost(FocusEvent e) {
-        if (!this.getText().equals(value)) {
-            value = getText();
-        }
-
-        //if (value.equals(placeholder)) {
-        //    setText(placeholder);
-        //}
-
-        System.out.println("Focus lost: " +this.value);
+        active = false;
+        valueChanged = !getText().equals("");
+        this.repaint();
     }
 }
