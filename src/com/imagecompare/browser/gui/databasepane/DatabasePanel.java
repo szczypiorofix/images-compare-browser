@@ -113,44 +113,20 @@ public class DatabasePanel extends JPanel {
         tableOfRecords.setFillsViewportHeight(true);
 
 
-        //TableRowFilter tableRowFilter = new TableRowFilter(recordsTableModel, "");
-
-        //TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);
-        //sorter.setRowFilter(tableRowFilter);
-        //recordsTableModel.setTableSorter(sorter);
-        //tableOfRecords.setRowSorter(sorter);
-
-
-        /*TableColumn column = null;
-        for (int i = 0; i < 5; i++) {
-            column = tableOfRecords.getColumnModel().getColumn(i);
-            if (i == 1) {
-                column.setPreferredWidth(100); //third column is bigger
-            } else {
-                column.setPreferredWidth(50);
-            }
-        }*/
-
+        TableRowFilter tableRowFilter = new TableRowFilter(recordsTableModel, "", 0);
+        TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);
+        sorter.setRowFilter(tableRowFilter);
+        tableOfRecords.setRowSorter(sorter);
 
         recordsTableScrollPane = new JScrollPane(tableOfRecords);
         recordsTableScrollPane.getVerticalScrollBar().setUnitIncrement(15);
-
-
         tableAndFiltersPanel = new JPanel(new BorderLayout());
         tableAndFiltersPanel.add(recordsTableScrollPane, BorderLayout.CENTER);
 
-        JPanel filtersPanel = new JPanel(new FlowLayout());
-        filtersPanel.add(new FilterInput(frame, "ID"));
-        filtersPanel.add(new FilterInput(frame, "Nazwa"));
-        filtersPanel.add(new FilterInput(frame, "Plik"));
-        filtersPanel.add(new FilterInput(frame, "Parametr 1"));
-        filtersPanel.add(new FilterInput(frame, "Parametr 2"));
-        filtersPanel.add(new FilterInput(frame, "Parametr 3"));
-        filtersPanel.add(new FilterInput(frame, "Parametr 4"));
-        filtersPanel.add(new FilterInput(frame, "Parametr 5"));
 
-
-        tableAndFiltersPanel.add(filtersPanel, BorderLayout.NORTH);
+        // Panel grupujący filter inputy.
+        GroupFilterInputs groupFilterInputs = new GroupFilterInputs(frame, recordsTableModel, sorter);
+        tableAndFiltersPanel.add(groupFilterInputs, BorderLayout.NORTH);
 
 
         mainPanel.add(tableAndFiltersPanel, BorderLayout.CENTER);

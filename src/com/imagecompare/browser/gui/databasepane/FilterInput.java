@@ -1,24 +1,35 @@
 package com.imagecompare.browser.gui.databasepane;
 
+import com.imagecompare.browser.gui.databasepane.table.TableRowFilter;
+import com.imagecompare.browser.model.RecordsTableModel;
+
 import javax.swing.*;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 
-public class FilterInput extends JTextField implements FocusListener {
+public class FilterInput extends JTextField implements FocusListener, DocumentListener {
 
     private String placeholder;
     private boolean valueChanged = false;
     private boolean active = false;
     private JFrame frame;
+    private RecordsTableModel recordsTableModel;
+    private GroupFilterInputs groupFilterInputs;
 
-    public FilterInput(JFrame frame, String placeholder) {
+    public FilterInput(JFrame frame, String placeholder, RecordsTableModel recordsTableModel, GroupFilterInputs groupFilterInputs) {
         super();
         this.frame = frame;
         this.placeholder = placeholder;
+        this.recordsTableModel = recordsTableModel;
         this.addFocusListener(this);
+        this.getDocument().addDocumentListener(this);
+        this.groupFilterInputs = groupFilterInputs;
     }
+
 
     @Override
     public Dimension getPreferredSize() {
@@ -48,4 +59,21 @@ public class FilterInput extends JTextField implements FocusListener {
         valueChanged = !getText().equals("");
         this.repaint();
     }
+
+    public void updateFilter() {
+        this.groupFilterInputs.updateFilters();
+    }
+
+    @Override
+    public void insertUpdate(DocumentEvent e) {
+        updateFilter();
+    }
+
+    @Override
+    public void removeUpdate(DocumentEvent e) {
+        updateFilter();
+    }
+
+    @Override
+    public void changedUpdate(DocumentEvent e) {}
 }

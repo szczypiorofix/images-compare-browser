@@ -11,8 +11,6 @@ public class RecordsTableModel extends AbstractTableModel {
 
     private final Object[][] data;
     private final String columns[] = {"ID", "Nazwa", "Plik", "Parametr 1", "Parametr 2", "Parametr 3", "Parametr 4", "Parametr 5"};
-    private String filterValue = "";
-    private TableRowSorter tableRowSorter;
 
     public RecordsTableModel(ArrayList<ImageItem> imageItems) {
 
@@ -68,22 +66,9 @@ public class RecordsTableModel extends AbstractTableModel {
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
         System.out.println("Zmieniona wartość w: " +rowIndex +" : " +columnIndex);
         System.out.println("Nowa wartość: " +aValue);
-
-        filterValue = aValue.toString();
-        TableRowFilter tableRowFilter = new TableRowFilter(this, "");
-        tableRowSorter.setRowFilter(tableRowFilter);
         this.data[rowIndex][columnIndex] = aValue.toString();
-
-        // TUTAJ MOŻNA BEDZIE AKTUALIZOWAC DANE W BAZIE
     }
 
-    public void setTableSorter(TableRowSorter tableRowSorter) {
-        this.tableRowSorter = tableRowSorter;
-    }
-
-    public String getFilterValue() {
-        return filterValue;
-    }
 
     @Override
     public void addTableModelListener(TableModelListener l) {
