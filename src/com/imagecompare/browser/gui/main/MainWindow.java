@@ -117,6 +117,9 @@ public final class MainWindow extends JFrame {
 
         panelDatabase = new DatabasePanel(this, this.databaseFileName);
 
+        // UPDATE DATA
+        mainPanelEast.setFilteredData(panelDatabase.getTableOfRecords());
+
         JScrollPane panelDatabaseScroll = new JScrollPane(panelDatabase);
         panelDatabaseScroll.getVerticalScrollBar().setUnitIncrement(12);
         tabbedPane.addTab("Baza danych", null, panelDatabaseScroll, "Baza danych zdjęć");
@@ -205,7 +208,7 @@ public final class MainWindow extends JFrame {
     }
 
     public void refreshDatabasePanel() {
-        mainPanelEast.refresh();
+        mainPanelEast.refresh(false);
         //rightSplitPane.setLeftComponent(mainPanel);
         //rightSplitPane.setRightComponent(mainPanelEast);
         panelDatabase.refresh();

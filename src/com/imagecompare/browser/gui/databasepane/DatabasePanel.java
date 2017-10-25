@@ -113,24 +113,32 @@ public class DatabasePanel extends JPanel {
         tableOfRecords.setFillsViewportHeight(true);
 
 
-        TableRowFilter tableRowFilter = new TableRowFilter(recordsTableModel, "", 0);
+        TableRowFilter tableRowFilter = new TableRowFilter();
         TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);
-        sorter.setRowFilter(tableRowFilter);
-        tableOfRecords.setRowSorter(sorter);
 
         recordsTableScrollPane = new JScrollPane(tableOfRecords);
         recordsTableScrollPane.getVerticalScrollBar().setUnitIncrement(15);
         tableAndFiltersPanel = new JPanel(new BorderLayout());
         tableAndFiltersPanel.add(recordsTableScrollPane, BorderLayout.CENTER);
 
-
         // Panel grupujący filter inputy.
         GroupFilterInputs groupFilterInputs = new GroupFilterInputs(frame, recordsTableModel, sorter);
+        tableRowFilter.setFilterInputs(groupFilterInputs.getFilterInputs());
+        groupFilterInputs.updateFilters();
+
+        sorter.setRowFilter(tableRowFilter);
+        tableOfRecords.setRowSorter(sorter);
+
         tableAndFiltersPanel.add(groupFilterInputs, BorderLayout.NORTH);
+        groupFilterInputs.setSorter(sorter);
 
 
         mainPanel.add(tableAndFiltersPanel, BorderLayout.CENTER);
 
         this.add(mainPanel, BorderLayout.CENTER);
+    }
+
+    public JTable getTableOfRecords() {
+        return tableOfRecords;
     }
 }

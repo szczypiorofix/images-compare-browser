@@ -11,9 +11,11 @@ import java.awt.*;
 public class GroupFilterInputs extends JPanel {
 
     private FilterInput[] filterInputs;
+    private TableRowSorter<TableModel> sorter;
 
     public GroupFilterInputs(JFrame frame, RecordsTableModel recordsTableModel, TableRowSorter<TableModel> sorter) {
         super(new FlowLayout());
+        this.sorter = sorter;
 
         FilterInput filterInputID = new FilterInput(frame, "Id", recordsTableModel, this);
         FilterInput filterInputName = new FilterInput(frame, "Nazwa", recordsTableModel, this);
@@ -42,13 +44,20 @@ public class GroupFilterInputs extends JPanel {
                 filterInputParam3,
                 filterInputParam4,
                 filterInputParam5};
+        System.out.println(filterInputs.length);
     }
 
-    /*TableRowFilter tableRowFilter = new TableRowFilter(recordsTableModel, this.getText(), col);
-            this.sorter.setRowFilter(tableRowFilter);*/
+    public FilterInput[] getFilterInputs() {
+        return filterInputs;
+    }
 
+    public void setSorter(TableRowSorter<TableModel> sorter) {
+        this.sorter = sorter;
+    }
 
     public void updateFilters() {
-
+        TableRowFilter tableRowFilter = new TableRowFilter();
+        tableRowFilter.setFilterInputs(this.filterInputs);
+        sorter.setRowFilter(tableRowFilter);
     }
 }
