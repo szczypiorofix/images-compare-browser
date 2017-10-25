@@ -67,21 +67,19 @@ public class ImagePanelEast extends JPanel {
     }
 
     public void setFilteredData(JTable tableOfRecords) {
-        //System.out.println(tableOfRecords.getValueAt(1,1));
         imageItems = new ArrayList<>();
         for (int i = 0; i < tableOfRecords.getRowCount(); i++) {
             imageItems.add(new ImageItem(
-                    tableOfRecords.getValueAt(i, 0),
-                    tableOfRecords.getValueAt(i, 1),
-                    tableOfRecords.getValueAt(i, 2),
-                    tableOfRecords.getValueAt(i, 3),
-                    tableOfRecords.getValueAt(i, 4),
-                    tableOfRecords.getValueAt(i, 5),
-                    tableOfRecords.getValueAt(i, 6),
-                    tableOfRecords.getValueAt(i, 7)
+                    Integer.valueOf(tableOfRecords.getValueAt(i, 0).toString()),
+                    tableOfRecords.getValueAt(i, 1).toString(),
+                    tableOfRecords.getValueAt(i, 2).toString(),
+                    tableOfRecords.getValueAt(i, 3).toString(),
+                    tableOfRecords.getValueAt(i, 4).toString(),
+                    tableOfRecords.getValueAt(i, 5).toString(),
+                    tableOfRecords.getValueAt(i, 6).toString(),
+                    tableOfRecords.getValueAt(i, 7).toString()
                     ));
         }
-        System.out.println(tableOfRecords.getRowCount());
         refresh(true);
     }
 }

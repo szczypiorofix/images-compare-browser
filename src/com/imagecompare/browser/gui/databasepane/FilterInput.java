@@ -17,14 +17,12 @@ public class FilterInput extends JTextField implements FocusListener, DocumentLi
     private boolean valueChanged = false;
     private boolean active = false;
     private JFrame frame;
-    private RecordsTableModel recordsTableModel;
     private GroupFilterInputs groupFilterInputs;
 
-    public FilterInput(JFrame frame, String placeholder, RecordsTableModel recordsTableModel, GroupFilterInputs groupFilterInputs) {
+    public FilterInput(JFrame frame, String placeholder, GroupFilterInputs groupFilterInputs) {
         super();
         this.frame = frame;
         this.placeholder = placeholder;
-        this.recordsTableModel = recordsTableModel;
         this.addFocusListener(this);
         this.getDocument().addDocumentListener(this);
         this.groupFilterInputs = groupFilterInputs;

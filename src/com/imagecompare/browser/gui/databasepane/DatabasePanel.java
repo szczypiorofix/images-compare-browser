@@ -122,7 +122,7 @@ public class DatabasePanel extends JPanel {
         tableAndFiltersPanel.add(recordsTableScrollPane, BorderLayout.CENTER);
 
         // Panel grupujący filter inputy.
-        GroupFilterInputs groupFilterInputs = new GroupFilterInputs(frame, recordsTableModel, sorter);
+        GroupFilterInputs groupFilterInputs = new GroupFilterInputs(frame, sorter);
         tableRowFilter.setFilterInputs(groupFilterInputs.getFilterInputs());
         groupFilterInputs.updateFilters();
 

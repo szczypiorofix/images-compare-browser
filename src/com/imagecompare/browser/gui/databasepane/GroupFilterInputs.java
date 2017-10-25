@@ -13,18 +13,18 @@ public class GroupFilterInputs extends JPanel {
     private FilterInput[] filterInputs;
     private TableRowSorter<TableModel> sorter;
 
-    public GroupFilterInputs(JFrame frame, RecordsTableModel recordsTableModel, TableRowSorter<TableModel> sorter) {
+    public GroupFilterInputs(JFrame frame, TableRowSorter<TableModel> sorter) {
         super(new FlowLayout());
         this.sorter = sorter;
 
-        FilterInput filterInputID = new FilterInput(frame, "Id", recordsTableModel, this);
-        FilterInput filterInputName = new FilterInput(frame, "Nazwa", recordsTableModel, this);
-        FilterInput filterInputFilename = new FilterInput(frame, "Plik", recordsTableModel, this);
-        FilterInput filterInputParam1 = new FilterInput(frame, "Parametr 1", recordsTableModel, this);
-        FilterInput filterInputParam2 = new FilterInput(frame, "Parametr 2", recordsTableModel, this);
-        FilterInput filterInputParam3 = new FilterInput(frame, "Parametr 3", recordsTableModel, this);
-        FilterInput filterInputParam4 = new FilterInput(frame, "Parametr 4", recordsTableModel, this);
-        FilterInput filterInputParam5 = new FilterInput(frame, "Parametr 5", recordsTableModel, this);
+        FilterInput filterInputID = new FilterInput(frame, "Id",  this);
+        FilterInput filterInputName = new FilterInput(frame, "Nazwa", this);
+        FilterInput filterInputFilename = new FilterInput(frame, "Plik",  this);
+        FilterInput filterInputParam1 = new FilterInput(frame, "Parametr 1",  this);
+        FilterInput filterInputParam2 = new FilterInput(frame, "Parametr 2",  this);
+        FilterInput filterInputParam3 = new FilterInput(frame, "Parametr 3",  this);
+        FilterInput filterInputParam4 = new FilterInput(frame, "Parametr 4",  this);
+        FilterInput filterInputParam5 = new FilterInput(frame, "Parametr 5",  this);
 
         add(filterInputID);
         add(filterInputName);
@@ -44,7 +44,6 @@ public class GroupFilterInputs extends JPanel {
                 filterInputParam3,
                 filterInputParam4,
                 filterInputParam5};
-        System.out.println(filterInputs.length);
     }
 
     public FilterInput[] getFilterInputs() {
