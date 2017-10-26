@@ -21,7 +21,9 @@ public class TableRowFilter extends RowFilter <Object, Object> {
         for (int i = 0; i < filterInputs.length; i++) {
             entryValues[i] = (String) entry.getValue(i);
         }
-        return (entryValues[1].toLowerCase().contains(filterInputs[1].getText())
+        return (entryValues[0].toLowerCase().contains(filterInputs[0].getText())
+                && (entryValues[1].toLowerCase().contains(filterInputs[1].getText()))
+                && (entryValues[2].toLowerCase().contains(filterInputs[2].getText()))
                 && (entryValues[3].toLowerCase().contains(filterInputs[3].getText()))
                 && (entryValues[4].toLowerCase().contains(filterInputs[4].getText()))
                 && (entryValues[5].toLowerCase().contains(filterInputs[5].getText()))
