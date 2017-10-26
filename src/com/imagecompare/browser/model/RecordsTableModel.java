@@ -1,10 +1,8 @@
 package com.imagecompare.browser.model;
 
-import com.imagecompare.browser.gui.databasepane.table.TableRowFilter;
 
 import javax.swing.event.TableModelListener;
 import javax.swing.table.AbstractTableModel;
-import javax.swing.table.TableRowSorter;
 import java.util.ArrayList;
 
 public class RecordsTableModel extends AbstractTableModel {
@@ -13,7 +11,6 @@ public class RecordsTableModel extends AbstractTableModel {
     private final String columns[] = {"ID", "Nazwa", "Plik", "Parametr 1", "Parametr 2", "Parametr 3", "Parametr 4", "Parametr 5"};
 
     public RecordsTableModel(ArrayList<ImageItem> imageItems) {
-
         data = new Object[imageItems.size()][columns.length];
         for (int i = 0; i < imageItems.size(); i++) {
                 data[i][0] = String.valueOf(imageItems.get(i).getId());
@@ -24,7 +21,6 @@ public class RecordsTableModel extends AbstractTableModel {
                 data[i][5] = imageItems.get(i).getParam3();
                 data[i][6] = imageItems.get(i).getParam4();
                 data[i][7] = imageItems.get(i).getParam5();
-
         }
     }
 
@@ -50,11 +46,8 @@ public class RecordsTableModel extends AbstractTableModel {
 
     @Override
     public boolean isCellEditable(int rowIndex, int columnIndex) {
-        //return false;
-        // EDYTOWALNE POLA
-        //if (rowIndex > 0)
-        return true;
-        //else return false;
+        //return true;
+        return false;
     }
 
     @Override
@@ -68,7 +61,6 @@ public class RecordsTableModel extends AbstractTableModel {
         System.out.println("Nowa wartość: " +aValue);
         this.data[rowIndex][columnIndex] = aValue.toString();
     }
-
 
     @Override
     public void addTableModelListener(TableModelListener l) {

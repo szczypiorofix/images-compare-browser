@@ -15,12 +15,13 @@ import javax.swing.table.*;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.print.PrinterException;
 import java.util.ArrayList;
 
 
 public class DatabasePanel extends JPanel {
 
-    private FunctionalButton buttonAdd, buttonDelete, buttonEdit;
+    private FunctionalButton buttonAdd, buttonDelete, buttonEdit, buttonPrint;
     private AddEditRecordDialog addRecordDialog, editRecordDialog;
     private String databaseFilename;
     private JTable tableOfRecords;
@@ -69,9 +70,25 @@ public class DatabasePanel extends JPanel {
             // n = 0 : yes, n = 1 : no
         });
 
+        buttonPrint = new FunctionalButton("Drukuj");
+        buttonPrint.addActionListener((ActionEvent e) -> {
+            // DRUKOWANIE TABLICY
+            try {
+                boolean complete = tableOfRecords.print();
+                if (complete) {
+                    /* show a success message  */
+                } else {
+                    /*show a message indicating that printing was cancelled */
+                }
+            } catch (PrinterException pe) {
+                /* Printing failed, report to the user */
+            }
+        });
+
         buttonsPanelGrid.add(buttonAdd);
         buttonsPanelGrid.add(buttonEdit);
         buttonsPanelGrid.add(buttonDelete);
+        buttonsPanelGrid.add(buttonPrint);
 
         buttonsPanel.add(buttonsPanelGrid);
 
@@ -111,6 +128,7 @@ public class DatabasePanel extends JPanel {
         tableOfRecords.setFillsViewportHeight(true);
         tableOfRecords.setPreferredScrollableViewportSize(new Dimension(500, 70));
         tableOfRecords.setFillsViewportHeight(true);
+
 
 
         TableRowFilter tableRowFilter = new TableRowFilter();
