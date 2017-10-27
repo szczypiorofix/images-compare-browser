@@ -126,7 +126,7 @@ public final class MainWindow extends JFrame {
         JScrollPane panelDatabaseScroll = new JScrollPane(panelDatabase);
         panelDatabaseScroll.getVerticalScrollBar().setUnitIncrement(12);
         tabbedPane.addTab("Baza danych", null, panelDatabaseScroll, "Baza danych zdjęć");
-        //tabbedPane.setColors();
+        tabbedPane.setColors();
 
         // IKONA
         java.net.URL imgUrl = MainClass.class.getResource("/conn_off.png");

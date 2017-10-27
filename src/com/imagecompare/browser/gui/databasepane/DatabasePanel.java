@@ -69,7 +69,7 @@ public class DatabasePanel extends JPanel {
                     options,
                     options[0]);
             System.out.println(n);
-            // n = 0 : yes, n = 1 : no
+            // 0=yes, 1=no
         });
 
         buttonPrint = new FunctionalButton("Drukuj");

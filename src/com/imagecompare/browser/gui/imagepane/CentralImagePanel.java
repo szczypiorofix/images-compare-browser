@@ -50,12 +50,9 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
 
     public CentralImagePanel() {
         super(new BorderLayout());
-
         this.selectorX = 1;
-
         this.addMouseListener(this);
         this.addMouseMotionListener(this);
-        //this.setPreferredSize(new Dimension(this.imageLeft.getWidth(), (this.imageLeft.getHeight() + this.imageRight.getHeight())/2));
     }
 
 
@@ -79,7 +76,7 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
 
             g.drawImage(cropImage(getScaledImage(this.imageLeft, scaledWidth, scaledHeight),
                     new Rectangle(dx + DIVIDER_SIZE, this.getHeight())), 0, 0, dx + DIVIDER_SIZE, this.getHeight(),this);
-            //}
+
 
             g.setColor(dividerColor);
             g.fillRect(dx, 0, DIVIDER_SIZE, this.getHeight());
