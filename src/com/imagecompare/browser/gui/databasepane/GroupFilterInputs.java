@@ -1,7 +1,7 @@
 package com.imagecompare.browser.gui.databasepane;
 
 import com.imagecompare.browser.gui.databasepane.table.TableRowFilter;
-import com.imagecompare.browser.model.RecordsTableModel;
+import com.imagecompare.browser.gui.imagepane.ImagePanelEast;
 
 import javax.swing.*;
 import javax.swing.table.TableModel;
@@ -12,12 +12,16 @@ public class GroupFilterInputs extends JPanel {
 
     private FilterInput[] filterInputs;
     private TableRowSorter<TableModel> sorter;
-
-    public GroupFilterInputs(JFrame frame, TableRowSorter<TableModel> sorter) {
+    private ImagePanelEast imagePanelEast;
+    private JTable tableOfRecords;
+;
+    public GroupFilterInputs(JFrame frame, TableRowSorter<TableModel> sorter, ImagePanelEast imagePanelEast, JTable tableOfRecords) {
         super(new FlowLayout());
         this.sorter = sorter;
+        this.imagePanelEast = imagePanelEast;
+        this.tableOfRecords = tableOfRecords;
 
-        FilterInput filterInputID = new FilterInput(frame, "Id",  this);
+        FilterInput filterInputID = new FilterInput(frame, "ID",  this);
         FilterInput filterInputName = new FilterInput(frame, "Nazwa", this);
         FilterInput filterInputFilename = new FilterInput(frame, "Plik",  this);
         FilterInput filterInputParam1 = new FilterInput(frame, "Parametr 1",  this);
@@ -54,9 +58,18 @@ public class GroupFilterInputs extends JPanel {
         this.sorter = sorter;
     }
 
+    public void setImagePanelEast(ImagePanelEast imagePanelEast) {
+        this.imagePanelEast = imagePanelEast;
+    }
+
     public void updateFilters() {
         TableRowFilter tableRowFilter = new TableRowFilter();
         tableRowFilter.setFilterInputs(this.filterInputs);
         sorter.setRowFilter(tableRowFilter);
+
+        if (imagePanelEast != null) {
+            imagePanelEast.refresh(true);
+            imagePanelEast.setFilteredData(tableOfRecords);
+        }
     }
 }

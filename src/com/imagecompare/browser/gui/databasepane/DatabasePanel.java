@@ -2,6 +2,7 @@ package com.imagecompare.browser.gui.databasepane;
 
 
 import com.imagecompare.browser.gui.databasepane.table.TableRowFilter;
+import com.imagecompare.browser.gui.imagepane.ImagePanelEast;
 import com.imagecompare.browser.gui.shared.FunctionalButton;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.model.RecordsTableModel;
@@ -9,7 +10,6 @@ import com.imagecompare.browser.system.SQLiteConnector;
 import com.imagecompare.browser.gui.databasepane.table.DatabaseTableCellRenderer;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.*;
 
@@ -28,6 +28,8 @@ public class DatabasePanel extends JPanel {
     private JScrollPane recordsTableScrollPane;
     private JFrame frame;
     private JPanel mainPanel,buttonsPanel, buttonsPanelGrid, tableAndFiltersPanel;
+    private GroupFilterInputs groupFilterInputs;
+    private ImagePanelEast imagePanelEast = null;
 
     public DatabasePanel(JFrame frame, String databaseFilename) {
         super(new BorderLayout());
@@ -76,12 +78,12 @@ public class DatabasePanel extends JPanel {
             try {
                 boolean complete = tableOfRecords.print();
                 if (complete) {
-                    /* show a success message  */
+                    JOptionPane.showMessageDialog(this, "Drukowanie powiodło się", "Drukowanie przebiegło pomyślnie", JOptionPane.INFORMATION_MESSAGE);
                 } else {
-                    /*show a message indicating that printing was cancelled */
+                    JOptionPane.showMessageDialog(this, "Drukowanie nie powiodło się", "Drukowanie zostało przerwane.", JOptionPane.WARNING_MESSAGE);
                 }
             } catch (PrinterException pe) {
-                /* Printing failed, report to the user */
+                JOptionPane.showMessageDialog(this, "Drukowanie nie powiodło się", "Błąd drukowania. Drukowanie nie powiodło się.", JOptionPane.ERROR_MESSAGE);
             }
         });
 
@@ -95,8 +97,11 @@ public class DatabasePanel extends JPanel {
         refresh();
     }
 
-    public void refresh() {
+    public void setImagePanelEast(ImagePanelEast imagePanelEast) {
+        groupFilterInputs.setImagePanelEast(imagePanelEast);
+    }
 
+    public void refresh() {
         mainPanel.removeAll();
         mainPanel.add(buttonsPanel, BorderLayout.NORTH);
 
@@ -106,19 +111,10 @@ public class DatabasePanel extends JPanel {
         }
 
         RecordsTableModel recordsTableModel = new RecordsTableModel(imageItems);
-        tableOfRecords = new JTable(recordsTableModel);// {
-            //protected JTableHeader createDefaultTableHeader() {
-           //     return new GroupableTableHeader(columnModel);
-           // }
-        //};
+        tableOfRecords = new JTable(recordsTableModel);
 
-        // TODO Dodać pasek postępu przy wczytywaniu danych z bazy w momencie ładowania programu
-        // TODO Dodać wstępną opcję drukowania wyników z bazy - o ile się da
-
-        //DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
         DatabaseTableCellRenderer centerRenderer = new DatabaseTableCellRenderer();
         centerRenderer.setHorizontalAlignment( JLabel.CENTER );
-        //tableOfRecords.setDefaultRenderer(String.class, centerRenderer);
 
         // SINGLE CELL SELECTION
         tableOfRecords.setCellSelectionEnabled(true);
@@ -129,8 +125,6 @@ public class DatabasePanel extends JPanel {
         tableOfRecords.setPreferredScrollableViewportSize(new Dimension(500, 70));
         tableOfRecords.setFillsViewportHeight(true);
 
-
-
         TableRowFilter tableRowFilter = new TableRowFilter();
         TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);
 
@@ -140,7 +134,7 @@ public class DatabasePanel extends JPanel {
         tableAndFiltersPanel.add(recordsTableScrollPane, BorderLayout.CENTER);
 
         // Panel grupujący filter inputy.
-        GroupFilterInputs groupFilterInputs = new GroupFilterInputs(frame, sorter);
+        groupFilterInputs = new GroupFilterInputs(frame, sorter, imagePanelEast, tableOfRecords);
         tableRowFilter.setFilterInputs(groupFilterInputs.getFilterInputs());
         groupFilterInputs.updateFilters();
 
@@ -149,7 +143,6 @@ public class DatabasePanel extends JPanel {
 
         tableAndFiltersPanel.add(groupFilterInputs, BorderLayout.NORTH);
         groupFilterInputs.setSorter(sorter);
-
 
         mainPanel.add(tableAndFiltersPanel, BorderLayout.CENTER);
 

@@ -1,8 +1,5 @@
 package com.imagecompare.browser.gui.databasepane;
 
-import com.imagecompare.browser.gui.databasepane.table.TableRowFilter;
-import com.imagecompare.browser.model.RecordsTableModel;
-
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;

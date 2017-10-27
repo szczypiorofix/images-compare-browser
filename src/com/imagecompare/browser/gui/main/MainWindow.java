@@ -96,9 +96,14 @@ public final class MainWindow extends JFrame {
         imageViewerPanel.setScrollPane(scrollPanel);
         mainPanel.add(scrollPanel, BorderLayout.CENTER);
 
+        panelDatabase = new DatabasePanel(this, this.databaseFileName);
+
         rightSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
-        mainPanelEast = new ImagePanelEast(databaseFileName, this, imageViewerPanel);
+        mainPanelEast = new ImagePanelEast(databaseFileName, imageViewerPanel, panelDatabase);
         mainPanelWest = new ImagePanelWest(databaseFileName, this, imageViewerPanel);
+
+        panelDatabase.setImagePanelEast(mainPanelEast);
+        mainPanelEast.refresh(false);
 
         rightSplitPane.setDividerSize(6);
         rightSplitPane.setContinuousLayout(true);
@@ -115,15 +120,13 @@ public final class MainWindow extends JFrame {
 
         tabbedPane.addTab("Przeglądarka zdjęć", null, leftSplitPane, "Lista zdjęć");
 
-        panelDatabase = new DatabasePanel(this, this.databaseFileName);
-
         // UPDATE DATA
         mainPanelEast.setFilteredData(panelDatabase.getTableOfRecords());
 
         JScrollPane panelDatabaseScroll = new JScrollPane(panelDatabase);
         panelDatabaseScroll.getVerticalScrollBar().setUnitIncrement(12);
         tabbedPane.addTab("Baza danych", null, panelDatabaseScroll, "Baza danych zdjęć");
-        tabbedPane.setColors();
+        //tabbedPane.setColors();
 
         // IKONA
         java.net.URL imgUrl = MainClass.class.getResource("/conn_off.png");
@@ -209,8 +212,6 @@ public final class MainWindow extends JFrame {
 
     public void refreshDatabasePanel() {
         mainPanelEast.refresh(false);
-        //rightSplitPane.setLeftComponent(mainPanel);
-        //rightSplitPane.setRightComponent(mainPanelEast);
         panelDatabase.refresh();
     }
 

@@ -1,12 +1,11 @@
 package com.imagecompare.browser.gui.imagepane;
 
-import com.imagecompare.browser.gui.main.MainWindow;
+import com.imagecompare.browser.gui.databasepane.DatabasePanel;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.system.SQLiteConnector;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 
 public class ImagePanelEast extends JPanel {
@@ -15,32 +14,27 @@ public class ImagePanelEast extends JPanel {
     private JList<String> imagesList;
     private String databaseFilename;
     private CentralImagePanel centralImagePanel;
-    private JScrollPane imagePanelEastScrollPane;
+    private JScrollPane imagesListScrollPane;
     private ArrayList<ImageItem> imageItems;
+    private DatabasePanel databasePanel;
 
-    public ImagePanelEast(String databaseFilename, MainWindow mainWindow, CentralImagePanel centralImagePanel) {
+    public ImagePanelEast(String databaseFilename, CentralImagePanel centralImagePanel, DatabasePanel databasePanel) {
         super(new BorderLayout());
         this.databaseFilename = databaseFilename;
         this.centralImagePanel = centralImagePanel;
-        refresh(false);
+        this.databasePanel = databasePanel;
         this.setPreferredSize(new Dimension(300, 700));
     }
+
 
     public void refresh(boolean filteredData) {
         this.removeAll();
         mainPanel = new JPanel(new BorderLayout());
         JPanel labelAndRefreshButtonPanel = new JPanel(new FlowLayout());
         labelAndRefreshButtonPanel.add(new JLabel("Lista obrazków:"));
-        JButton refreshDataButton = new JButton("Odśwież");
-        refreshDataButton.addActionListener((ActionEvent e) -> {
-            refresh(true);
-        });
-        labelAndRefreshButtonPanel.add(refreshDataButton);
-
 
         mainPanel.add(labelAndRefreshButtonPanel, BorderLayout.NORTH);
         DefaultListModel<String> listModel = new DefaultListModel<>();
-
 
         if (!filteredData) {
             imageItems = new ArrayList<>();
@@ -55,15 +49,28 @@ public class ImagePanelEast extends JPanel {
 
         imagesList = new JList<>(listModel);
 
+        imagesList.setVisibleRowCount(10);
+        imagesList.setCellRenderer(new DefaultListCellRenderer() {
+            @Override
+            public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+                Component renderer = super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+                if (renderer instanceof JLabel) {
+                    ((JLabel) renderer).setText(imageItems.get(index).getName());
+                }
+                return renderer;
+            }
+        });
+
         imagesList.addListSelectionListener(e -> {
             if (!e.getValueIsAdjusting() && centralImagePanel.isImageLoaded()) {
-                //System.out.println(imagesList.getSelectedValue());
                 centralImagePanel.loadImage(centralImagePanel.getImageLeftName(), imagesList.getSelectedValue());
             }
         });
-        mainPanel.add(imagesList);
-        imagePanelEastScrollPane = new JScrollPane(mainPanel);
-        this.add(imagePanelEastScrollPane);
+
+        imagesListScrollPane = new JScrollPane(imagesList);
+        imagesListScrollPane.getVerticalScrollBar().setUnitIncrement(15);
+        mainPanel.add(imagesListScrollPane);
+        this.add(mainPanel);
     }
 
     public void setFilteredData(JTable tableOfRecords) {

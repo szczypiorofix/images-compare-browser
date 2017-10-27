@@ -101,6 +101,7 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
         } catch (IOException e) {
             e.printStackTrace();
             Log.put(false, Level.WARNING, "Błąd otwierania pliku "+ imageLeftName +" : "+e.getMessage(), this.getClass().getName());
+            JOptionPane.showMessageDialog(this, "Błąd otwierania pliku "+imageLeftName +" !!!", "Błąd otwierania pliku!" , JOptionPane.ERROR_MESSAGE);
         }
         finally {
             this.imageLeftName = imageLeftName;
@@ -111,6 +112,7 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
         } catch (IOException e) {
             e.printStackTrace();
             Log.put(false, Level.WARNING, "Błąd otwierania pliku "+ imageRightName +" : "+e.getMessage(), this.getClass().getName());
+            JOptionPane.showMessageDialog(this, "Błąd otwierania pliku "+imageRightName +" !!!", "Błąd otwierania pliku!", JOptionPane.ERROR_MESSAGE);
         }
         finally {
             this.imageRightName = imageRightName;
