@@ -27,7 +27,7 @@ public class InformationDialog extends JDialog {
         titleLabel.setFont(new Font("Tahoma", Font.PLAIN, 18));
         titleLabel.setBounds(20, 0, 240, 50);
 
-        JLabel versionContentLabel = new JLabel("ver. 0.6");
+        JLabel versionContentLabel = new JLabel("ver. 0.86");
         versionContentLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
         versionContentLabel.setBounds(100, 35, 50, 50);
 
