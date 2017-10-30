@@ -1,5 +1,6 @@
 package com.imagecompare.browser.gui.databasepane;
 
+import com.imagecompare.browser.gui.databasepane.table.DatabaseTable;
 import com.imagecompare.browser.gui.databasepane.table.TableRowFilter;
 import com.imagecompare.browser.gui.imagepane.ImagePanelEast;
 
@@ -13,9 +14,9 @@ public class GroupFilterInputs extends JPanel {
     private FilterInput[] filterInputs;
     private TableRowSorter<TableModel> sorter;
     private ImagePanelEast imagePanelEast;
-    private JTable tableOfRecords;
+    private DatabaseTable tableOfRecords;
 ;
-    public GroupFilterInputs(JFrame frame, TableRowSorter<TableModel> sorter, ImagePanelEast imagePanelEast, JTable tableOfRecords) {
+    public GroupFilterInputs(JFrame frame, TableRowSorter<TableModel> sorter, ImagePanelEast imagePanelEast, DatabaseTable tableOfRecords) {
         super(new FlowLayout());
         this.sorter = sorter;
         this.imagePanelEast = imagePanelEast;

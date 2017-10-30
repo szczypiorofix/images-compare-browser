@@ -19,12 +19,13 @@ import java.util.logging.Level;
 public class CentralImagePanel extends JPanel implements MouseMotionListener, MouseListener {
 
     private BufferedImage imageLeft = null, imageRight = null;
-    private Point location;
+    private Point componentLocation, dragStart;
     private final int DIVIDER_SIZE = 2;
     private final Color dividerColor = new Color(255, 20, 30);
     private int selectorX = 300;
     private JScrollPane scrollPane = null;
     private boolean imageLoaded = false;
+    private boolean drag = false;
     private String imageLeftName = "", imageRightName = "";
 
     public CentralImagePanel(String imageName1, String imageName2) {
@@ -73,6 +74,8 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
 
             scaledHeight = this.getHeight();
             scaledWidth = this.getWidth();
+
+            // TODO SKALOWANIE DO MNIEJSZEGO OBRAZKA, NP. LEWY WYŻSZY OD PRAWEGO TO LEWY JEST ZMNNIEJSZANY TAK ZEBY WYS LEWEGO = WYS PRAWEGO Z ZACHOWANIEM ASPECT RATIO
 
             g.drawImage(cropImage(getScaledImage(this.imageLeft, scaledWidth, scaledHeight),
                     new Rectangle(dx + DIVIDER_SIZE, this.getHeight())), 0, 0, dx + DIVIDER_SIZE, this.getHeight(),this);
@@ -199,17 +202,23 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
     public void mousePressed(MouseEvent e) {
         if (SwingUtilities.isLeftMouseButton(e)) {
             Component component = e.getComponent();
-            location = component.getLocation(location);
-            this.selectorX = location.x + this.scrollPane.getHorizontalScrollBar().getValue() + e.getX();
+            componentLocation = component.getLocation(componentLocation);
+            this.selectorX = componentLocation.x + this.scrollPane.getHorizontalScrollBar().getValue() + e.getX();
             if (this.selectorX <= 0) this.selectorX = 1;
         }
 
+        if (SwingUtilities.isRightMouseButton(e)) {
+            drag = true;
+            //System.out.println("DRAG ON");
+        }
         this.repaint();
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
         this.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        drag = false;
+        //System.out.println("DRAG OFF");
     }
 
     @Override
@@ -222,38 +231,38 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
 
     @Override
     public void mouseDragged(MouseEvent e) {
-
         if (SwingUtilities.isLeftMouseButton(e)) {
             Component component = e.getComponent();
-            location = component.getLocation(location);
-            this.selectorX = location.x + this.scrollPane.getHorizontalScrollBar().getValue() + e.getX();
+            componentLocation = component.getLocation(componentLocation);
+            this.selectorX = componentLocation.x + this.scrollPane.getHorizontalScrollBar().getValue() + e.getX();
             if (this.selectorX <= 0) this.selectorX = 1;
         }
 
-        if (SwingUtilities.isRightMouseButton(e)) {
-            this.setCursor(new Cursor(Cursor.MOVE_CURSOR));
-            Component component = e.getComponent();
-            location = component.getLocation(location);
-            int dx = this.scrollPane.getHorizontalScrollBar().getWidth() - (location.x + e.getX());
-            System.out.println(this.scrollPane.getHorizontalScrollBar().getWidth() + location.x - e.getX());
-            if (dx > 0 && dx < this.scrollPane.getHorizontalScrollBar().getWidth()) {
+        if (drag) {
+            if (SwingUtilities.isRightMouseButton(e)) {
+                this.setCursor(new Cursor(Cursor.MOVE_CURSOR));
+
+                Component component = e.getComponent();
+                componentLocation = component.getLocation(componentLocation);
+
+                int dx = this.scrollPane.getHorizontalScrollBar().getWidth() - (componentLocation.x + e.getX());
+
+                //System.out.println(this.scrollPane.getHorizontalScrollBar().getWidth() + " - (" +location.x + " + " +e.getX() +")");
+
+                if (dx < 0) dx = 0;
+                if (dx > this.scrollPane.getHorizontalScrollBar().getWidth()) dx = this.scrollPane.getHorizontalScrollBar().getWidth();
+
                 this.scrollPane.getHorizontalScrollBar().setValue(dx);
             }
         }
-
         this.repaint();
     }
 
     @Override
-    public void mouseMoved(MouseEvent e) {
-    }
+    public void mouseMoved(MouseEvent e) {}
 
     public String getImageLeftName() {
         return imageLeftName;
-    }
-
-    public String getImageRightName() {
-        return imageRightName;
     }
 
     public boolean isImageLoaded() {

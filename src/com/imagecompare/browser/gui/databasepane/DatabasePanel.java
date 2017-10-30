@@ -1,6 +1,7 @@
 package com.imagecompare.browser.gui.databasepane;
 
 
+import com.imagecompare.browser.gui.databasepane.table.DatabaseTable;
 import com.imagecompare.browser.gui.databasepane.table.TableRowFilter;
 import com.imagecompare.browser.gui.imagepane.ImagePanelEast;
 import com.imagecompare.browser.gui.shared.FunctionalButton;
@@ -15,6 +16,8 @@ import javax.swing.table.*;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.print.PrinterException;
 import java.util.ArrayList;
 
@@ -24,7 +27,7 @@ public class DatabasePanel extends JPanel {
     private FunctionalButton buttonAdd, buttonDelete, buttonEdit, buttonPrint;
     private AddEditRecordDialog addRecordDialog, editRecordDialog;
     private String databaseFilename;
-    private JTable tableOfRecords;
+    private DatabaseTable tableOfRecords;
     private JScrollPane recordsTableScrollPane;
     private JFrame frame;
     private JPanel mainPanel,buttonsPanel, buttonsPanelGrid, tableAndFiltersPanel;
@@ -61,15 +64,19 @@ public class DatabasePanel extends JPanel {
             String[] options = {"Tak", "Nie"};
             int n = JOptionPane.showOptionDialog(
                     frame,
-                    "Usunąć pozycję?",
+                    "Usunąć pozycję " +tableOfRecords.getSelectedItem().getName() + "?",
                     "Usunąć pozycję?",
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.WARNING_MESSAGE,
                     null,
                     options,
                     options[0]);
-            System.out.println(n);
             // 0=yes, 1=no
+            if (n == 0) {
+                System.out.println("Usunięto pozycję (ID): "+getTableOfRecords().getSelectedItem().getId());
+                System.out.println("Usunięto pozycję (Name): "+getTableOfRecords().getSelectedItem().getName());
+                tableOfRecords.removeRecord(tableOfRecords.getSelectedItem());
+            }
         });
 
         buttonPrint = new FunctionalButton("Drukuj");
@@ -111,19 +118,10 @@ public class DatabasePanel extends JPanel {
         }
 
         RecordsTableModel recordsTableModel = new RecordsTableModel(imageItems);
-        tableOfRecords = new JTable(recordsTableModel);
+        tableOfRecords = new DatabaseTable(recordsTableModel);
 
-        DatabaseTableCellRenderer centerRenderer = new DatabaseTableCellRenderer();
-        centerRenderer.setHorizontalAlignment( JLabel.CENTER );
-
-        // SINGLE CELL SELECTION
-        tableOfRecords.setCellSelectionEnabled(true);
-        ListSelectionModel select = tableOfRecords.getSelectionModel();
-        select.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-
-        tableOfRecords.setFillsViewportHeight(true);
-        tableOfRecords.setPreferredScrollableViewportSize(new Dimension(500, 70));
-        tableOfRecords.setFillsViewportHeight(true);
+        //DatabaseTableCellRenderer centerRenderer = new DatabaseTableCellRenderer();
+        //centerRenderer.setHorizontalAlignment( JLabel.CENTER );
 
         TableRowFilter tableRowFilter = new TableRowFilter();
         TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);
@@ -149,7 +147,7 @@ public class DatabasePanel extends JPanel {
         this.add(mainPanel, BorderLayout.CENTER);
     }
 
-    public JTable getTableOfRecords() {
+    public DatabaseTable getTableOfRecords() {
         return tableOfRecords;
     }
 }

@@ -1,6 +1,7 @@
 package com.imagecompare.browser.gui.imagepane;
 
 import com.imagecompare.browser.gui.databasepane.DatabasePanel;
+import com.imagecompare.browser.gui.databasepane.table.DatabaseTable;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.system.SQLiteConnector;
 
@@ -73,7 +74,7 @@ public class ImagePanelEast extends JPanel {
         this.add(mainPanel);
     }
 
-    public void setFilteredData(JTable tableOfRecords) {
+    public void setFilteredData(DatabaseTable tableOfRecords) {
         imageItems = new ArrayList<>();
         for (int i = 0; i < tableOfRecords.getRowCount(); i++) {
             imageItems.add(new ImageItem(
