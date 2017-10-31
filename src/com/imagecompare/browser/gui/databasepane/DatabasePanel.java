@@ -8,7 +8,6 @@ import com.imagecompare.browser.gui.shared.FunctionalButton;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.model.RecordsTableModel;
 import com.imagecompare.browser.system.SQLiteConnector;
-import com.imagecompare.browser.gui.databasepane.table.DatabaseTableCellRenderer;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -16,8 +15,6 @@ import javax.swing.table.*;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.awt.print.PrinterException;
 import java.util.ArrayList;
 
@@ -40,6 +37,10 @@ public class DatabasePanel extends JPanel {
         this.frame = frame;
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
         this.setOpaque(true);
+    }
+
+
+    public void setImagePanelEast(ImagePanelEast imagePanelEast) {
         JLabel titlePane = new JLabel("Baza danych zdjęć");
         titlePane.setHorizontalAlignment(JLabel.CENTER);
         titlePane.setFont(new Font("Tahoma", Font.BOLD, 18));
@@ -73,9 +74,10 @@ public class DatabasePanel extends JPanel {
                     options[0]);
             // 0=yes, 1=no
             if (n == 0) {
-                System.out.println("Usunięto pozycję (ID): "+getTableOfRecords().getSelectedItem().getId());
-                System.out.println("Usunięto pozycję (Name): "+getTableOfRecords().getSelectedItem().getName());
                 tableOfRecords.removeRecord(tableOfRecords.getSelectedItem());
+                refresh();
+                imagePanelEast.setFilteredData(tableOfRecords);
+                imagePanelEast.refresh(true);
             }
         });
 
@@ -102,9 +104,6 @@ public class DatabasePanel extends JPanel {
         buttonsPanel.add(buttonsPanelGrid);
 
         refresh();
-    }
-
-    public void setImagePanelEast(ImagePanelEast imagePanelEast) {
         groupFilterInputs.setImagePanelEast(imagePanelEast);
     }
 
@@ -119,9 +118,6 @@ public class DatabasePanel extends JPanel {
 
         RecordsTableModel recordsTableModel = new RecordsTableModel(imageItems);
         tableOfRecords = new DatabaseTable(recordsTableModel);
-
-        //DatabaseTableCellRenderer centerRenderer = new DatabaseTableCellRenderer();
-        //centerRenderer.setHorizontalAlignment( JLabel.CENTER );
 
         TableRowFilter tableRowFilter = new TableRowFilter();
         TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);

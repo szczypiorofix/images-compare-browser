@@ -2,20 +2,21 @@ package com.imagecompare.browser.gui.databasepane.table;
 
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.model.RecordsTableModel;
+import com.imagecompare.browser.system.Log;
+import com.imagecompare.browser.system.SQLiteConnector;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.util.logging.Level;
 
 public class DatabaseTable extends JTable implements MouseListener{
 
-    private RecordsTableModel recordsTableModel;
     private int selectedRow = 0;
 
     public DatabaseTable(RecordsTableModel recordsTableModel) {
         super(recordsTableModel);
-        this.recordsTableModel = recordsTableModel;
 
         // SINGLE CELL SELECTION
         /*setCellSelectionEnabled(true);
@@ -30,8 +31,8 @@ public class DatabaseTable extends JTable implements MouseListener{
     }
 
     public void removeRecord(ImageItem imageItem) {
-        //repaint();
-
+        SQLiteConnector.removeItemFromDatabase(imageItem);
+        Log.put(false, Level.INFO, "Usunięto rekord z bazy danych: "+imageItem.getName(), this.getClass().getName());
     }
 
     @Override

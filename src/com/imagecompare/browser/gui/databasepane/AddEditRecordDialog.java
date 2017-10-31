@@ -1,20 +1,17 @@
 package com.imagecompare.browser.gui.databasepane;
 
 
+import com.imagecompare.browser.MainClass;
 import com.imagecompare.browser.gui.shared.OpenFileDialog;
+import com.imagecompare.browser.system.Log;
 
-import javax.swing.JPanel;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.JScrollPane;
+import javax.imageio.ImageIO;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.WindowConstants;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.util.logging.Level;
 
 
 public class AddEditRecordDialog extends JDialog {
@@ -24,11 +21,19 @@ public class AddEditRecordDialog extends JDialog {
     private Font font;
     private JScrollPane scrollPane;
     private JPanel mainPanel;
+    private JPanel northPanel;
+    private JLabel titleLabel;
+    private JButton addButton;
+    private JPanel mainFieldsPanel;
+    private JButton buttonSubmit, buttonNext, buttonPrev;
+    private JPanel buttonSubmitPanel;
+    private JLabel fieldItemId;
+    private JTextField fieldItemName, fieldItemParam1, fieldItemParam2, fieldItemParam3, fieldItemParam4, fieldItemParam5;
 
     public AddEditRecordDialog(JFrame panel, String name, int type) {
         super(panel, name, true);
         this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        this.setSize(400, 280);
+        this.setSize(400, 300);
         this.setLocationRelativeTo(panel);
         this.setLayout(new BorderLayout());
 
@@ -46,29 +51,53 @@ public class AddEditRecordDialog extends JDialog {
     }
 
     private void showAddRecordDialog() {
-        JLabel titleLabel = new JLabel("Dodawanie nowej pozycji do bazy danych");
+        showCommonContent(true);
+        titleLabel.setText("Dodawanie rekordu:");
+    }
+
+    private void showEditRecordDialog() {
+        setSize(400, 280);
+        showCommonContent(false);
+        titleLabel.setText("Edycja rekordu:");
+    }
+
+    private void showCommonContent(boolean addFile) {
+        titleLabel = new JLabel();
         titleLabel.setFont(font);
 
-        JPanel northPanel = new JPanel(new FlowLayout());
-        JButton addButton = new JButton("Dodaj plik");
+        northPanel = new JPanel(new FlowLayout());
+        addButton = new JButton("Dodaj plik");
         addButton.addActionListener((ActionEvent e) -> {
             OpenFileDialog fc = new OpenFileDialog(OpenFileDialog.IMAGE_FILE);
             int returnVal = fc.showDialog(this, "Otwórz");
         });
 
         northPanel.add(titleLabel, BorderLayout.NORTH);
-        northPanel.add(addButton, BorderLayout.SOUTH);
-        northPanel.setPreferredSize(new Dimension(250, 80));
+        if (addFile) {
+            northPanel.add(addButton, BorderLayout.SOUTH);
+        }
+
+        northPanel.setPreferredSize(new Dimension(250, 40));
         mainPanel.add(northPanel, BorderLayout.NORTH);
 
         // INPUT FIELDS
-        JTextField fieldItemName = new JTextField();
-        JTextField fieldItemParam1 = new JTextField();
-        JTextField fieldItemParam2 = new JTextField();
-        JTextField fieldItemParam3 = new JTextField();
-        JTextField fieldItemParam4 = new JTextField();
+        fieldItemId = new  JLabel();
+        fieldItemName = new JTextField();
+        fieldItemParam1 = new JTextField();
+        fieldItemParam2 = new JTextField();
+        fieldItemParam3 = new JTextField();
+        fieldItemParam4 = new JTextField();
+        fieldItemParam5 = new JTextField();
 
-        JPanel mainFieldsPanel = new JPanel(new GridLayout(5, 4));
+        JLabel idNameLabel = new JLabel();
+        if (!addFile) {
+            fieldItemId.setText("ID number");
+            idNameLabel.setText("ID");
+        }
+
+        mainFieldsPanel = new JPanel(new GridLayout(7, 4));
+        mainFieldsPanel.add(idNameLabel);
+        mainFieldsPanel.add(fieldItemId);
         mainFieldsPanel.add(new JLabel("Nazwa"));
         mainFieldsPanel.add(fieldItemName);
         mainFieldsPanel.add(new JLabel("Parametr 1"));
@@ -79,17 +108,35 @@ public class AddEditRecordDialog extends JDialog {
         mainFieldsPanel.add(fieldItemParam3);
         mainFieldsPanel.add(new JLabel("Parametr 4"));
         mainFieldsPanel.add(fieldItemParam4);
+        mainFieldsPanel.add(new JLabel("Parametr 5"));
+        mainFieldsPanel.add(fieldItemParam5);
 
-        JPanel buttonSubmitPanel = new JPanel(new FlowLayout());
-        JButton buttonSubmit = new JButton("Zapisz");
+        buttonSubmitPanel = new JPanel(new FlowLayout());
+
+        buttonSubmit = new JButton("Zapisz");
+        buttonNext = new JButton();
+        buttonPrev = new JButton();
+
+        try {
+            Image img = ImageIO.read(getClass().getResource("/arrow_right.png"));
+            buttonNext.setIcon(new ImageIcon(img));
+        } catch (Exception ex) {
+            Log.put(false, Level.INFO, "Błąd podczas otwierania pliku zasobów: obrazek strzałki w prawo (arrow_right.png)", this.getClass().getName());
+        }
+
+        try {
+            Image img = ImageIO.read(getClass().getResource("/arrow_left.png"));
+            buttonPrev.setIcon(new ImageIcon(img));
+        } catch (Exception ex) {
+            Log.put(false, Level.INFO, "Błąd podczas otwierania pliku zasobów: obrazek strzałki w lewo (arrow_left.png)", this.getClass().getName());
+        }
+
+        if (!addFile) buttonSubmitPanel.add(buttonPrev);
         buttonSubmitPanel.add(buttonSubmit);
+        if (!addFile) buttonSubmitPanel.add(buttonNext);
 
         mainPanel.add(buttonSubmitPanel, BorderLayout.SOUTH);
         mainPanel.add(mainFieldsPanel, BorderLayout.CENTER);
-    }
-
-    private void showEditRecordDialog() {
-
     }
 
     public void showDialog(Boolean s) {

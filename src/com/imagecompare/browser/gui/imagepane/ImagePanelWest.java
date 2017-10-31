@@ -96,7 +96,7 @@ public class ImagePanelWest extends JPanel {
                     && (!textFieldParam4.getText().equals(""))
                     && (!textFieldParam5.getText().equals(""))) {
 
-                SQLiteConnector.insertDataToDatabase(new ImageItem(textFieldName.getText(),
+                SQLiteConnector.insertItemToDatabase(new ImageItem(textFieldName.getText(),
                         this.chosenFilePath,
                         this.textFieldParam1.getText(),
                         this.textFieldParam2.getText(),

@@ -51,6 +51,7 @@ public class SQLiteConnector {
 
 
     public static Boolean createNewDatabaseFile(String databaseFileName) {
+        boolean success = false;
         if (!databaseFileName.equals("")) {
             dbFileName = databaseFileName;
 
@@ -76,17 +77,15 @@ public class SQLiteConnector {
                     stm.execute(SQL_CR_TB_IMAGEPARAMS);
                     Log.put(false, Level.INFO, "Utworzono nową tabelę 'imageparams' w bazie danych.", SQLiteConnector.class.getName());*/
 
-                    return true;
+                    success = true;
                 }
-
             } catch (SQLException sqle) {
                 System.out.println(sqle.getMessage());
                 Log.put(false, Level.WARNING, "Database connection error: " +sqle.getMessage(), SQLiteConnector.class.getName());
                 JOptionPane.showMessageDialog(null, sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
-                return false;
             }
         }
-        return false;
+        return success;
     }
 
     public static Boolean connectToDatabase(String databaseFileName) {
@@ -136,7 +135,19 @@ public class SQLiteConnector {
         return imageItems;
     }
 
-    public static void insertDataToDatabase(ImageItem imageItem) {
+    public static void removeItemFromDatabase(ImageItem imageItem) {
+        try {
+            conn = getConn(DB_URL+dbFileName);
+            PreparedStatement preparedStatement = conn.prepareStatement("DELETE FROM images WHERE image_id = ?;");
+            preparedStatement.setInt(1, imageItem.getId());
+            preparedStatement.executeUpdate();
+        } catch (SQLException sqle) {
+            Log.put(false, Level.WARNING, "Błąd połączenia z bazą danych: " +sqle.getMessage(), SQLiteConnector.class.getName());
+            JOptionPane.showMessageDialog(null, "Błąd: " +sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    public static void insertItemToDatabase(ImageItem imageItem) {
         try {
             conn = getConn(DB_URL+dbFileName);
             PreparedStatement preparedStatement = conn.prepareStatement("INSERT INTO images(image_name, image_filepath, param1, param2, param3, param4, param5) VALUES(?, ?, ?, ?, ?, ?, ?);");
@@ -151,7 +162,7 @@ public class SQLiteConnector {
             Log.put(false, Level.INFO, "Wstawiono nowe dane do bazy danych.", SQLiteConnector.class.getName());
 
         } catch (SQLException sqle) {
-            Log.put(false, Level.WARNING, "Błąd połączenia z bazą danych:: " +sqle.getMessage(), SQLiteConnector.class.getName());
+            Log.put(false, Level.WARNING, "Błąd połączenia z bazą danych: " +sqle.getMessage(), SQLiteConnector.class.getName());
             JOptionPane.showMessageDialog(null, "Błąd: " +sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
         }
     }

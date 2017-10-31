@@ -103,6 +103,7 @@ public final class MainWindow extends JFrame {
         mainPanelWest = new ImagePanelWest(databaseFileName, this, imageViewerPanel);
 
         panelDatabase.setImagePanelEast(mainPanelEast);
+
         mainPanelEast.refresh(false);
 
         rightSplitPane.setDividerSize(6);
