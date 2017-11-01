@@ -46,7 +46,6 @@ public class RecordsTableModel extends AbstractTableModel {
 
     @Override
     public boolean isCellEditable(int rowIndex, int columnIndex) {
-        //return true;
         return false;
     }
 
@@ -57,8 +56,6 @@ public class RecordsTableModel extends AbstractTableModel {
 
     @Override
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
-        //System.out.println("Zmieniona wartość w: " +rowIndex +" : " +columnIndex);
-        //System.out.println("Nowa wartość: " +aValue);
         this.data[rowIndex][columnIndex] = aValue.toString();
     }
 
