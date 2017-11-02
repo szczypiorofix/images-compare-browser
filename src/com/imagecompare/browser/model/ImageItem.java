@@ -3,9 +3,10 @@ package com.imagecompare.browser.model;
 public class ImageItem {
 
     private int id;
-    private final String name;
-    private final String filename;
-    private final String param1, param2, param3, param4, param5;
+    private String name;
+    private String filename;
+    private String param1, param2, param3, param4, param5;
+    private boolean changed;
 
     public ImageItem(int id, String name, String filename, String param1, String param2, String param3, String param4, String param5) {
         this.id = id;
@@ -16,6 +17,7 @@ public class ImageItem {
         this.param3 = param3;
         this.param4 = param4;
         this.param5 = param5;
+        changed = false;
     }
 
     public ImageItem(String name, String filename, String param1, String param2, String param3, String param4, String param5) {
@@ -58,5 +60,13 @@ public class ImageItem {
 
     public String getParam5() {
         return param5;
+    }
+
+    public boolean isChanged() {
+        return changed;
+    }
+
+    public void setChanged(boolean changed) {
+        this.changed = changed;
     }
 }

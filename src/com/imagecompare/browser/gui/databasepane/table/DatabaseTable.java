@@ -40,8 +40,20 @@ public class DatabaseTable extends JTable implements MouseListener{
         return selectedRow;
     }
 
+    public void setSelectedItem(int selectedRow) {
+        this.selectedRow = selectedRow;
+    }
+
     public ImageItem getSelectedItem() {
-        return new ImageItem(Integer.valueOf(getValueAt(selectedRow, 0).toString()), getValueAt(selectedRow, 1).toString(), getValueAt(selectedRow, 2).toString(), getValueAt(selectedRow, 1).toString(), getValueAt(selectedRow, 1).toString(), getValueAt(selectedRow, 1).toString(), getValueAt(selectedRow, 1).toString(), getValueAt(selectedRow, 1).toString());
+        return new ImageItem(
+                Integer.valueOf(getValueAt(selectedRow, 0).toString()),
+                getValueAt(selectedRow, 1).toString(),
+                getValueAt(selectedRow, 2).toString(),
+                getValueAt(selectedRow, 3).toString(),
+                getValueAt(selectedRow, 4).toString(),
+                getValueAt(selectedRow, 5).toString(),
+                getValueAt(selectedRow, 6).toString(),
+                getValueAt(selectedRow, 7).toString());
     }
 
     @Override

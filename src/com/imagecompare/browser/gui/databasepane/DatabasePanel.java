@@ -58,7 +58,10 @@ public class DatabasePanel extends JPanel {
         buttonAdd.addActionListener((ActionEvent e) -> addRecordDialog.showDialog(true));
 
         buttonEdit = new FunctionalButton("Edytuj");
-        buttonEdit.addActionListener((ActionEvent e) -> editRecordDialog.showDialog(true));
+        buttonEdit.addActionListener((ActionEvent e) -> {
+            editRecordDialog.setData(tableOfRecords);
+            editRecordDialog.showDialog(true);
+        });
 
         buttonDelete = new FunctionalButton("Usuń");
         buttonDelete.addActionListener((ActionEvent e) -> {
@@ -134,6 +137,9 @@ public class DatabasePanel extends JPanel {
 
         sorter.setRowFilter(tableRowFilter);
         tableOfRecords.setRowSorter(sorter);
+
+        // FORCE SELECT FIRST ROW IN TABLE
+        tableOfRecords.setRowSelectionInterval(0, 0);
 
         tableAndFiltersPanel.add(groupFilterInputs, BorderLayout.NORTH);
         groupFilterInputs.setSorter(sorter);
