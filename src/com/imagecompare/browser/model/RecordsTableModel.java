@@ -8,7 +8,15 @@ import java.util.ArrayList;
 public class RecordsTableModel extends AbstractTableModel {
 
     private final Object[][] data;
-    private final String columns[] = {"ID", "Nazwa", "Plik", "Parametr 1", "Parametr 2", "Parametr 3", "Parametr 4", "Parametr 5"};
+    private final String columns[] = {
+            ImageItem.PARAM_ID_TITLE,
+            ImageItem.PARAM_NAME_TITLE,
+            ImageItem.PARAM_FILENAME_TITLE,
+            ImageItem.PARAM_PARAM1_TITLE,
+            ImageItem.PARAM_PARAM2_TITLE,
+            ImageItem.PARAM_PARAM3_TITLE,
+            ImageItem.PARAM_PARAM4_TITLE,
+            ImageItem.PARAM_PARAM5_TITLE};
 
     public RecordsTableModel(ArrayList<ImageItem> imageItems) {
         data = new Object[imageItems.size()][columns.length];

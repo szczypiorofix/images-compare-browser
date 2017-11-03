@@ -2,6 +2,15 @@ package com.imagecompare.browser.model;
 
 public class ImageItem {
 
+    public static final String PARAM_ID_TITLE = "ID";
+    public static final String PARAM_NAME_TITLE = "Nazwa";
+    public static final String PARAM_FILENAME_TITLE = "Plik";
+    public static final String PARAM_PARAM1_TITLE = "Parametr 1";
+    public static final String PARAM_PARAM2_TITLE = "Parametr 2";
+    public static final String PARAM_PARAM3_TITLE = "Parametr 3";
+    public static final String PARAM_PARAM4_TITLE = "Parametr 4";
+    public static final String PARAM_PARAM5_TITLE = "Parametr 5";
+
     private int id;
     private String name;
     private String filename;

@@ -51,11 +51,14 @@ public class DatabasePanel extends JPanel {
         buttonsPanel = new JPanel(new FlowLayout());
         buttonsPanelGrid = new JPanel(new FlowLayout());
 
-        addRecordDialog = new AddEditRecordDialog(frame, "Dodaj pozycję", AddEditRecordDialog.ADD);
-        editRecordDialog = new AddEditRecordDialog(frame, "Edytuj pozycję", AddEditRecordDialog.EDIT);
+        addRecordDialog = new AddEditRecordDialog(frame, "Dodaj pozycję", AddEditRecordDialog.ADD, imagePanelEast, this);
+        editRecordDialog = new AddEditRecordDialog(frame, "Edytuj pozycję", AddEditRecordDialog.EDIT, imagePanelEast, this);
 
         buttonAdd = new FunctionalButton("Dodaj");
-        buttonAdd.addActionListener((ActionEvent e) -> addRecordDialog.showDialog(true));
+        buttonAdd.addActionListener((ActionEvent e) -> {
+            addRecordDialog.setData(tableOfRecords);
+            addRecordDialog.showDialog(true);
+        });
 
         buttonEdit = new FunctionalButton("Edytuj");
         buttonEdit.addActionListener((ActionEvent e) -> {
@@ -108,6 +111,10 @@ public class DatabasePanel extends JPanel {
 
         refresh();
         groupFilterInputs.setImagePanelEast(imagePanelEast);
+    }
+
+    public void clearFilterInputs() {
+        groupFilterInputs.clearFilters();
     }
 
     public void refresh() {

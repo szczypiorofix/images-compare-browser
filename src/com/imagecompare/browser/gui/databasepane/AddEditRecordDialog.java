@@ -2,9 +2,11 @@ package com.imagecompare.browser.gui.databasepane;
 
 
 import com.imagecompare.browser.gui.databasepane.table.DatabaseTable;
+import com.imagecompare.browser.gui.imagepane.ImagePanelEast;
 import com.imagecompare.browser.gui.shared.OpenFileDialog;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.system.Log;
+import com.imagecompare.browser.system.SQLiteConnector;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -14,6 +16,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.File;
 import java.util.logging.Level;
 
 
@@ -30,17 +33,25 @@ public class AddEditRecordDialog extends JDialog {
     private JPanel mainFieldsPanel;
     private JButton buttonSubmit, buttonNext, buttonPrev;
     private JPanel buttonSubmitPanel;
-    private JLabel fieldItemId;
+    private JLabel fieldItemId, addedFileName;
     private JTextField fieldItemName, fieldItemParam1, fieldItemParam2, fieldItemParam3, fieldItemParam4, fieldItemParam5;
     private DatabaseTable tableOfRecords;
     private int selectedRow = 0;
     private ImageItem currentItem;
     private ImageItem[] tempItems;
+    private int type;
+    private String chosenFilePath = "";
+    private ImagePanelEast imagePanelEast;
+    private DatabasePanel databasePanel;
 
 
-    public AddEditRecordDialog(JFrame panel, String name, int type) {
+    public AddEditRecordDialog(JFrame panel, String name, int type, ImagePanelEast imagePanelEast, DatabasePanel databasePanel) {
         super(panel, name, true);
+        this.type = type;
+        this.imagePanelEast = imagePanelEast;
+        this.databasePanel = databasePanel;
         this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+        // SIZE WHEN DIALOG IS ADD DIALOG
         this.setSize(400, 300);
         this.setLocationRelativeTo(panel);
         this.setLayout(new BorderLayout());
@@ -75,7 +86,7 @@ public class AddEditRecordDialog extends JDialog {
         this.tableOfRecords = tableOfRecords;
         currentItem = tableOfRecords.getSelectedItem();
         selectedRow = tableOfRecords.getSelectedRow();
-        tempItems = new ImageItem[tableOfRecords.getRowCount()-1];
+        tempItems = new ImageItem[tableOfRecords.getRowCount()];
 
         for (int i = 0; i < tempItems.length; i++) {
             tempItems[i] = new ImageItem(
@@ -91,13 +102,16 @@ public class AddEditRecordDialog extends JDialog {
     }
 
     public void showDialog(Boolean s) {
-        fieldItemId.setText(String.valueOf(currentItem.getId()));
-        fieldItemName.setText(currentItem.getName());
-        fieldItemParam1.setText(currentItem.getParam1());
-        fieldItemParam2.setText(currentItem.getParam2());
-        fieldItemParam3.setText(currentItem.getParam3());
-        fieldItemParam4.setText(currentItem.getParam4());
-        fieldItemParam5.setText(currentItem.getParam5());
+        if (type == EDIT) {
+            fieldItemId.setText(String.valueOf(currentItem.getId()));
+            fieldItemName.setText(currentItem.getName());
+            fieldItemParam1.setText(currentItem.getParam1());
+            fieldItemParam2.setText(currentItem.getParam2());
+            fieldItemParam3.setText(currentItem.getParam3());
+            fieldItemParam4.setText(currentItem.getParam4());
+            fieldItemParam5.setText(currentItem.getParam5());
+        }
+
         this.setVisible(s);
     }
 
@@ -107,7 +121,7 @@ public class AddEditRecordDialog extends JDialog {
     }
 
     private void showEditRecordDialog() {
-        setSize(400, 280);
+        setSize(400, 290);
         showCommonContent(false);
         titleLabel.setText("Edycja rekordu:");
     }
@@ -116,19 +130,28 @@ public class AddEditRecordDialog extends JDialog {
         titleLabel = new JLabel();
         titleLabel.setFont(font);
 
-        northPanel = new JPanel(new FlowLayout());
+        addedFileName = new JLabel("");
+
+        northPanel = new JPanel(new BorderLayout());
         addButton = new JButton("Dodaj plik");
         addButton.addActionListener((ActionEvent e) -> {
             OpenFileDialog fc = new OpenFileDialog(OpenFileDialog.IMAGE_FILE);
             int returnVal = fc.showDialog(this, "Otwórz");
+
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                File selectedFile = fc.getSelectedFile();
+                chosenFilePath = selectedFile.getAbsolutePath();
+                addedFileName.setText(selectedFile.getName());
+            }
         });
 
         northPanel.add(titleLabel, BorderLayout.NORTH);
         if (addFile) {
-            northPanel.add(addButton, BorderLayout.SOUTH);
+            northPanel.add(addButton, BorderLayout.WEST);
+            northPanel.add(addedFileName, BorderLayout.CENTER);
         }
 
-        northPanel.setPreferredSize(new Dimension(250, 40));
+        northPanel.setPreferredSize(new Dimension(250, 50));
         mainPanel.add(northPanel, BorderLayout.NORTH);
 
         // INPUT FIELDS
@@ -143,28 +166,69 @@ public class AddEditRecordDialog extends JDialog {
         JLabel idNameLabel = new JLabel();
         if (!addFile) {
             fieldItemId.setText("ID number");
-            idNameLabel.setText("ID");
+            idNameLabel.setText(ImageItem.PARAM_ID_TITLE);
         }
 
         mainFieldsPanel = new JPanel(new GridLayout(7, 4));
         mainFieldsPanel.add(idNameLabel);
         mainFieldsPanel.add(fieldItemId);
-        mainFieldsPanel.add(new JLabel("Nazwa"));
+        mainFieldsPanel.add(new JLabel(ImageItem.PARAM_NAME_TITLE));
         mainFieldsPanel.add(fieldItemName);
-        mainFieldsPanel.add(new JLabel("Parametr 1"));
+        mainFieldsPanel.add(new JLabel(ImageItem.PARAM_PARAM1_TITLE));
         mainFieldsPanel.add(fieldItemParam1);
-        mainFieldsPanel.add(new JLabel("Parametr 2"));
+        mainFieldsPanel.add(new JLabel(ImageItem.PARAM_PARAM2_TITLE));
         mainFieldsPanel.add(fieldItemParam2);
-        mainFieldsPanel.add(new JLabel("Parametr 3"));
+        mainFieldsPanel.add(new JLabel(ImageItem.PARAM_PARAM3_TITLE));
         mainFieldsPanel.add(fieldItemParam3);
-        mainFieldsPanel.add(new JLabel("Parametr 4"));
+        mainFieldsPanel.add(new JLabel(ImageItem.PARAM_PARAM4_TITLE));
         mainFieldsPanel.add(fieldItemParam4);
-        mainFieldsPanel.add(new JLabel("Parametr 5"));
+        mainFieldsPanel.add(new JLabel(ImageItem.PARAM_PARAM5_TITLE));
         mainFieldsPanel.add(fieldItemParam5);
 
         buttonSubmitPanel = new JPanel(new FlowLayout());
 
         buttonSubmit = new JButton("Zapisz");
+        buttonSubmit.addActionListener((ActionEvent e) -> {
+            if (type == ADD) {
+                if (!fieldItemName.getText().equals("")
+                        && !fieldItemParam1.getText().equals("")
+                        && !fieldItemParam2.getText().equals("")
+                        && !fieldItemParam3.getText().equals("")
+                        && !fieldItemParam4.getText().equals("")
+                        && !fieldItemParam5.getText().equals("")
+                        && !chosenFilePath.equals("") ) {
+
+                    SQLiteConnector.insertItemToDatabase(new ImageItem(
+                            fieldItemName.getText(),
+                            chosenFilePath,
+                            fieldItemParam1.getText(),
+                            fieldItemParam2.getText(),
+                            fieldItemParam3.getText(),
+                            fieldItemParam4.getText(),
+                            fieldItemParam5.getText()
+                    ));
+
+
+                    //imagePanelEast.setFilteredData(tableOfRecords);
+                    imagePanelEast.refresh(false);
+                    databasePanel.refresh();
+                    databasePanel.clearFilterInputs();
+
+                    JOptionPane.showMessageDialog(this, "Pomyślnie dodano nowe dane do bazy!", "Sukces!", JOptionPane.INFORMATION_MESSAGE);
+                    fieldItemName.setText("");
+                    fieldItemParam1.setText("");
+                    fieldItemParam2.setText("");
+                    fieldItemParam3.setText("");
+                    fieldItemParam4.setText("");
+                    fieldItemParam5.setText("");
+                    chosenFilePath = "";
+                    addedFileName.setText("");
+                } else {
+                    JOptionPane.showMessageDialog(this, "Proszę wypełnić wszystkie pola przez dodaniem danych do bazy!", "Nie wypełniono wszystkich pól!", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
         //buttonSubmit.setEnabled(false);
         buttonNext = new JButton();
         buttonPrev = new JButton();
@@ -193,7 +257,7 @@ public class AddEditRecordDialog extends JDialog {
             if (selectedRow < 0) {
                 selectedRow = tempItems.length-1;
             }
-            System.out.println("Previous: " +selectedRow);
+            //System.out.println("Previous: " +selectedRow);
 
             currentItem = tempItems[selectedRow];
             showCurrentData();
@@ -205,7 +269,7 @@ public class AddEditRecordDialog extends JDialog {
             if (selectedRow > tempItems.length-1) {
                 selectedRow = 0;
             }
-            System.out.println("Next: " +selectedRow);
+            //System.out.println("Next: " +selectedRow);
 
             currentItem = tempItems[selectedRow];
             showCurrentData();
@@ -223,11 +287,30 @@ public class AddEditRecordDialog extends JDialog {
                 || !fieldItemParam4.getText().equals(tempItems[selectedRow].getParam4())
                 || !fieldItemParam5.getText().equals(tempItems[selectedRow].getParam5())
                 ) {
-            tempItems[selectedRow].setChanged(true);
-            titleLabel.setText("Edycja rekordu: <niezapisane zmiany>");
-        } else {
-            titleLabel.setText("Edycja rekordu:");
+
+            String[] options = {"Tak", "Nie"};
+            int option = JOptionPane.showOptionDialog(this,
+                    "Czy zapisać zmiany?",
+                    "Zapisać zmiany?",
+                    0,
+                    JOptionPane.INFORMATION_MESSAGE,
+                    null,
+                    options,
+                    null);
+
+            if (option == JOptionPane.YES_OPTION) {
+                System.out.println("Zapisywanie zmian...");
+                saveChanges();
+            }
         }
+    }
+
+    private void saveChanges() {
+        currentItem = new ImageItem(currentItem.getId(), fieldItemName.getText(), currentItem.getFilename(), fieldItemParam1.getText(), fieldItemParam2.getText(), fieldItemParam3.getText(), fieldItemParam4.getText(), fieldItemParam5.getText());
+        SQLiteConnector.updateItemInDatabase(currentItem);
+        imagePanelEast.refresh(false);
+        databasePanel.refresh();
+        databasePanel.clearFilterInputs();
     }
 
     private void showCurrentData() {

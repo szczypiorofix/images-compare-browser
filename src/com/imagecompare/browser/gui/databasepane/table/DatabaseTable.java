@@ -40,9 +40,6 @@ public class DatabaseTable extends JTable implements MouseListener{
         return selectedRow;
     }
 
-    public void setSelectedItem(int selectedRow) {
-        this.selectedRow = selectedRow;
-    }
 
     public ImageItem getSelectedItem() {
         return new ImageItem(

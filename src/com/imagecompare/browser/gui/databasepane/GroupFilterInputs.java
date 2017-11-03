@@ -3,11 +3,14 @@ package com.imagecompare.browser.gui.databasepane;
 import com.imagecompare.browser.gui.databasepane.table.DatabaseTable;
 import com.imagecompare.browser.gui.databasepane.table.TableRowFilter;
 import com.imagecompare.browser.gui.imagepane.ImagePanelEast;
+import com.imagecompare.browser.model.ImageItem;
+import com.imagecompare.browser.system.Log;
 
 import javax.swing.*;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
+import java.util.logging.Level;
 
 public class GroupFilterInputs extends JPanel {
 
@@ -22,14 +25,14 @@ public class GroupFilterInputs extends JPanel {
         this.imagePanelEast = imagePanelEast;
         this.tableOfRecords = tableOfRecords;
 
-        FilterInput filterInputID = new FilterInput(frame, "ID",  this);
-        FilterInput filterInputName = new FilterInput(frame, "Nazwa", this);
-        FilterInput filterInputFilename = new FilterInput(frame, "Plik",  this);
-        FilterInput filterInputParam1 = new FilterInput(frame, "Parametr 1",  this);
-        FilterInput filterInputParam2 = new FilterInput(frame, "Parametr 2",  this);
-        FilterInput filterInputParam3 = new FilterInput(frame, "Parametr 3",  this);
-        FilterInput filterInputParam4 = new FilterInput(frame, "Parametr 4",  this);
-        FilterInput filterInputParam5 = new FilterInput(frame, "Parametr 5",  this);
+        FilterInput filterInputID = new FilterInput(frame, ImageItem.PARAM_ID_TITLE,  this);
+        FilterInput filterInputName = new FilterInput(frame, ImageItem.PARAM_NAME_TITLE, this);
+        FilterInput filterInputFilename = new FilterInput(frame, ImageItem.PARAM_FILENAME_TITLE,  this);
+        FilterInput filterInputParam1 = new FilterInput(frame, ImageItem.PARAM_PARAM1_TITLE,  this);
+        FilterInput filterInputParam2 = new FilterInput(frame, ImageItem.PARAM_PARAM2_TITLE,  this);
+        FilterInput filterInputParam3 = new FilterInput(frame, ImageItem.PARAM_PARAM3_TITLE,  this);
+        FilterInput filterInputParam4 = new FilterInput(frame, ImageItem.PARAM_PARAM4_TITLE,  this);
+        FilterInput filterInputParam5 = new FilterInput(frame, ImageItem.PARAM_PARAM5_TITLE,  this);
 
         add(filterInputID);
         add(filterInputName);
@@ -61,6 +64,13 @@ public class GroupFilterInputs extends JPanel {
 
     public void setImagePanelEast(ImagePanelEast imagePanelEast) {
         this.imagePanelEast = imagePanelEast;
+    }
+
+    public void clearFilters() {
+        for (int i = 0; i < filterInputs.length; i++) {
+            filterInputs[i].setText("");
+        }
+        Log.put(false, Level.INFO, "Filtry wyczyszczone.", this.getClass().toString());
     }
 
     public void updateFilters() {

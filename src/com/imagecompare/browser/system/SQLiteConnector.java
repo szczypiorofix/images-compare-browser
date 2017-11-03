@@ -124,6 +124,7 @@ public class SQLiteConnector {
                             resultSet.getString("param5")));
                     resultsCounter++;
                 }
+                resultSet.close();
 
                 Log.put(false, Level.INFO, "Zwróconych wyników z bazy danych: " +resultsCounter, SQLiteConnector.class.getName());
                 Log.put(false, Level.INFO, "Odczyt z bazy danych "+ dbFileName +" prawidłowy.", SQLiteConnector.class.getName());
@@ -135,12 +136,49 @@ public class SQLiteConnector {
         return imageItems;
     }
 
+    public static void updateItemInDatabase(ImageItem imageItem) {
+        PreparedStatement preparedStatement = null;
+        try {
+            conn = getConn(DB_URL+dbFileName);
+            String sqlQuery = "UPDATE images SET " +
+                    "image_name = ?, " +
+                    "param1 = ?, " +
+                    "param2 = ?, " +
+                    "param3 = ?, " +
+                    "param4 = ?, " +
+                    "param5 = ? " +
+                    "WHERE image_id = ?";
+            preparedStatement = conn.prepareStatement(sqlQuery);
+            preparedStatement.setString(1, imageItem.getName());
+            preparedStatement.setString(2, imageItem.getParam1());
+            preparedStatement.setString(3, imageItem.getParam2());
+            preparedStatement.setString(4, imageItem.getParam3());
+            preparedStatement.setString(5, imageItem.getParam4());
+            preparedStatement.setString(6, imageItem.getParam5());
+            preparedStatement.setInt(7, imageItem.getId());
+
+            int r = preparedStatement.executeUpdate();
+            System.out.println("Result: " +r);
+        } catch (SQLException sqle) {
+            Log.put(false, Level.WARNING, "Błąd połączenia z bazą danych: " +sqle.getMessage(), SQLiteConnector.class.getName());
+            JOptionPane.showMessageDialog(null, "Błąd: " +sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
+        }
+        finally {
+            try {
+                if (preparedStatement != null) preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     public static void removeItemFromDatabase(ImageItem imageItem) {
         try {
             conn = getConn(DB_URL+dbFileName);
             PreparedStatement preparedStatement = conn.prepareStatement("DELETE FROM images WHERE image_id = ?;");
             preparedStatement.setInt(1, imageItem.getId());
             preparedStatement.executeUpdate();
+            preparedStatement.close();
         } catch (SQLException sqle) {
             Log.put(false, Level.WARNING, "Błąd połączenia z bazą danych: " +sqle.getMessage(), SQLiteConnector.class.getName());
             JOptionPane.showMessageDialog(null, "Błąd: " +sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
@@ -159,8 +197,8 @@ public class SQLiteConnector {
             preparedStatement.setString(6, imageItem.getParam4());
             preparedStatement.setString(7, imageItem.getParam5());
             preparedStatement.executeUpdate();
+            preparedStatement.close();
             Log.put(false, Level.INFO, "Wstawiono nowe dane do bazy danych.", SQLiteConnector.class.getName());
-
         } catch (SQLException sqle) {
             Log.put(false, Level.WARNING, "Błąd połączenia z bazą danych: " +sqle.getMessage(), SQLiteConnector.class.getName());
             JOptionPane.showMessageDialog(null, "Błąd: " +sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);
