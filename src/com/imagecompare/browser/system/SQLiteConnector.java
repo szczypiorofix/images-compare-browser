@@ -157,8 +157,9 @@ public class SQLiteConnector {
             preparedStatement.setString(6, imageItem.getParam5());
             preparedStatement.setInt(7, imageItem.getId());
 
-            int r = preparedStatement.executeUpdate();
-            System.out.println("Result: " +r);
+            preparedStatement.executeUpdate();
+            //int r = preparedStatement.executeUpdate();
+            //System.out.println("Result: " +r);
         } catch (SQLException sqle) {
             Log.put(false, Level.WARNING, "Błąd połączenia z bazą danych: " +sqle.getMessage(), SQLiteConnector.class.getName());
             JOptionPane.showMessageDialog(null, "Błąd: " +sqle.getMessage(), "Uwaga !!!", JOptionPane.ERROR_MESSAGE);

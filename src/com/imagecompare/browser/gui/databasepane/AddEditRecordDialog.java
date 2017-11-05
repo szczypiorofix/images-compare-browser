@@ -227,6 +227,9 @@ public class AddEditRecordDialog extends JDialog {
                     JOptionPane.showMessageDialog(this, "Proszę wypełnić wszystkie pola przez dodaniem danych do bazy!", "Nie wypełniono wszystkich pól!", JOptionPane.WARNING_MESSAGE);
                 }
             }
+            else {
+                saveChanges();
+            }
         });
 
         //buttonSubmit.setEnabled(false);
@@ -307,6 +310,7 @@ public class AddEditRecordDialog extends JDialog {
 
     private void saveChanges() {
         currentItem = new ImageItem(currentItem.getId(), fieldItemName.getText(), currentItem.getFilename(), fieldItemParam1.getText(), fieldItemParam2.getText(), fieldItemParam3.getText(), fieldItemParam4.getText(), fieldItemParam5.getText());
+        tempItems[selectedRow] = currentItem;
         SQLiteConnector.updateItemInDatabase(currentItem);
         imagePanelEast.refresh(false);
         databasePanel.refresh();
