@@ -40,6 +40,11 @@ public class DatabasePanel extends JPanel {
     }
 
 
+    public void editRecord() {
+        editRecordDialog.setData(tableOfRecords);
+        editRecordDialog.showDialog(true);
+    }
+
     public void setImagePanelEast(ImagePanelEast imagePanelEast) {
         JLabel titlePane = new JLabel("Baza danych zdjęć");
         titlePane.setHorizontalAlignment(JLabel.CENTER);
@@ -62,8 +67,7 @@ public class DatabasePanel extends JPanel {
 
         buttonEdit = new FunctionalButton("Edytuj");
         buttonEdit.addActionListener((ActionEvent e) -> {
-            editRecordDialog.setData(tableOfRecords);
-            editRecordDialog.showDialog(true);
+            editRecord();
         });
 
         buttonDelete = new FunctionalButton("Usuń");
@@ -127,7 +131,7 @@ public class DatabasePanel extends JPanel {
         }
 
         RecordsTableModel recordsTableModel = new RecordsTableModel(imageItems);
-        tableOfRecords = new DatabaseTable(recordsTableModel);
+        tableOfRecords = new DatabaseTable(recordsTableModel, this);
 
         TableRowFilter tableRowFilter = new TableRowFilter();
         TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);
@@ -146,7 +150,8 @@ public class DatabasePanel extends JPanel {
         tableOfRecords.setRowSorter(sorter);
 
         // FORCE SELECT FIRST ROW IN TABLE
-        tableOfRecords.setRowSelectionInterval(0, 0);
+        // Setting row selection but only when database is not empty.
+        if (tableOfRecords.getRowCount() > 0) tableOfRecords.setRowSelectionInterval(0, 0);
 
         tableAndFiltersPanel.add(groupFilterInputs, BorderLayout.NORTH);
         groupFilterInputs.setSorter(sorter);

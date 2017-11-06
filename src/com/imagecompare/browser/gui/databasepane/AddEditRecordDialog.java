@@ -51,6 +51,7 @@ public class AddEditRecordDialog extends JDialog {
         this.imagePanelEast = imagePanelEast;
         this.databasePanel = databasePanel;
         this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+
         // SIZE WHEN DIALOG IS ADD DIALOG
         this.setSize(400, 300);
         this.setLocationRelativeTo(panel);
@@ -208,7 +209,6 @@ public class AddEditRecordDialog extends JDialog {
                             fieldItemParam5.getText()
                     ));
 
-
                     //imagePanelEast.setFilteredData(tableOfRecords);
                     imagePanelEast.refresh(false);
                     databasePanel.refresh();
@@ -232,7 +232,6 @@ public class AddEditRecordDialog extends JDialog {
             }
         });
 
-        //buttonSubmit.setEnabled(false);
         buttonNext = new JButton();
         buttonPrev = new JButton();
 
@@ -260,8 +259,6 @@ public class AddEditRecordDialog extends JDialog {
             if (selectedRow < 0) {
                 selectedRow = tempItems.length-1;
             }
-            //System.out.println("Previous: " +selectedRow);
-
             currentItem = tempItems[selectedRow];
             showCurrentData();
         });
@@ -272,8 +269,6 @@ public class AddEditRecordDialog extends JDialog {
             if (selectedRow > tempItems.length-1) {
                 selectedRow = 0;
             }
-            //System.out.println("Next: " +selectedRow);
-
             currentItem = tempItems[selectedRow];
             showCurrentData();
         });
@@ -302,7 +297,6 @@ public class AddEditRecordDialog extends JDialog {
                     null);
 
             if (option == JOptionPane.YES_OPTION) {
-                System.out.println("Zapisywanie zmian...");
                 saveChanges();
             }
         }
@@ -312,6 +306,7 @@ public class AddEditRecordDialog extends JDialog {
         currentItem = new ImageItem(currentItem.getId(), fieldItemName.getText(), currentItem.getFilename(), fieldItemParam1.getText(), fieldItemParam2.getText(), fieldItemParam3.getText(), fieldItemParam4.getText(), fieldItemParam5.getText());
         tempItems[selectedRow] = currentItem;
         SQLiteConnector.updateItemInDatabase(currentItem);
+        Log.put(false, Level.INFO, "Zapis edytowanych zmian.", this.getClass().getName());
         imagePanelEast.refresh(false);
         databasePanel.refresh();
         databasePanel.clearFilterInputs();

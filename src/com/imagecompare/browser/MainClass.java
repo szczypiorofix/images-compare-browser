@@ -8,6 +8,17 @@ import com.imagecompare.browser.system.Log;
 import java.awt.*;
 import java.util.logging.Level;
 
+
+/**
+ * Images-Compare-Browser app (a.k.a. AdminImages)
+ *
+ * Main class of the application.
+ *
+ * ##########################################################################
+ * @author Piotr Wróblewski
+ * @version 0.94
+ * ##########################################################################
+ */
 public class MainClass {
 
     public static final String DATABASE_FILE_EXTENSION_DB = "db";
@@ -15,18 +26,22 @@ public class MainClass {
     public static final String DATABASE_FILE_EXTENSION_SQLITE = "sqlite";
     public static final String DATABASE_FILE_EXTENSION_SQLITE3 = "sqlite3";
 
+
+    /**
+     * Main class constructor.
+     * @param args - String -  array of parameters e.g. "debug" or "-debug", used for running in debug mode.
+     */
     private MainClass(String[] args) {
+        Log.DEBUG_MODE = false;
         if (args.length > 0) {
             if (args[0].equals("-debug") || args[0].equals("debug")) {
                 Log.DEBUG_MODE = true;
             }
         }
-        else {
-            Log.DEBUG_MODE = false;
-        }
+
 
         Log.DEBUG_IN_CONSOLE = true;
-        Log.put(false, Level.INFO, "Start aplikacji.", this.getClass().getName());
+        Log.put(false, Level.INFO, "Start aplikacji ImageCompareBrowser a.k.a. Admin Images.", this.getClass().getName());
 
         ConfigFileHandler.init();
 
@@ -52,6 +67,10 @@ public class MainClass {
         }
     }
 
+    /**
+     * This is the main class of this application and method "main" is where the application starts.
+     * @param args String - array of arguments.
+     */
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> new MainClass(args));
     }

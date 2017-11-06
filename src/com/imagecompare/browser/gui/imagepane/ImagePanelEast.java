@@ -25,6 +25,8 @@ public class ImagePanelEast extends JPanel {
         this.centralImagePanel = centralImagePanel;
         this.databasePanel = databasePanel;
         this.setPreferredSize(new Dimension(300, 700));
+        //this.setMinimumSize(new Dimension(100, 700));
+        //this.setMaximumSize(new Dimension(300, 700));
     }
 
 

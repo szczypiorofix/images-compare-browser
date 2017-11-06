@@ -54,6 +54,8 @@ public class CentralImagePanel extends JPanel implements MouseMotionListener, Mo
         this.selectorX = 1;
         this.addMouseListener(this);
         this.addMouseMotionListener(this);
+        //this.setPreferredSize(new Dimension(400, 200));
+        //this.setMinimumSize(new Dimension(300, 700));
     }
 
 

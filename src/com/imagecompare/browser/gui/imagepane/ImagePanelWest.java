@@ -104,7 +104,7 @@ public class ImagePanelWest extends JPanel {
                         this.textFieldParam4.getText(),
                         this.textFieldParam5.getText()));
                 mainWindow.checkAndShowSqlConnection();
-                mainWindow.refreshDatabasePanel();
+                mainWindow.refreshDatabaseAndEastPanel();
                 JOptionPane.showMessageDialog(null, "Pomyślnie dodano nowe dane do bazy!", "Udało się!", JOptionPane.INFORMATION_MESSAGE);
             }
             else {

@@ -1,7 +1,5 @@
 package com.imagecompare.browser.system;
 
-
-
 import com.imagecompare.browser.model.ImageItem;
 
 import javax.swing.*;
@@ -9,8 +7,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.logging.Level;
 
-public class SQLiteConnector {
 
+public class SQLiteConnector {
 
     private final static String DB_URL = "jdbc:sqlite:";
     private final static String SQL_CR_TB_IMAGES = "CREATE TABLE IF NOT EXISTS images (" +
@@ -37,10 +35,18 @@ public class SQLiteConnector {
     private static Connection conn = null;
     private static Statement stm = null;
 
-    private SQLiteConnector(String databaseFileName) {
-        //init(databaseFileName);
-    }
+    /**
+     * Private SQLiteConnector constructor.
+     */
+    private SQLiteConnector() {}
 
+    /**
+     * getConn - static method which check if connection exists, if not it creates new connection.
+     *
+     * @param url String - database file path.
+     * @return Connection - returns Connection object.
+     * @throws SQLException
+     */
     private static Connection getConn(String url) throws SQLException {
         if (conn == null) {
             conn = DriverManager.getConnection(url);
@@ -49,34 +55,26 @@ public class SQLiteConnector {
         return conn;
     }
 
-
+    /**
+     * createNewDatabaseFile(String databaseFileName)
+     * Creates new SQLite database file.
+     *
+     * @param databaseFileName String - database filename
+     * @return Boolean - true if new SQLite database file was created without any errors.
+     */
     public static Boolean createNewDatabaseFile(String databaseFileName) {
         boolean success = false;
         if (!databaseFileName.equals("")) {
             dbFileName = databaseFileName;
-
             try {
                 conn = getConn(DB_URL+dbFileName);
-
                 if (conn != null) {
                     DatabaseMetaData meta = conn.getMetaData();
                     Log.put(false, Level.INFO, "Nazwa sterownika bazy danych:" +meta.getDriverName(), SQLiteConnector.class.getName());
                     Log.put(false, Level.INFO, "Utworzono nową bazę danych.", SQLiteConnector.class.getName());
-
                     stm = conn.createStatement();
-
-                    // Nowa tabela 'images'
                     stm.execute(SQL_CR_TB_IMAGES);
                     Log.put(false, Level.INFO, "Utworzono nową tabelę 'images' w bazie danych.", SQLiteConnector.class.getName());
-
-/*                    // Nowa tabela 'paramnames'
-                    stm.execute(SQL_CR_TB_PARAMNAMES);
-                    Log.put(false, Level.INFO, "Utworzono nową tabelę 'paramnames' w bazie danych.", SQLiteConnector.class.getName());
-
-                    // Nowa tabela 'imageparams'
-                    stm.execute(SQL_CR_TB_IMAGEPARAMS);
-                    Log.put(false, Level.INFO, "Utworzono nową tabelę 'imageparams' w bazie danych.", SQLiteConnector.class.getName());*/
-
                     success = true;
                 }
             } catch (SQLException sqle) {
@@ -88,6 +86,14 @@ public class SQLiteConnector {
         return success;
     }
 
+    /**
+     * connectToDatabase(String databaseFileName)
+     *
+     * Check if there is a connection with database.
+     *
+     * @param databaseFileName String - database filename.
+     * @return Boolean - true if connection with database exists.
+     */
     public static Boolean connectToDatabase(String databaseFileName) {
         if (!databaseFileName.equals("")) {
             dbFileName = databaseFileName;
@@ -102,6 +108,13 @@ public class SQLiteConnector {
         return false;
     }
 
+    /**
+     * getResults()
+     *
+     * Returns all of the results from SQLite database.
+     *
+     * @return ArrayList<ImageItem> - ArrayList of ImageItem objects (model object).
+     */
     public static ArrayList<ImageItem> getResults() {
         ArrayList<ImageItem> imageItems = null;
         try {
@@ -136,6 +149,13 @@ public class SQLiteConnector {
         return imageItems;
     }
 
+    /**
+     * updateItemInDatabase(ImageItem imageItem)
+     *
+     * Update database record.
+     *
+     * @param imageItem ImageItem - object which has to be updated in database.
+     */
     public static void updateItemInDatabase(ImageItem imageItem) {
         PreparedStatement preparedStatement = null;
         try {
@@ -173,6 +193,13 @@ public class SQLiteConnector {
         }
     }
 
+    /**
+     * removeItemFromDatabase(ImageItem imageItem)
+     *
+     * Removes record from database.
+     *
+     * @param imageItem ImageItem - object which has to be removed from database.
+     */
     public static void removeItemFromDatabase(ImageItem imageItem) {
         try {
             conn = getConn(DB_URL+dbFileName);
@@ -186,6 +213,13 @@ public class SQLiteConnector {
         }
     }
 
+    /**
+     * insertItemToDatabase(ImageItem imageItem)
+     *
+     * Insert object to database.
+     *
+     * @param imageItem ImageItem - object which has to be inserted into database.
+     */
     public static void insertItemToDatabase(ImageItem imageItem) {
         try {
             conn = getConn(DB_URL+dbFileName);
@@ -206,10 +240,23 @@ public class SQLiteConnector {
         }
     }
 
+    /**
+     * isConnected()
+     *
+     * Checks connection with database.
+     *
+     * @return Boolean - returns true if connection exists.
+     */
     public static Boolean isConnected() {
         return conn != null;
     }
 
+    /**
+     * closeConnection()
+     *
+     * Closes connection with database - mainly, when the application is closing.
+     *
+     */
     public static void closeConnection() {
         try {
             if (conn != null) {

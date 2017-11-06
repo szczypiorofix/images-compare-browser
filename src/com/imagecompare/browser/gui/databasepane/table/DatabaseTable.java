@@ -1,5 +1,6 @@
 package com.imagecompare.browser.gui.databasepane.table;
 
+import com.imagecompare.browser.gui.databasepane.DatabasePanel;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.model.RecordsTableModel;
 import com.imagecompare.browser.system.Log;
@@ -11,12 +12,14 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.logging.Level;
 
-public class DatabaseTable extends JTable implements MouseListener{
+public class DatabaseTable extends JTable implements MouseListener {
 
     private int selectedRow = 0;
+    private DatabasePanel databasePanel;
 
-    public DatabaseTable(RecordsTableModel recordsTableModel) {
+    public DatabaseTable(RecordsTableModel recordsTableModel, DatabasePanel databasePanel) {
         super(recordsTableModel);
+        this.databasePanel = databasePanel;
 
         // SINGLE CELL SELECTION
         /*setCellSelectionEnabled(true);
@@ -59,7 +62,13 @@ public class DatabaseTable extends JTable implements MouseListener{
     }
 
     @Override
-    public void mousePressed(MouseEvent e) {}
+    public void mousePressed(MouseEvent e) {
+        DatabaseTable table =(DatabaseTable) e.getSource();
+        if (e.getClickCount() == 2 && table.rowAtPoint(e.getPoint()) != -1) {
+            selectedRow = table.rowAtPoint(e.getPoint());
+            databasePanel.editRecord();
+        }
+    }
 
     @Override
     public void mouseReleased(MouseEvent e) {}
