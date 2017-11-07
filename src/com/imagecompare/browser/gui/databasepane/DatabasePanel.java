@@ -93,13 +93,10 @@ public class DatabasePanel extends JPanel {
 
         buttonPrint = new FunctionalButton("Drukuj");
         buttonPrint.addActionListener((ActionEvent e) -> {
-            // DRUKOWANIE TABLICY
             try {
                 boolean complete = tableOfRecords.print();
                 if (complete) {
                     JOptionPane.showMessageDialog(this, "Drukowanie powiodło się", "Drukowanie przebiegło pomyślnie", JOptionPane.INFORMATION_MESSAGE);
-                } else {
-                    JOptionPane.showMessageDialog(this, "Drukowanie nie powiodło się", "Drukowanie zostało przerwane.", JOptionPane.WARNING_MESSAGE);
                 }
             } catch (PrinterException pe) {
                 JOptionPane.showMessageDialog(this, "Drukowanie nie powiodło się", "Błąd drukowania. Drukowanie nie powiodło się.", JOptionPane.ERROR_MESSAGE);

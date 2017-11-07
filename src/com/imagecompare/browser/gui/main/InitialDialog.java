@@ -1,6 +1,7 @@
 package com.imagecompare.browser.gui.main;
 
 import com.imagecompare.browser.MainClass;
+import com.imagecompare.browser.gui.shared.FunctionalButton;
 import com.imagecompare.browser.gui.shared.OpenFileDialog;
 import com.imagecompare.browser.system.ConfigFileHandler;
 import com.imagecompare.browser.system.Log;
@@ -49,7 +50,8 @@ public class InitialDialog extends JDialog {
             JLabel databaseFilenameLabel = new JLabel(dbfn.toString());
             databaseFilenameLabel.setBounds(50, 40, 320, 30);
             mainPanel.add(databaseFilenameLabel);
-            JButton openThisDatabase = new JButton("Otwórz");
+
+            FunctionalButton openThisDatabase = new FunctionalButton("Otwórz");
             openThisDatabase.setBounds(80, 80, 120, 30);
             openThisDatabase.addActionListener((ActionEvent e) -> {
                 File dbFile = new File(databaseFilename);
@@ -65,7 +67,7 @@ public class InitialDialog extends JDialog {
             mainPanel.add(openThisDatabase);
         }
 
-        JButton confirmButton = new JButton("Utwórz nowy plik bazy");
+        FunctionalButton confirmButton = new FunctionalButton("Utwórz nowy plik bazy");
         confirmButton.setBounds(60, 140, 160, 30);
         confirmButton.addActionListener((ActionEvent e) -> {
 
@@ -123,7 +125,7 @@ public class InitialDialog extends JDialog {
         });
         mainPanel.add(confirmButton);
 
-        JButton chooseDBButton = new JButton("Otwórz plik bazy danych");
+        FunctionalButton chooseDBButton = new FunctionalButton("Otwórz plik bazy danych");
         chooseDBButton.setBounds(55, 190, 175, 30);
         chooseDBButton.addActionListener((ActionEvent e) -> {
             OpenFileDialog fc = new OpenFileDialog(OpenFileDialog.DATABASE_FILE);

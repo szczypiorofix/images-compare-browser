@@ -1,5 +1,6 @@
 package com.imagecompare.browser.gui.imagepane;
 
+import com.imagecompare.browser.gui.shared.FunctionalButton;
 import com.imagecompare.browser.gui.shared.OpenFileDialog;
 import com.imagecompare.browser.gui.main.MainWindow;
 import com.imagecompare.browser.model.ImageItem;
@@ -30,7 +31,7 @@ public class ImagePanelWest extends JPanel {
 
         JPanel fileNamePanel = new JPanel(new BorderLayout());
         JLabel fileNameLabel = new JLabel("<brak pliku>");
-        JButton chooseFileButton = new JButton("Dodaj zdjęcie");
+        FunctionalButton chooseFileButton = new FunctionalButton("Dodaj zdjęcie");
 
         chooseFileButton.addActionListener((ActionEvent e) -> {
             OpenFileDialog fc = new OpenFileDialog(OpenFileDialog.IMAGE_FILE);
@@ -86,7 +87,7 @@ public class ImagePanelWest extends JPanel {
 
         inputMainPanel.add(inputGridPanel, BorderLayout.CENTER);
 
-        JButton addToDatabaseButton = new JButton("Dodaj");
+        FunctionalButton addToDatabaseButton = new FunctionalButton("Dodaj");
         addToDatabaseButton.addActionListener((ActionEvent e) -> {
             if ((!this.chosenFileName.equals(""))
                     && (!textFieldName.getText().equals(""))

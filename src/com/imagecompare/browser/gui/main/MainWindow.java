@@ -33,6 +33,7 @@ public final class MainWindow extends JFrame {
     public static final String frameTitleName = "AdminImages";
 
     private InformationDialog informationDialog;
+    private TopicsDialog topicsDialog;
     private MainTabbedPanel tabbedPane;
     private JPanel mainPanel;
     private JMenuBar mainMenuBar;
@@ -199,12 +200,15 @@ public final class MainWindow extends JFrame {
         menuOptions.add(menuOptionShowDatabase);*/
 
         informationDialog = new InformationDialog(this, "Informacje", true);
+        topicsDialog = new TopicsDialog(this, "Tematy pomocy", false);
 
         menuHelp = new JMenu("Pomoc");
         menuHelp.setMnemonic(KeyEvent.VK_C);
 
         menuHelpTopics = new JMenuItem("Tematy pomocy");
         menuHelpTopics.setMnemonic(KeyEvent.VK_T);
+        menuHelpTopics.addActionListener((ActionEvent e) -> topicsDialog.setVisible(true));
+
         menuHelpInformations = new JMenuItem("Informacje");
         menuHelpInformations.setMnemonic(KeyEvent.VK_I);
         menuHelpInformations.addActionListener((ActionEvent action) -> informationDialog.setVisible(true));

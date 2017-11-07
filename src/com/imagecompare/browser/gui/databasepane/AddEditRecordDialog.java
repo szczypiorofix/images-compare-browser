@@ -3,6 +3,7 @@ package com.imagecompare.browser.gui.databasepane;
 
 import com.imagecompare.browser.gui.databasepane.table.DatabaseTable;
 import com.imagecompare.browser.gui.imagepane.ImagePanelEast;
+import com.imagecompare.browser.gui.shared.FunctionalButton;
 import com.imagecompare.browser.gui.shared.OpenFileDialog;
 import com.imagecompare.browser.model.ImageItem;
 import com.imagecompare.browser.system.Log;
@@ -29,9 +30,9 @@ public class AddEditRecordDialog extends JDialog {
     private JPanel mainPanel;
     private JPanel northPanel;
     private JLabel titleLabel;
-    private JButton addButton;
+    private FunctionalButton addButton;
     private JPanel mainFieldsPanel;
-    private JButton buttonSubmit, buttonNext, buttonPrev;
+    private FunctionalButton buttonSubmit, buttonNext, buttonPrev;
     private JPanel buttonSubmitPanel;
     private JLabel fieldItemId, addedFileName;
     private JTextField fieldItemName, fieldItemParam1, fieldItemParam2, fieldItemParam3, fieldItemParam4, fieldItemParam5;
@@ -134,7 +135,7 @@ public class AddEditRecordDialog extends JDialog {
         addedFileName = new JLabel("");
 
         northPanel = new JPanel(new BorderLayout());
-        addButton = new JButton("Dodaj plik");
+        addButton = new FunctionalButton("Dodaj plik");
         addButton.addActionListener((ActionEvent e) -> {
             OpenFileDialog fc = new OpenFileDialog(OpenFileDialog.IMAGE_FILE);
             int returnVal = fc.showDialog(this, "Otwórz");
@@ -188,7 +189,7 @@ public class AddEditRecordDialog extends JDialog {
 
         buttonSubmitPanel = new JPanel(new FlowLayout());
 
-        buttonSubmit = new JButton("Zapisz");
+        buttonSubmit = new FunctionalButton("Zapisz");
         buttonSubmit.addActionListener((ActionEvent e) -> {
             if (type == ADD) {
                 if (!fieldItemName.getText().equals("")
@@ -232,8 +233,8 @@ public class AddEditRecordDialog extends JDialog {
             }
         });
 
-        buttonNext = new JButton();
-        buttonPrev = new JButton();
+        buttonNext = new FunctionalButton();
+        buttonPrev = new FunctionalButton();
 
         try {
             Image img = ImageIO.read(getClass().getResource("/arrow_right.png"));
