@@ -76,9 +76,9 @@ public class DatabasePanel extends JPanel {
             int n = JOptionPane.showOptionDialog(
                     frame,
                     "Usunąć pozycję " +tableOfRecords.getSelectedItem().getName() + "?",
-                    "Usunąć pozycję?",
+                    "Usunąć rekord?",
                     JOptionPane.YES_NO_OPTION,
-                    JOptionPane.WARNING_MESSAGE,
+                    JOptionPane.ERROR_MESSAGE,
                     null,
                     options,
                     options[0]);
@@ -136,7 +136,8 @@ public class DatabasePanel extends JPanel {
         recordsTableScrollPane = new JScrollPane(tableOfRecords);
         recordsTableScrollPane.getVerticalScrollBar().setUnitIncrement(15);
         tableAndFiltersPanel = new JPanel(new BorderLayout());
-        tableAndFiltersPanel.add(recordsTableScrollPane, BorderLayout.CENTER);
+        tableAndFiltersPanel.add(tableOfRecords.getTableHeader(), BorderLayout.CENTER);
+        tableAndFiltersPanel.add(tableOfRecords, BorderLayout.SOUTH);
 
         // Panel grupujący filter inputy.
         groupFilterInputs = new GroupFilterInputs(frame, sorter, imagePanelEast, tableOfRecords);
@@ -153,9 +154,9 @@ public class DatabasePanel extends JPanel {
         tableAndFiltersPanel.add(groupFilterInputs, BorderLayout.NORTH);
         groupFilterInputs.setSorter(sorter);
 
-        mainPanel.add(tableAndFiltersPanel, BorderLayout.CENTER);
+        mainPanel.add(new JScrollPane(tableAndFiltersPanel), BorderLayout.CENTER);
 
-        this.add(mainPanel, BorderLayout.CENTER);
+        this.add(mainPanel);
     }
 
     public DatabaseTable getTableOfRecords() {

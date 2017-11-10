@@ -20,7 +20,7 @@ public class GroupFilterInputs extends JPanel {
     private DatabaseTable tableOfRecords;
 ;
     public GroupFilterInputs(JFrame frame, TableRowSorter<TableModel> sorter, ImagePanelEast imagePanelEast, DatabaseTable tableOfRecords) {
-        super(new FlowLayout());
+        super(new GridLayout(1, 8));
         this.sorter = sorter;
         this.imagePanelEast = imagePanelEast;
         this.tableOfRecords = tableOfRecords;
@@ -52,6 +52,7 @@ public class GroupFilterInputs extends JPanel {
                 filterInputParam3,
                 filterInputParam4,
                 filterInputParam5};
+        setPreferredSize(new Dimension(400, 25));
     }
 
     public FilterInput[] getFilterInputs() {

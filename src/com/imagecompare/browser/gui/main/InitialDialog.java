@@ -24,18 +24,18 @@ public class InitialDialog extends JDialog {
         super(root, title, modal);
         this.databaseFilename = databaseFilename;
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        setSize(300, 300);
+        setSize(290, 270);
         setLocationRelativeTo(root);
         setResizable(false);
 
         JPanel mainPanel = new JPanel(null);
 
         JLabel titleLabel = new JLabel("Ostatnio wybrana baza danych:");
-        titleLabel.setBounds(50, 10, 280, 30);
+        titleLabel.setBounds(50, 10, 270, 30);
 
         if (this.databaseFilename.equals("")) {
             titleLabel.setText("Wybierz bazę danych:");
-            titleLabel.setBounds(70, 10, 270, 30);
+            titleLabel.setBounds(70, 10, 260, 30);
         }
         else {
             StringBuilder dbfn = new StringBuilder();
@@ -68,7 +68,7 @@ public class InitialDialog extends JDialog {
         }
 
         FunctionalButton confirmButton = new FunctionalButton("Utwórz nowy plik bazy");
-        confirmButton.setBounds(60, 140, 160, 30);
+        confirmButton.setBounds(60, 130, 160, 30);
         confirmButton.addActionListener((ActionEvent e) -> {
 
             UIManager.put("FileChooser.saveButtonText", "Zapisz");
@@ -88,7 +88,6 @@ public class InitialDialog extends JDialog {
 
             fileChooser.setDialogTitle("Zapisz");
             fileChooser.setFileFilter(filter);
-            //fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
             try {
                 fileChooser.setCurrentDirectory(new File(this.getClass().getProtectionDomain().getCodeSource().getLocation().toURI().getPath()));
             } catch (URISyntaxException urie) {
@@ -126,7 +125,7 @@ public class InitialDialog extends JDialog {
         mainPanel.add(confirmButton);
 
         FunctionalButton chooseDBButton = new FunctionalButton("Otwórz plik bazy danych");
-        chooseDBButton.setBounds(55, 190, 175, 30);
+        chooseDBButton.setBounds(55, 180, 175, 30);
         chooseDBButton.addActionListener((ActionEvent e) -> {
             OpenFileDialog fc = new OpenFileDialog(OpenFileDialog.DATABASE_FILE);
             int returnVal = fc.showDialog(this, "Otwórz");
