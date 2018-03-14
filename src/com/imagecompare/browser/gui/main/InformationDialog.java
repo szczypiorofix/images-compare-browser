@@ -31,7 +31,7 @@ public class InformationDialog extends JDialog {
         versionContentLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
         versionContentLabel.setBounds(100, 30, 50, 50);
 
-        JLabel copyrightContentLabel = new JLabel("Copyright \u00a9 Wróblewski Piotr 2017");
+        JLabel copyrightContentLabel = new JLabel("Copyright \u00a9 Wróblewski Piotr 2018");
         copyrightContentLabel.setFont(new Font("Tahoma", Font.PLAIN, 13));
         copyrightContentLabel.setSize(new Dimension(250, 100));
         copyrightContentLabel.setBounds(20, 55, 220, 50);
