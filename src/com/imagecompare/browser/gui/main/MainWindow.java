@@ -190,14 +190,14 @@ public final class MainWindow extends JFrame {
         //menuFile.add(menuFileOpen);
         menuFile.add(menuFileExit);
 
-/*        menuOptions = new JMenu("Opcje");
+        menuOptions = new JMenu("Opcje");
         menuOptions.setMnemonic(KeyEvent.VK_O);
 
         menuOptionsAddNewImage = new JMenuItem("Dodaj zdjęcie do bazy danych");
         menuOptionShowDatabase = new JMenuItem("Zdjęcia w bazie danych");
 
         menuOptions.add(menuOptionsAddNewImage);
-        menuOptions.add(menuOptionShowDatabase);*/
+        menuOptions.add(menuOptionShowDatabase);
 
         informationDialog = new InformationDialog(this, "Informacje", true);
         topicsDialog = new TopicsDialog(this, "Tematy pomocy", false);
@@ -211,13 +211,13 @@ public final class MainWindow extends JFrame {
 
         menuHelpInformations = new JMenuItem("Informacje");
         menuHelpInformations.setMnemonic(KeyEvent.VK_I);
-        menuHelpInformations.addActionListener((ActionEvent action) -> informationDialog.setVisible(true));
+        //menuHelpInformations.addActionListener((ActionEvent action) -> informationDialog.setVisible(true));
 
         menuHelp.add(menuHelpTopics);
         menuHelp.add(menuHelpInformations);
 
         mainMenuBar.add(menuFile);
-        //mainMenuBar.add(menuOptions);
+        mainMenuBar.add(menuOptions);
         mainMenuBar.add(menuHelp);
 
         this.setJMenuBar(mainMenuBar);
