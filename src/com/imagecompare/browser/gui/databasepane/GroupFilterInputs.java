@@ -18,12 +18,14 @@ public class GroupFilterInputs extends JPanel {
     private TableRowSorter<TableModel> sorter;
     private ImagePanelEast imagePanelEast;
     private DatabaseTable tableOfRecords;
+    private JScrollPane jScrollPane;
 ;
-    public GroupFilterInputs(JFrame frame, TableRowSorter<TableModel> sorter, ImagePanelEast imagePanelEast, DatabaseTable tableOfRecords) {
+    public GroupFilterInputs(JFrame frame, TableRowSorter<TableModel> sorter, ImagePanelEast imagePanelEast, DatabaseTable tableOfRecords, JScrollPane jScrollPane) {
         super(new GridLayout(1, 8));
         this.sorter = sorter;
         this.imagePanelEast = imagePanelEast;
         this.tableOfRecords = tableOfRecords;
+        this.jScrollPane = jScrollPane;
 
         FilterInput filterInputID = new FilterInput(frame, ImageItem.PARAM_ID_TITLE,  this);
         FilterInput filterInputName = new FilterInput(frame, ImageItem.PARAM_NAME_TITLE, this);
@@ -83,5 +85,6 @@ public class GroupFilterInputs extends JPanel {
             imagePanelEast.refresh(true);
             imagePanelEast.setFilteredData(tableOfRecords);
         }
+        jScrollPane.revalidate();
     }
 }

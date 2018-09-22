@@ -129,23 +129,37 @@ public class DatabasePanel extends JPanel {
 
         RecordsTableModel recordsTableModel = new RecordsTableModel(imageItems);
         tableOfRecords = new DatabaseTable(recordsTableModel, this);
+        //tableOfRecords.setRowHeight(24);
+
+        JPanel tablePanel = new JPanel(new BorderLayout());
 
         TableRowFilter tableRowFilter = new TableRowFilter();
         TableRowSorter<TableModel> sorter = new TableRowSorter<>(recordsTableModel);
 
         recordsTableScrollPane = new JScrollPane(tableOfRecords);
         recordsTableScrollPane.getVerticalScrollBar().setUnitIncrement(15);
+
+        //recordsTableScrollPane.setPreferredSize(new Dimension(800, 600));
+
         tableAndFiltersPanel = new JPanel(new BorderLayout());
-        tableAndFiltersPanel.add(tableOfRecords.getTableHeader(), BorderLayout.CENTER);
-        tableAndFiltersPanel.add(tableOfRecords, BorderLayout.SOUTH);
+
+        tablePanel.add(tableOfRecords.getTableHeader(), BorderLayout.NORTH);
+        tablePanel.add(tableOfRecords, BorderLayout.CENTER);
+        tableAndFiltersPanel.add(tablePanel, BorderLayout.CENTER);
+
+        //tableAndFiltersPanel.add(tableOfRecords.getTableHeader(), BorderLayout.CENTER);
+        //tableAndFiltersPanel.add(tableOfRecords, BorderLayout.SOUTH);
 
         // Panel grupujący filter inputy.
-        groupFilterInputs = new GroupFilterInputs(frame, sorter, imagePanelEast, tableOfRecords);
+        groupFilterInputs = new GroupFilterInputs(frame, sorter, imagePanelEast, tableOfRecords, recordsTableScrollPane);
         tableRowFilter.setFilterInputs(groupFilterInputs.getFilterInputs());
         groupFilterInputs.updateFilters();
+        //groupFilterInputs.revalidate();
 
         sorter.setRowFilter(tableRowFilter);
         tableOfRecords.setRowSorter(sorter);
+        //tableOfRecords.revalidate();
+        recordsTableScrollPane.setPreferredSize(tableOfRecords.getDimension());
 
         // FORCE SELECT FIRST ROW IN TABLE
         // Setting row selection but only when database is not empty.

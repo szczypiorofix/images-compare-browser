@@ -26,10 +26,10 @@ public class DatabaseTable extends JTable implements MouseListener {
         ListSelectionModel select = this.getSelectionModel();
         select.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);*/
 
-        setPreferredScrollableViewportSize(new Dimension(500, 70));
+        //setPreferredScrollableViewportSize(new Dimension(500, 70));
         setFillsViewportHeight(true);
 
-        setRowHeight(18);
+        //setRowHeight(18);
         addMouseListener(this);
     }
 
@@ -43,6 +43,9 @@ public class DatabaseTable extends JTable implements MouseListener {
         return selectedRow;
     }
 
+    public Dimension getDimension() {
+        return new Dimension(getWidth(), getHeight());
+    }
 
     public ImageItem getSelectedItem() {
         return new ImageItem(
