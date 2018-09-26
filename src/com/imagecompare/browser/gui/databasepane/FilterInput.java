@@ -1,6 +1,10 @@
 package com.imagecompare.browser.gui.databasepane;
 
 import javax.swing.*;
+import javax.swing.border.Border;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.awt.*;
@@ -23,6 +27,9 @@ public class FilterInput extends JTextField implements FocusListener, DocumentLi
         this.addFocusListener(this);
         this.getDocument().addDocumentListener(this);
         this.groupFilterInputs = groupFilterInputs;
+        Border border = new LineBorder(Color.gray, 1);
+        Border margin = new EmptyBorder(1,5,1,1);
+        this.setBorder(new CompoundBorder(margin, border));
     }
 
 

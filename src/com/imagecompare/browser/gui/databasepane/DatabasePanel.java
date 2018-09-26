@@ -159,16 +159,20 @@ public class DatabasePanel extends JPanel {
         sorter.setRowFilter(tableRowFilter);
         tableOfRecords.setRowSorter(sorter);
         //tableOfRecords.revalidate();
-        recordsTableScrollPane.setPreferredSize(tableOfRecords.getDimension());
+        //recordsTableScrollPane.setPreferredSize(tableOfRecords.getDimension());
 
         // FORCE SELECT FIRST ROW IN TABLE
         // Setting row selection but only when database is not empty.
         if (tableOfRecords.getRowCount() > 0) tableOfRecords.setRowSelectionInterval(0, 0);
 
         tableAndFiltersPanel.add(groupFilterInputs, BorderLayout.NORTH);
+        tableAndFiltersPanel.setBorder(new EmptyBorder(2, 2, 2, 2));
         groupFilterInputs.setSorter(sorter);
 
-        mainPanel.add(new JScrollPane(tableAndFiltersPanel), BorderLayout.CENTER);
+        mainPanel.add(//new JScrollPane(
+                tableAndFiltersPanel
+                //)
+                , BorderLayout.CENTER);
 
         this.add(mainPanel);
     }
