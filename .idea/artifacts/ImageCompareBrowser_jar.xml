@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/ImageCompareBrowser_jar</output-path>
     <root id="archive" name="ImageCompareBrowser.jar">
       <element id="module-output" name="ImageCompareBrowser" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/res/sqlite-jdbc-3.20.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/main/resources/sqlite-jdbc-3.20.0.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
