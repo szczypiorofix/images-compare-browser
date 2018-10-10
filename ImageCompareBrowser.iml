@@ -15,7 +15,7 @@
     <orderEntry type="module-library">
       <library name="Maven: sqlite:sqlite-jdbc:3.20.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/sqlite-jdbc-3.20.0.jar!/" />
+          <root url="jar://C:/Java Libraries/sqlite/sqlite-jdbc-3.20.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
